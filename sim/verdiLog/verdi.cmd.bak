@@ -1,0 +1,2454 @@
+debImport "-sv" "-f" "./f.list"
+debLoadSimResult /home/wx/Project/SDMA/sim/TB_sdma_top.fsdb
+wvCreateWindow
+srcHBSelect "TB_sdma_top.U_SDMA_TOP_0" -win $_nTrace1
+srcHBDrag -win $_nTrace1
+wvRenameGroup -win $_nWave2 {G1} {U_SDMA_TOP_0}
+wvAddSignal -win $_nWave2 "/TB_sdma_top/U_SDMA_TOP_0/clk" \
+           "/TB_sdma_top/U_SDMA_TOP_0/rst_n" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_en" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_inst_vld" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_inst\[511:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ready" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbready" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbrdata\[31:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbrvld\[3:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbraddr\[31:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbren\[3:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwdata\[31:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwen\[3:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwaddr\[31:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1ready" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1rdata\[511:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1rvld\[63:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1raddr\[31:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1ren\[63:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1wdata\[511:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1wen\[63:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1waddr\[31:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2ready" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2rdata\[511:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2rvld\[63:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2raddr\[31:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2ren\[63:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2wdata\[511:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2wen\[63:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2waddr\[31:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1ready" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1rdata\[511:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1rvld\[63:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1raddr\[31:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1ren\[63:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1wdata\[511:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1wen\[63:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1waddr\[31:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2ready" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2rdata\[511:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2rvld\[63:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2raddr\[31:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2ren\[63:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2wdata\[511:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2wen\[63:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2waddr\[31:0\]"
+wvSetPosition -win $_nWave2 {("U_SDMA_TOP_0" 0)}
+wvSetPosition -win $_nWave2 {("U_SDMA_TOP_0" 46)}
+wvSetPosition -win $_nWave2 {("U_SDMA_TOP_0" 46)}
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvZoom -win $_nWave2 0.000000 92399.718508
+wvZoomOut -win $_nWave2
+wvSetCursor -win $_nWave2 17166.450166 -snap {("U_SDMA_TOP_0" 9)}
+wvSetCursor -win $_nWave2 18206.841085 -snap {("U_SDMA_TOP_0" 12)}
+wvSelectSignal -win $_nWave2 {( "U_SDMA_TOP_0" 14 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_TOP_0" 14 )} 
+wvSetRadix -win $_nWave2 -format UDec
+wvSetCursor -win $_nWave2 20287.622924 -snap {("U_SDMA_TOP_0" 14)}
+wvScrollUp -win $_nWave2 3
+wvSelectGroup -win $_nWave2 {U_SDMA_TOP_0}
+wvSetPosition -win $_nWave2 {("U_SDMA_TOP_0" 0)}
+wvSelectGroup -win $_nWave2 {G2}
+srcHBSelect "TB_sdma_top.U_SDMA_TOP_0.U_SDMA_DATA_PATH_0" -win $_nTrace1
+srcHBDrag -win $_nTrace1
+wvSetPosition -win $_nWave2 {("G2" 0)}
+wvRenameGroup -win $_nWave2 {G2} {U_SDMA_DATA_PATH_0}
+wvAddSignal -win $_nWave2 "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/clk" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/rst_n" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_en" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_transfer_pending" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_num_of_remain_bytes\[6:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_mode\[2:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din_strb\[63:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din_vld" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din\[511:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_dout_ready" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_dout_ldb_num\[6:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_paddingflag" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_upsampleflag" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_din_ready" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_dout\[511:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_input_section_done" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_output_section_done" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_parallelinout_section_done"
+wvSetPosition -win $_nWave2 {("U_SDMA_DATA_PATH_0" 0)}
+wvSetPosition -win $_nWave2 {("U_SDMA_DATA_PATH_0" 18)}
+wvSetPosition -win $_nWave2 {("U_SDMA_DATA_PATH_0" 18)}
+wvScrollDown -win $_nWave2 47
+wvScrollDown -win $_nWave2 0
+wvSetCursor -win $_nWave2 16256.108112 -snap {("U_SDMA_DATA_PATH_0" 11)}
+wvSetCursor -win $_nWave2 18466.938815 -snap {("U_SDMA_DATA_PATH_0" 15)}
+wvZoomOut -win $_nWave2
+wvScrollUp -win $_nWave2 47
+wvSelectGroup -win $_nWave2 {U_SDMA_DATA_PATH_0}
+wvSetPosition -win $_nWave2 {("U_SDMA_DATA_PATH_0" 0)}
+wvSelectGroup -win $_nWave2 {G3}
+srcHBSelect "TB_sdma_top.U_SDMA_TOP_0.U_SDMA_SECTION_CTRL_0" -win $_nTrace1
+srcHBDrag -win $_nTrace1
+wvSetPosition -win $_nWave2 {("U_SDMA_TOP_0" 0)}
+wvSetPosition -win $_nWave2 {("U_SDMA_DATA_PATH_0" 0)}
+wvSetPosition -win $_nWave2 {("G3" 0)}
+wvRenameGroup -win $_nWave2 {G3} {U_SDMA_SECTION_CTRL_0}
+wvAddSignal -win $_nWave2 "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/clk" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/rst_n" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_en" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_concateen" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfmsmovelength\[20:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms2movelength\[20:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms1concatelength\[20:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms2concatelength\[20:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_sdp_outputsectiondone" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_sdp_parallelinoutsectiondone" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_transfer_pending" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_transfer_done" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_num_of_remain_bytes\[6:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_concate_fms_switch_flag" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_sapsdpen" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_ready"
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 0)}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 16)}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 16)}
+wvSetCursor -win $_nWave2 19767.427464 -snap {("U_SDMA_SECTION_CTRL_0" 14)}
+wvSelectGroup -win $_nWave2 {U_SDMA_SECTION_CTRL_0}
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 2 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 3 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 2 )} 
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 2)}
+wvGetSignalOpen -win $_nWave2
+wvGetSignalSetScope -win $_nWave2 "/TB_sdma_top"
+wvGetSignalSetScope -win $_nWave2 "/TB_sdma_top/U_SDMA_TOP_0"
+wvGetSignalSetScope -win $_nWave2 \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0"
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 3)}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 3)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"U_SDMA_TOP_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_inst_vld} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_inst\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbrdata\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbrvld\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbraddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbren\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwdata\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwen\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwaddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2waddr\[31:0\]} \
+}
+wvCollapseGroup -win $_nWave2 "U_SDMA_TOP_0"
+wvAddSignal -win $_nWave2 -group {"U_SDMA_DATA_PATH_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_transfer_pending} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_num_of_remain_bytes\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_mode\[2:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din_strb\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din_vld} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_dout_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_dout_ldb_num\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_paddingflag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_upsampleflag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_din_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_dout\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_input_section_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_output_section_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_parallelinout_section_done} \
+}
+wvCollapseGroup -win $_nWave2 "U_SDMA_DATA_PATH_0"
+wvAddSignal -win $_nWave2 -group {"U_SDMA_SECTION_CTRL_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/cur_state\[1:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_concateen} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfmsmovelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms2movelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms1concatelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms2concatelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_sdp_outputsectiondone} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_sdp_parallelinoutsectiondone} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_transfer_pending} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_transfer_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_num_of_remain_bytes\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_concate_fms_switch_flag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_sapsdpen} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_ready} \
+}
+wvAddSignal -win $_nWave2 -group {"G4" \
+}
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 3 )} 
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 3)}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 3)}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 3)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"U_SDMA_TOP_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_inst_vld} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_inst\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbrdata\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbrvld\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbraddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbren\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwdata\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwen\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwaddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2waddr\[31:0\]} \
+}
+wvCollapseGroup -win $_nWave2 "U_SDMA_TOP_0"
+wvAddSignal -win $_nWave2 -group {"U_SDMA_DATA_PATH_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_transfer_pending} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_num_of_remain_bytes\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_mode\[2:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din_strb\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din_vld} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_dout_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_dout_ldb_num\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_paddingflag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_upsampleflag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_din_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_dout\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_input_section_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_output_section_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_parallelinout_section_done} \
+}
+wvCollapseGroup -win $_nWave2 "U_SDMA_DATA_PATH_0"
+wvAddSignal -win $_nWave2 -group {"U_SDMA_SECTION_CTRL_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/cur_state\[1:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_concateen} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfmsmovelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms2movelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms1concatelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms2concatelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_sdp_outputsectiondone} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_sdp_parallelinoutsectiondone} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_transfer_pending} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_transfer_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_num_of_remain_bytes\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_concate_fms_switch_flag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_sapsdpen} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_ready} \
+}
+wvAddSignal -win $_nWave2 -group {"G4" \
+}
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 3 )} 
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 3)}
+wvGetSignalClose -win $_nWave2
+wvSetCursor -win $_nWave2 7542.834164 -snap {("U_SDMA_SECTION_CTRL_0" 3)}
+debReload
+wvSetCursor -win $_nWave2 19767.427464 -snap {("U_SDMA_SECTION_CTRL_0" 15)}
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 14 )} 
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 14)}
+wvGetSignalOpen -win $_nWave2
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 15)}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 15)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"U_SDMA_TOP_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_inst_vld} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_inst\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbrdata\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbrvld\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbraddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbren\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwdata\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwen\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwaddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2waddr\[31:0\]} \
+}
+wvCollapseGroup -win $_nWave2 "U_SDMA_TOP_0"
+wvAddSignal -win $_nWave2 -group {"U_SDMA_DATA_PATH_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_transfer_pending} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_num_of_remain_bytes\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_mode\[2:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din_strb\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din_vld} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_dout_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_dout_ldb_num\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_paddingflag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_upsampleflag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_din_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_dout\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_input_section_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_output_section_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_parallelinout_section_done} \
+}
+wvCollapseGroup -win $_nWave2 "U_SDMA_DATA_PATH_0"
+wvAddSignal -win $_nWave2 -group {"U_SDMA_SECTION_CTRL_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/cur_state\[1:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_concateen} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfmsmovelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms2movelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms1concatelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms2concatelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_sdp_outputsectiondone} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_sdp_parallelinoutsectiondone} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_transfer_pending} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_transfer_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_num_of_remain_bytes\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/num_of_remain_bytes_next\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_concate_fms_switch_flag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_sapsdpen} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_ready} \
+}
+wvAddSignal -win $_nWave2 -group {"G4" \
+}
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 15 )} 
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 15)}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 15)}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 15)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"U_SDMA_TOP_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_inst_vld} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_inst\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbrdata\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbrvld\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbraddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbren\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwdata\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwen\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwaddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2waddr\[31:0\]} \
+}
+wvCollapseGroup -win $_nWave2 "U_SDMA_TOP_0"
+wvAddSignal -win $_nWave2 -group {"U_SDMA_DATA_PATH_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_transfer_pending} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_num_of_remain_bytes\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_mode\[2:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din_strb\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din_vld} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_dout_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_dout_ldb_num\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_paddingflag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_upsampleflag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_din_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_dout\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_input_section_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_output_section_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_parallelinout_section_done} \
+}
+wvCollapseGroup -win $_nWave2 "U_SDMA_DATA_PATH_0"
+wvAddSignal -win $_nWave2 -group {"U_SDMA_SECTION_CTRL_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/cur_state\[1:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_concateen} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfmsmovelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms2movelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms1concatelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms2concatelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_sdp_outputsectiondone} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_sdp_parallelinoutsectiondone} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_transfer_pending} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_transfer_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_num_of_remain_bytes\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/num_of_remain_bytes_next\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_concate_fms_switch_flag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_sapsdpen} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_ready} \
+}
+wvAddSignal -win $_nWave2 -group {"G4" \
+}
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 15 )} 
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 15)}
+wvGetSignalClose -win $_nWave2
+debReload
+wvSetCursor -win $_nWave2 48638.275471 -snap {("U_SDMA_SECTION_CTRL_0" 14)}
+wvSetCursor -win $_nWave2 35633.388981 -snap {("U_SDMA_SECTION_CTRL_0" 16)}
+wvScrollUp -win $_nWave2 19
+wvScrollUp -win $_nWave2 47
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvSelectGroup -win $_nWave2 {U_SDMA_SECTION_CTRL_0}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 0)}
+wvSelectGroup -win $_nWave2 {U_SDMA_DATA_PATH_0}
+wvSelectGroup -win $_nWave2 {U_SDMA_TOP_0}
+wvZoom -win $_nWave2 12484.691030 20807.818383
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvSetCursor -win $_nWave2 10589.876323 -snap {("U_SDMA_TOP_0" 10)}
+wvSetCursor -win $_nWave2 24553.518554 -snap {("U_SDMA_TOP_0" 10)}
+wvSetCursor -win $_nWave2 38892.023664 -snap {("U_SDMA_TOP_0" 10)}
+wvSetCursor -win $_nWave2 34674.816278 -snap {("U_SDMA_TOP_0" 12)}
+wvSetCursor -win $_nWave2 20148.879729 -snap {("U_SDMA_TOP_0" 14)}
+wvSetCursor -win $_nWave2 48825.889949 -snap {("U_SDMA_TOP_0" 13)}
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvSelectGroup -win $_nWave2 {U_SDMA_TOP_0}
+wvSelectGroup -win $_nWave2 {U_SDMA_SECTION_CTRL_0}
+wvScrollDown -win $_nWave2 47
+wvScrollDown -win $_nWave2 19
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 16 )} 
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 16)}
+wvGetSignalOpen -win $_nWave2
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 18)}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 18)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"U_SDMA_TOP_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_inst_vld} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_inst\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbrdata\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbrvld\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbraddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbren\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwdata\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwen\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwaddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2waddr\[31:0\]} \
+}
+wvCollapseGroup -win $_nWave2 "U_SDMA_TOP_0"
+wvAddSignal -win $_nWave2 -group {"U_SDMA_DATA_PATH_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_transfer_pending} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_num_of_remain_bytes\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_mode\[2:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din_strb\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din_vld} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_dout_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_dout_ldb_num\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_paddingflag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_upsampleflag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_din_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_dout\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_input_section_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_output_section_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_parallelinout_section_done} \
+}
+wvCollapseGroup -win $_nWave2 "U_SDMA_DATA_PATH_0"
+wvAddSignal -win $_nWave2 -group {"U_SDMA_SECTION_CTRL_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/cur_state\[1:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_concateen} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfmsmovelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms2movelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms1concatelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms2concatelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_sdp_outputsectiondone} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_sdp_parallelinoutsectiondone} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_transfer_pending} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_transfer_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_num_of_remain_bytes\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/num_of_remain_bytes_next\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_concate_fms_switch_flag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms2concatelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/sfms2_concate_cnt\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_sapsdpen} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_ready} \
+}
+wvAddSignal -win $_nWave2 -group {"G4" \
+}
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 17 18 )} 
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 18)}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 18)}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 18)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"U_SDMA_TOP_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_inst_vld} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_inst\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbrdata\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbrvld\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbraddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbren\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwdata\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwen\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwaddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2waddr\[31:0\]} \
+}
+wvCollapseGroup -win $_nWave2 "U_SDMA_TOP_0"
+wvAddSignal -win $_nWave2 -group {"U_SDMA_DATA_PATH_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_transfer_pending} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_num_of_remain_bytes\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_mode\[2:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din_strb\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din_vld} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_dout_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_dout_ldb_num\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_paddingflag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_upsampleflag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_din_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_dout\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_input_section_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_output_section_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_parallelinout_section_done} \
+}
+wvCollapseGroup -win $_nWave2 "U_SDMA_DATA_PATH_0"
+wvAddSignal -win $_nWave2 -group {"U_SDMA_SECTION_CTRL_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/cur_state\[1:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_concateen} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfmsmovelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms2movelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms1concatelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms2concatelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_sdp_outputsectiondone} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_sdp_parallelinoutsectiondone} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_transfer_pending} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_transfer_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_num_of_remain_bytes\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/num_of_remain_bytes_next\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_concate_fms_switch_flag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms2concatelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/sfms2_concate_cnt\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_sapsdpen} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_ready} \
+}
+wvAddSignal -win $_nWave2 -group {"G4" \
+}
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 17 18 )} 
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 18)}
+wvGetSignalClose -win $_nWave2
+wvSetCursor -win $_nWave2 50044.194304 -snap {("U_SDMA_SECTION_CTRL_0" 16)}
+wvGetSignalOpen -win $_nWave2
+wvGetSignalSetScope -win $_nWave2 "/TB_sdma_top"
+wvGetSignalSetScope -win $_nWave2 "/TB_sdma_top/U_SDMA_TOP_0"
+wvGetSignalSetScope -win $_nWave2 \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0"
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 20)}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 20)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"U_SDMA_TOP_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_inst_vld} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_inst\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbrdata\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbrvld\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbraddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbren\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwdata\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwen\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwaddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2waddr\[31:0\]} \
+}
+wvCollapseGroup -win $_nWave2 "U_SDMA_TOP_0"
+wvAddSignal -win $_nWave2 -group {"U_SDMA_DATA_PATH_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_transfer_pending} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_num_of_remain_bytes\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_mode\[2:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din_strb\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din_vld} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_dout_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_dout_ldb_num\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_paddingflag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_upsampleflag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_din_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_dout\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_input_section_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_output_section_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_parallelinout_section_done} \
+}
+wvCollapseGroup -win $_nWave2 "U_SDMA_DATA_PATH_0"
+wvAddSignal -win $_nWave2 -group {"U_SDMA_SECTION_CTRL_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/cur_state\[1:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_concateen} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfmsmovelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms2movelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms1concatelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms2concatelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_sdp_outputsectiondone} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_sdp_parallelinoutsectiondone} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_transfer_pending} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_transfer_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_num_of_remain_bytes\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/num_of_remain_bytes_next\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_concate_fms_switch_flag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms2concatelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/sfms2_concate_cnt\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms1concatelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/sfms1_concate_cnt\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_sapsdpen} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_ready} \
+}
+wvAddSignal -win $_nWave2 -group {"G4" \
+}
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 19 20 )} 
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 20)}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 20)}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 20)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"U_SDMA_TOP_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_inst_vld} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_inst\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbrdata\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbrvld\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbraddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbren\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwdata\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwen\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwaddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2waddr\[31:0\]} \
+}
+wvCollapseGroup -win $_nWave2 "U_SDMA_TOP_0"
+wvAddSignal -win $_nWave2 -group {"U_SDMA_DATA_PATH_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_transfer_pending} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_num_of_remain_bytes\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_mode\[2:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din_strb\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din_vld} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_dout_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_dout_ldb_num\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_paddingflag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_upsampleflag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_din_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_dout\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_input_section_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_output_section_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_parallelinout_section_done} \
+}
+wvCollapseGroup -win $_nWave2 "U_SDMA_DATA_PATH_0"
+wvAddSignal -win $_nWave2 -group {"U_SDMA_SECTION_CTRL_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/cur_state\[1:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_concateen} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfmsmovelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms2movelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms1concatelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms2concatelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_sdp_outputsectiondone} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_sdp_parallelinoutsectiondone} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_transfer_pending} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_transfer_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_num_of_remain_bytes\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/num_of_remain_bytes_next\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_concate_fms_switch_flag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms2concatelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/sfms2_concate_cnt\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms1concatelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/sfms1_concate_cnt\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_sapsdpen} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_ready} \
+}
+wvAddSignal -win $_nWave2 -group {"G4" \
+}
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 19 20 )} 
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 20)}
+wvGetSignalClose -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 21 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 20 )} 
+wvSetCursor -win $_nWave2 19492.869692 -snap {("U_SDMA_SECTION_CTRL_0" 20)}
+wvSetCursor -win $_nWave2 7872.120452 -snap {("U_SDMA_SECTION_CTRL_0" 20)}
+wvSetCursor -win $_nWave2 34768.531998 -snap {("U_SDMA_SECTION_CTRL_0" 18)}
+wvSetCursor -win $_nWave2 49763.047145 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 19)}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 18)}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 17)}
+wvMoveSelected -win $_nWave2
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 17)}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 18)}
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 19 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 20 )} 
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 20)}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 19)}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 18)}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 17)}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 16)}
+wvMoveSelected -win $_nWave2
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 16)}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 17)}
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 19 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 20 )} 
+wvSetCursor -win $_nWave2 20898.605487 -snap {("U_SDMA_SECTION_CTRL_0" 19)}
+wvSetCursor -win $_nWave2 33643.943362 -snap {("U_SDMA_SECTION_CTRL_0" 20)}
+wvSetCursor -win $_nWave2 49388.184267 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 21554.615524 -snap {("U_SDMA_SECTION_CTRL_0" 19)}
+wvSetCursor -win $_nWave2 34674.816278 -snap {("U_SDMA_SECTION_CTRL_0" 15)}
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 19
+wvScrollDown -win $_nWave2 19
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvSetCursor -win $_nWave2 6747.531816 -snap {("U_SDMA_SECTION_CTRL_0" 12)}
+wvSetCursor -win $_nWave2 33925.090521 -snap {("U_SDMA_SECTION_CTRL_0" 16)}
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 18 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 19 )} 
+wvSetCursor -win $_nWave2 48544.742790 -snap {("U_SDMA_SECTION_CTRL_0" 14)}
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 18 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 17 18 )} 
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 17)}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 16)}
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 17 )} 
+wvSetCursor -win $_nWave2 20617.458328 -snap {("U_SDMA_SECTION_CTRL_0" 17)}
+wvSetCursor -win $_nWave2 35049.679157 -snap {("U_SDMA_SECTION_CTRL_0" 16)}
+wvSetCursor -win $_nWave2 21273.468365 -snap {("U_SDMA_SECTION_CTRL_0" 17)}
+wvSetCursor -win $_nWave2 34862.247718 -snap {("U_SDMA_SECTION_CTRL_0" 16)}
+wvSetCursor -win $_nWave2 20992.321206 -snap {("U_SDMA_SECTION_CTRL_0" 16)}
+debReload
+wvSetCursor -win $_nWave2 35799.404914 -snap {("U_SDMA_SECTION_CTRL_0" 17)}
+debReload
+wvSetCursor -win $_nWave2 19492.869692 -snap {("U_SDMA_SECTION_CTRL_0" 16)}
+debReload
+wvSetCursor -win $_nWave2 18930.575374 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 20992.321206 -snap {("U_SDMA_SECTION_CTRL_0" 16)}
+wvSetCursor -win $_nWave2 20055.164010 -snap {("U_SDMA_SECTION_CTRL_0" 15)}
+wvSetCursor -win $_nWave2 21086.036926 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 31863.344688 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 16 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 18 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 18 )} 
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 18)}
+wvGetSignalOpen -win $_nWave2
+wvSetCursor -win $_nWave2 20992.321206 -snap {("U_SDMA_SECTION_CTRL_0" 16)}
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 16 )} 
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 19
+wvScrollUp -win $_nWave2 47
+wvScrollDown -win $_nWave2 47
+wvScrollDown -win $_nWave2 19
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 19
+wvScrollDown -win $_nWave2 19
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 18 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 16 )} 
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 19
+wvScrollUp -win $_nWave2 47
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 47
+wvScrollDown -win $_nWave2 19
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 19
+wvScrollUp -win $_nWave2 47
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 3 )} 
+wvScrollDown -win $_nWave2 47
+wvScrollDown -win $_nWave2 19
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 18 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 17 )} 
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 19
+wvScrollUp -win $_nWave2 47
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 47
+wvScrollDown -win $_nWave2 19
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 18 )} 
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 19
+wvScrollUp -win $_nWave2 47
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 47
+wvScrollDown -win $_nWave2 19
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvGetSignalOpen -win $_nWave2
+wvScrollUp -win $_nWave2 1
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 9 )} 
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 8 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 6 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 7 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 9 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 8 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 9 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 18 )} 
+wvGetSignalOpen -win $_nWave2
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 19)}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 19)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"U_SDMA_TOP_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_inst_vld} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_inst\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbrdata\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbrvld\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbraddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbren\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwdata\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwen\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwaddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2waddr\[31:0\]} \
+}
+wvCollapseGroup -win $_nWave2 "U_SDMA_TOP_0"
+wvAddSignal -win $_nWave2 -group {"U_SDMA_DATA_PATH_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_transfer_pending} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_num_of_remain_bytes\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_mode\[2:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din_strb\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din_vld} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_dout_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_dout_ldb_num\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_paddingflag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_upsampleflag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_din_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_dout\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_input_section_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_output_section_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_parallelinout_section_done} \
+}
+wvCollapseGroup -win $_nWave2 "U_SDMA_DATA_PATH_0"
+wvAddSignal -win $_nWave2 -group {"U_SDMA_SECTION_CTRL_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/cur_state\[1:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_concateen} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfmsmovelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms2movelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms1concatelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms2concatelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_sdp_outputsectiondone} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_sdp_parallelinoutsectiondone} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_transfer_pending} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_transfer_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_num_of_remain_bytes\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/num_of_remain_bytes_next\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_concate_fms_switch_flag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/sfms1_concate_cnt\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/sfms2_concate_cnt\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/sfms2_transfer_cnt\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_sapsdpen} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_ready} \
+}
+wvAddSignal -win $_nWave2 -group {"G4" \
+}
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 19 )} 
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 19)}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 19)}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 19)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"U_SDMA_TOP_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_inst_vld} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_inst\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbrdata\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbrvld\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbraddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbren\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwdata\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwen\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwaddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2waddr\[31:0\]} \
+}
+wvCollapseGroup -win $_nWave2 "U_SDMA_TOP_0"
+wvAddSignal -win $_nWave2 -group {"U_SDMA_DATA_PATH_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_transfer_pending} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_num_of_remain_bytes\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_mode\[2:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din_strb\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din_vld} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_dout_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_dout_ldb_num\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_paddingflag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_upsampleflag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_din_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_dout\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_input_section_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_output_section_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_parallelinout_section_done} \
+}
+wvCollapseGroup -win $_nWave2 "U_SDMA_DATA_PATH_0"
+wvAddSignal -win $_nWave2 -group {"U_SDMA_SECTION_CTRL_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/cur_state\[1:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_concateen} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfmsmovelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms2movelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms1concatelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms2concatelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_sdp_outputsectiondone} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_sdp_parallelinoutsectiondone} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_transfer_pending} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_transfer_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_num_of_remain_bytes\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/num_of_remain_bytes_next\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_concate_fms_switch_flag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/sfms1_concate_cnt\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/sfms2_concate_cnt\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/sfms2_transfer_cnt\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_sapsdpen} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_ready} \
+}
+wvAddSignal -win $_nWave2 -group {"G4" \
+}
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 19 )} 
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 19)}
+wvGetSignalClose -win $_nWave2
+wvGetSignalOpen -win $_nWave2
+wvGetSignalSetScope -win $_nWave2 "/TB_sdma_top"
+wvGetSignalSetScope -win $_nWave2 "/TB_sdma_top/U_SDMA_TOP_0"
+wvGetSignalSetScope -win $_nWave2 \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0"
+wvGetSignalSetScope -win $_nWave2 \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0"
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 20)}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 20)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"U_SDMA_TOP_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_inst_vld} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_inst\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbrdata\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbrvld\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbraddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbren\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwdata\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwen\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwaddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2waddr\[31:0\]} \
+}
+wvCollapseGroup -win $_nWave2 "U_SDMA_TOP_0"
+wvAddSignal -win $_nWave2 -group {"U_SDMA_DATA_PATH_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_transfer_pending} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_num_of_remain_bytes\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_mode\[2:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din_strb\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din_vld} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_dout_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_dout_ldb_num\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_paddingflag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_upsampleflag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_din_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_dout\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_input_section_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_output_section_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_parallelinout_section_done} \
+}
+wvCollapseGroup -win $_nWave2 "U_SDMA_DATA_PATH_0"
+wvAddSignal -win $_nWave2 -group {"U_SDMA_SECTION_CTRL_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/cur_state\[1:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_concateen} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfmsmovelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms2movelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms1concatelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms2concatelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_sdp_outputsectiondone} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_sdp_parallelinoutsectiondone} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_transfer_pending} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_transfer_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_num_of_remain_bytes\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/num_of_remain_bytes_next\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_concate_fms_switch_flag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/sfms1_concate_cnt\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/sfms2_concate_cnt\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/sfms2_transfer_cnt\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/sfms1_transfer_cnt\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_sapsdpen} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_ready} \
+}
+wvAddSignal -win $_nWave2 -group {"G4" \
+}
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 20 )} 
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 20)}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 20)}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 20)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"U_SDMA_TOP_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_inst_vld} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_inst\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbrdata\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbrvld\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbraddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbren\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwdata\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwen\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwaddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2waddr\[31:0\]} \
+}
+wvCollapseGroup -win $_nWave2 "U_SDMA_TOP_0"
+wvAddSignal -win $_nWave2 -group {"U_SDMA_DATA_PATH_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_transfer_pending} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_num_of_remain_bytes\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_mode\[2:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din_strb\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din_vld} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_dout_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_dout_ldb_num\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_paddingflag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_upsampleflag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_din_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_dout\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_input_section_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_output_section_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_parallelinout_section_done} \
+}
+wvCollapseGroup -win $_nWave2 "U_SDMA_DATA_PATH_0"
+wvAddSignal -win $_nWave2 -group {"U_SDMA_SECTION_CTRL_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/cur_state\[1:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_concateen} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfmsmovelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms2movelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms1concatelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms2concatelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_sdp_outputsectiondone} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_sdp_parallelinoutsectiondone} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_transfer_pending} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_transfer_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_num_of_remain_bytes\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/num_of_remain_bytes_next\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_concate_fms_switch_flag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/sfms1_concate_cnt\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/sfms2_concate_cnt\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/sfms2_transfer_cnt\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/sfms1_transfer_cnt\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_sapsdpen} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_ready} \
+}
+wvAddSignal -win $_nWave2 -group {"G4" \
+}
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 20 )} 
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 20)}
+wvGetSignalClose -win $_nWave2
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 19)}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 18)}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 17)}
+wvMoveSelected -win $_nWave2
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 17)}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 18)}
+wvSetCursor -win $_nWave2 35157.665386 -snap {("U_SDMA_SECTION_CTRL_0" 16)}
+wvSetCursor -win $_nWave2 21282.106780 -snap {("U_SDMA_SECTION_CTRL_0" 18)}
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 16 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 15 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 16 )} 
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 19
+wvScrollUp -win $_nWave2 47
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 47
+wvScrollDown -win $_nWave2 19
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 16 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 13 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 14 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 15 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 16 )} 
+debReload
+wvSetCursor -win $_nWave2 35251.419161 -snap {("U_SDMA_SECTION_CTRL_0" 15)}
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 20 )} 
+wvSetCursor -win $_nWave2 21938.383201 -snap {("U_SDMA_SECTION_CTRL_0" 15)}
+wvSetCursor -win $_nWave2 35157.665386 -snap {("U_SDMA_SECTION_CTRL_0" 16)}
+wvSetCursor -win $_nWave2 21375.860555 -snap {("U_SDMA_SECTION_CTRL_0" 16)}
+debReload
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvSetCursor -win $_nWave2 682527.477364 -snap {("U_SDMA_SECTION_CTRL_0" 18)}
+wvScrollDown -win $_nWave2 1
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 18 )} 
+wvZoom -win $_nWave2 681027.416975 698278.111457
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 16 )} 
+wvSetCursor -win $_nWave2 693251.377361 -snap {("U_SDMA_SECTION_CTRL_0" 19)}
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvZoomOut -win $_nWave2
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 19
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvScrollDown -win $_nWave2 19
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoom -win $_nWave2 16105.681209 78917.837926
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvSetCursor -win $_nWave2 21258.089509 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 35369.062717 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 10 )} 
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSetCursor -win $_nWave2 88514.286489 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 102991.778482 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 116369.714121 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 130114.168545 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 145874.476284 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 159618.930708 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 173363.385131 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 188207.395909 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 201585.331548 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 215329.785972 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 229440.759180 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 242635.435427 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvZoom -win $_nWave2 237687.431835 243918.251173
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvSetCursor -win $_nWave2 256654.845774 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 272943.143739 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 285450.229676 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 298539.040541 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 315699.925897 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 328788.736762 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 342750.135018 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 355257.220955 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 370963.793993 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 384634.329785 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 397432.278186 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 409939.364123 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 425936.799625 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvZoomOut -win $_nWave2
+wvSetCursor -win $_nWave2 439202.320130 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 453163.718386 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 465379.941859 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 476432.715479 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 489812.388807 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 508427.586481 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 521225.534883 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 536932.107920 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 554383.855740 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 571253.878632 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 581724.927324 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 589869.076307 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 609065.998909 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 623609.122092 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 636407.070493 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 653858.818313 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 666075.041786 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 680618.164969 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 694579.563225 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 18 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 18 )} 
+wvSetRadix -win $_nWave2 -format UDec
+wvSetCursor -win $_nWave2 679454.715115 -snap {("U_SDMA_SECTION_CTRL_0" 18)}
+wvSetCursor -win $_nWave2 18615.197674 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 678872.990187 -snap {("U_SDMA_SECTION_CTRL_0" 16)}
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 16 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 20 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 20 )} 
+wvSetRadix -win $_nWave2 -format UDec
+wvSelectSignal -win $_nWave2 {( "U_SDMA_SECTION_CTRL_0" 14 )} 
+wvSetCursor -win $_nWave2 691670.938589 -snap {("U_SDMA_SECTION_CTRL_0" 13)}
+wvSetCursor -win $_nWave2 692252.663516 -snap {("U_SDMA_SECTION_CTRL_0" 15)}
+wvScrollUp -win $_nWave2 70
+wvScrollDown -win $_nWave2 68
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 19
+wvScrollUp -win $_nWave2 47
+wvScrollDown -win $_nWave2 47
+wvScrollDown -win $_nWave2 19
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvSetCursor -win $_nWave2 663748.142077 -snap {("U_SDMA_SECTION_CTRL_0" 19)}
+debReload
+wvSetCursor -win $_nWave2 682945.064679 -snap {("U_SDMA_SECTION_CTRL_0" 19)}
+wvSetCursor -win $_nWave2 653858.818313 -snap {("U_SDMA_SECTION_CTRL_0" 16)}
+wvSetCursor -win $_nWave2 663166.417150 -snap {("U_SDMA_SECTION_CTRL_0" 16)}
+debReload
+wvSetCursor -win $_nWave2 669565.391351 -snap {("U_SDMA_SECTION_CTRL_0" 13)}
+wvZoomOut -win $_nWave2
+wvZoom -win $_nWave2 12797.948401 102383.587209
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvSetCursor -win $_nWave2 18557.491919 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvZoomOut -win $_nWave2
+wvSetCursor -win $_nWave2 32410.267578 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 46524.416361 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 63252.296401 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 59070.326391 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 72138.982673 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 86775.877708 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 99321.787738 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 115004.175275 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 128072.831556 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 141141.487838 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 156301.129124 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 170938.024159 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSetCursor -win $_nWave2 199689.067978 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 212234.978008 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 228962.858048 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 243599.753083 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 259804.886871 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 271305.304399 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 289601.423193 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 304238.318228 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 313647.750750 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 331943.869544 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 343967.033323 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 357558.435855 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 371672.584639 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 382127.509664 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 399378.135955 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 418719.747251 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 428651.926025 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 438061.358548 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 453743.746085 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 463675.924859 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 478312.819894 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 494517.953683 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 512291.326225 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 527450.967511 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 542610.608798 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 553065.533823 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 566656.936355 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 579202.846385 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 589657.771410 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 606908.397701 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 622068.038988 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 632522.964013 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvSetCursor -win $_nWave2 649773.590304 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvZoom -win $_nWave2 660751.261580 666501.470344
+wvSetCursor -win $_nWave2 666182.713330 -snap {("U_SDMA_SECTION_CTRL_0" 10)}
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 19
+wvScrollUp -win $_nWave2 47
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvSelectGroup -win $_nWave2 {U_SDMA_SECTION_CTRL_0}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 0)}
+wvSelectGroup -win $_nWave2 {U_SDMA_TOP_0}
+wvZoomOut -win $_nWave2
+wvZoom -win $_nWave2 10737.078363 820312.786907
+wvZoom -win $_nWave2 16642.079884 66834.592813
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoom -win $_nWave2 14204.737430 24016.257098
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvSetCursor -win $_nWave2 8931.273921 -snap {("U_SDMA_TOP_0" 11)}
+wvSetCursor -win $_nWave2 24732.758551 -snap {("U_SDMA_TOP_0" 10)}
+wvSelectGroup -win $_nWave2 {U_SDMA_TOP_0}
+wvSelectGroup -win $_nWave2 {U_SDMA_SECTION_CTRL_0}
+wvSelectGroup -win $_nWave2 {G4}
+wvSelectGroup -win $_nWave2 {G4}
+srcHBSelect "TB_sdma_top.U_SDMA_TOP_0" -win $_nTrace1
+srcHBDrag -win $_nTrace1
+srcHBDrag -win $_nTrace1
+wvSetPosition -win $_nWave2 {("U_SDMA_TOP_0" 0)}
+wvSetPosition -win $_nWave2 {("U_SDMA_DATA_PATH_0" 0)}
+wvSetPosition -win $_nWave2 {("U_SDMA_SECTION_CTRL_0" 0)}
+wvSetPosition -win $_nWave2 {("G4" 0)}
+wvRenameGroup -win $_nWave2 {G4} {U_SDMA_ADDR_PATH_0}
+wvAddSignal -win $_nWave2 "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/clk" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/rst_n" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_en" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_transfer_pending" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_num_of_remain_bytes\[6:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_concate_fms_switch_flag" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_sdpmode\[2:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_sdmamode\[5:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_srcfmsaddr\[31:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_dstfmsaddr\[31:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_srcfms2addr\[31:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_srcfmsc\[12:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_srcfmsx\[12:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_srcfmsy\[12:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_dstfmsstride3\[16:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_dstfmsstride2\[16:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_dstfmsstride1\[16:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_paddingaxisbefore\[2:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_paddingleftx\[5:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_paddingrightx\[5:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_paddinglefty\[5:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_paddingrighty\[5:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_insertzeronum\[2:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_insertzeronumtotalx\[10:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_insertzeronumtotaly\[10:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_cropfmsstride2\[16:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_cropfmsstride1\[12:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_cropfmsc\[12:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_cropfmsx\[12:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_cropfmsy\[12:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_cropfms2stride2\[16:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_cropfms2stride1\[12:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_cropfms2c\[12:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_cropfms2x\[12:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_cropfms2y\[12:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_sdp_ready" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_sdp_inputsectiondone" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_sdp_outputsectiondone" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_sdp_parallelinoutsectiondone" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_sport_ready" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_dport_ready" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/o_sap_sdp_ldb_num\[6:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/o_sap_sport_ren\[63:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/o_sap_sport_raddr\[31:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/o_sap_dport_wen\[63:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/o_sap_dport_waddr\[31:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/o_sap_padding_flag" \
+           "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/o_sap_upsample_flag"
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 0)}
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 48)}
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 48)}
+wvZoomOut -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "U_SDMA_ADDR_PATH_0" 36 )} 
+wvScrollUp -win $_nWave2 3
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvSelectSignal -win $_nWave2 {( "U_SDMA_ADDR_PATH_0" 43 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_ADDR_PATH_0" 44 )} 
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 44)}
+wvGetSignalOpen -win $_nWave2
+wvGetSignalSetScope -win $_nWave2 "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DPORT_MUX_0"
+wvGetSignalSetScope -win $_nWave2 "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0"
+wvGetSignalSetScope -win $_nWave2 "/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0"
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 45)}
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 45)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"U_SDMA_TOP_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_inst_vld} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_inst\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbrdata\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbrvld\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbraddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbren\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwdata\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwen\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwaddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2waddr\[31:0\]} \
+}
+wvCollapseGroup -win $_nWave2 "U_SDMA_TOP_0"
+wvAddSignal -win $_nWave2 -group {"U_SDMA_DATA_PATH_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_transfer_pending} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_num_of_remain_bytes\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_mode\[2:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din_strb\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din_vld} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_dout_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_dout_ldb_num\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_paddingflag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_upsampleflag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_din_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_dout\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_input_section_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_output_section_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_parallelinout_section_done} \
+}
+wvCollapseGroup -win $_nWave2 "U_SDMA_DATA_PATH_0"
+wvAddSignal -win $_nWave2 -group {"U_SDMA_SECTION_CTRL_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/cur_state\[1:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_concateen} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfmsmovelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms2movelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms1concatelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms2concatelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_sdp_outputsectiondone} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_sdp_parallelinoutsectiondone} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_transfer_pending} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_transfer_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_num_of_remain_bytes\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/num_of_remain_bytes_next\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_concate_fms_switch_flag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/sfms1_concate_cnt\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/sfms1_transfer_cnt\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/sfms2_concate_cnt\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/sfms2_transfer_cnt\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_sapsdpen} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_ready} \
+}
+wvCollapseGroup -win $_nWave2 "U_SDMA_SECTION_CTRL_0"
+wvAddSignal -win $_nWave2 -group {"U_SDMA_ADDR_PATH_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_transfer_pending} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_num_of_remain_bytes\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_concate_fms_switch_flag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_sdpmode\[2:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_sdmamode\[5:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_srcfmsaddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_dstfmsaddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_srcfms2addr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_srcfmsc\[12:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_srcfmsx\[12:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_srcfmsy\[12:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_dstfmsstride3\[16:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_dstfmsstride2\[16:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_dstfmsstride1\[16:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_paddingaxisbefore\[2:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_paddingleftx\[5:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_paddingrightx\[5:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_paddinglefty\[5:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_paddingrighty\[5:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_insertzeronum\[2:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_insertzeronumtotalx\[10:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_insertzeronumtotaly\[10:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_cropfmsstride2\[16:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_cropfmsstride1\[12:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_cropfmsc\[12:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_cropfmsx\[12:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_cropfmsy\[12:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_cropfms2stride2\[16:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_cropfms2stride1\[12:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_cropfms2c\[12:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_cropfms2x\[12:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_cropfms2y\[12:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_sdp_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_sdp_inputsectiondone} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_sdp_outputsectiondone} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_sdp_parallelinoutsectiondone} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_sport_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_dport_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/o_sap_sdp_ldb_num\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/o_sap_sport_ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/o_sap_sport_raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/cur_state\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/o_sap_dport_wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/o_sap_dport_waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/o_sap_padding_flag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/o_sap_upsample_flag} \
+}
+wvAddSignal -win $_nWave2 -group {"G5" \
+}
+wvSelectSignal -win $_nWave2 {( "U_SDMA_ADDR_PATH_0" 45 )} 
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 45)}
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 45)}
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 45)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"U_SDMA_TOP_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_inst_vld} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_inst\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbrdata\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbrvld\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbraddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbren\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwdata\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwen\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwaddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2rdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2rvld\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2wdata\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2waddr\[31:0\]} \
+}
+wvCollapseGroup -win $_nWave2 "U_SDMA_TOP_0"
+wvAddSignal -win $_nWave2 -group {"U_SDMA_DATA_PATH_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_transfer_pending} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_num_of_remain_bytes\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_mode\[2:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din_strb\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din_vld} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_din\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_dout_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_dout_ldb_num\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_paddingflag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/i_sdp_upsampleflag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_din_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_dout\[511:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_input_section_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_output_section_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/o_sdp_parallelinout_section_done} \
+}
+wvCollapseGroup -win $_nWave2 "U_SDMA_DATA_PATH_0"
+wvAddSignal -win $_nWave2 -group {"U_SDMA_SECTION_CTRL_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/cur_state\[1:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_concateen} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfmsmovelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms2movelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms1concatelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_srcfms2concatelength\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_sdp_outputsectiondone} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/i_ssc_sdp_parallelinoutsectiondone} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_transfer_pending} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_transfer_done} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_num_of_remain_bytes\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/num_of_remain_bytes_next\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_concate_fms_switch_flag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/sfms1_concate_cnt\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/sfms1_transfer_cnt\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/sfms2_concate_cnt\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/sfms2_transfer_cnt\[20:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_sapsdpen} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_SECTION_CTRL_0/o_ssc_ready} \
+}
+wvCollapseGroup -win $_nWave2 "U_SDMA_SECTION_CTRL_0"
+wvAddSignal -win $_nWave2 -group {"U_SDMA_ADDR_PATH_0" \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/clk} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/rst_n} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_en} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_transfer_pending} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_num_of_remain_bytes\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_concate_fms_switch_flag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_sdpmode\[2:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_sdmamode\[5:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_srcfmsaddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_dstfmsaddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_srcfms2addr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_srcfmsc\[12:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_srcfmsx\[12:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_srcfmsy\[12:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_dstfmsstride3\[16:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_dstfmsstride2\[16:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_dstfmsstride1\[16:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_paddingaxisbefore\[2:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_paddingleftx\[5:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_paddingrightx\[5:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_paddinglefty\[5:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_paddingrighty\[5:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_insertzeronum\[2:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_insertzeronumtotalx\[10:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_insertzeronumtotaly\[10:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_cropfmsstride2\[16:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_cropfmsstride1\[12:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_cropfmsc\[12:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_cropfmsx\[12:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_cropfmsy\[12:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_cropfms2stride2\[16:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_cropfms2stride1\[12:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_cropfms2c\[12:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_cropfms2x\[12:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_cropfms2y\[12:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_sdp_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_sdp_inputsectiondone} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_sdp_outputsectiondone} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_sdp_parallelinoutsectiondone} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_sport_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/i_sap_dport_ready} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/o_sap_sdp_ldb_num\[6:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/o_sap_sport_ren\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/o_sap_sport_raddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/cur_state\[3:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/o_sap_dport_wen\[63:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/o_sap_dport_waddr\[31:0\]} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/o_sap_padding_flag} \
+{/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/o_sap_upsample_flag} \
+}
+wvAddSignal -win $_nWave2 -group {"G5" \
+}
+wvSelectSignal -win $_nWave2 {( "U_SDMA_ADDR_PATH_0" 45 )} 
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 45)}
+wvGetSignalClose -win $_nWave2
+wvSetCursor -win $_nWave2 15801.484630 -snap {("U_SDMA_ADDR_PATH_0" 45)}
+wvSetCursor -win $_nWave2 21068.646173 -snap {("U_SDMA_ADDR_PATH_0" 45)}
+wvSetCursor -win $_nWave2 21755.667244 -snap {("U_SDMA_ADDR_PATH_0" 44)}
+wvSetCursor -win $_nWave2 36412.116755 -snap {("U_SDMA_ADDR_PATH_0" 45)}
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvSelectSignal -win $_nWave2 {( "U_SDMA_ADDR_PATH_0" 6 )} 
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 6)}
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 7)}
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 8)}
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 9)}
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 10)}
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 11)}
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 12)}
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 13)}
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 14)}
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 15)}
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 16)}
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 17)}
+wvMoveSelected -win $_nWave2
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 17)}
+wvScrollDown -win $_nWave2 6
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 18)}
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 19)}
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 20)}
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 21)}
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 22)}
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 23)}
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 22)}
+wvMoveSelected -win $_nWave2
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 22)}
+wvScrollDown -win $_nWave2 16
+wvScrollUp -win $_nWave2 2
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 22)}
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 21)}
+wvScrollDown -win $_nWave2 12
+wvSelectSignal -win $_nWave2 {( "U_SDMA_ADDR_PATH_0" 44 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_ADDR_PATH_0" 41 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_ADDR_PATH_0" 43 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_ADDR_PATH_0" 44 )} 
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 44)}
+wvPaste -win $_nWave2
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 44)}
+wvSetPosition -win $_nWave2 {("U_SDMA_ADDR_PATH_0" 45)}
+wvSetCursor -win $_nWave2 35038.074614 -snap {("U_SDMA_ADDR_PATH_0" 45)}
+wvSetCursor -win $_nWave2 21755.667244 -snap {("U_SDMA_ADDR_PATH_0" 44)}
+wvSelectSignal -win $_nWave2 {( "U_SDMA_ADDR_PATH_0" 43 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_ADDR_PATH_0" 44 )} 
+wvSetCursor -win $_nWave2 22900.702362 -snap {("U_SDMA_ADDR_PATH_0" 44)}
+wvSetCursor -win $_nWave2 25190.772598 -snap {("U_SDMA_ADDR_PATH_0" 43)}
+wvSetCursor -win $_nWave2 35496.088661 -snap {("U_SDMA_ADDR_PATH_0" 45)}
+wvSetCursor -win $_nWave2 37099.137826 -snap {("U_SDMA_ADDR_PATH_0" 44)}
+wvSetCursor -win $_nWave2 49923.531149 -snap {("U_SDMA_ADDR_PATH_0" 44)}
+wvSetCursor -win $_nWave2 19923.611055 -snap {("U_SDMA_ADDR_PATH_0" 44)}
+wvSetCursor -win $_nWave2 21526.660220 -snap {("U_SDMA_ADDR_PATH_0" 44)}
+wvSetCursor -win $_nWave2 22900.702362 -snap {("U_SDMA_ADDR_PATH_0" 44)}
+wvSetCursor -win $_nWave2 36641.123779 -snap {("U_SDMA_ADDR_PATH_0" 45)}
+wvSetCursor -win $_nWave2 50610.552220 -snap {("U_SDMA_ADDR_PATH_0" 44)}
+wvSetCursor -win $_nWave2 21755.667244 -snap {("U_SDMA_ADDR_PATH_0" 45)}
+wvSetCursor -win $_nWave2 22900.702362 -snap {("U_SDMA_ADDR_PATH_0" 43)}
+wvSetCursor -win $_nWave2 21755.667244 -snap {("U_SDMA_ADDR_PATH_0" 44)}
+wvZoom -win $_nWave2 18549.568913 27251.835811
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvScrollDown -win $_nWave2 1
+wvZoomOut -win $_nWave2
+wvScrollUp -win $_nWave2 1
+debReload
+wvSelectSignal -win $_nWave2 {( "U_SDMA_ADDR_PATH_0" 43 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_ADDR_PATH_0" 43 )} 
+wvSetRadix -win $_nWave2 -format UDec
+wvZoomOut -win $_nWave2
+wvSetCursor -win $_nWave2 10562.051143 -snap {("U_SDMA_ADDR_PATH_0" 43)}
+wvSetCursor -win $_nWave2 24881.755097 -snap {("U_SDMA_ADDR_PATH_0" 43)}
+wvSetCursor -win $_nWave2 38795.226315 -snap {("U_SDMA_ADDR_PATH_0" 43)}
+wvSetCursor -win $_nWave2 52911.813900 -snap {("U_SDMA_ADDR_PATH_0" 43)}
+wvSetCursor -win $_nWave2 66622.168750 -snap {("U_SDMA_ADDR_PATH_0" 43)}
+wvSetCursor -win $_nWave2 81144.989072 -snap {("U_SDMA_ADDR_PATH_0" 43)}
+wvSetCursor -win $_nWave2 94652.227553 -snap {("U_SDMA_ADDR_PATH_0" 43)}
+wvSetCursor -win $_nWave2 109175.047875 -snap {("U_SDMA_ADDR_PATH_0" 43)}
+wvZoom -win $_nWave2 22139.684127 28537.849724
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvScrollDown -win $_nWave2 1
+wvSetCursor -win $_nWave2 18965.824204 -snap {("U_SDMA_ADDR_PATH_0" 37)}
+wvSetCursor -win $_nWave2 15083.057044 -snap {("U_SDMA_ADDR_PATH_0" 36)}
+wvSetCursor -win $_nWave2 11349.627083 -snap {("U_SDMA_ADDR_PATH_0" 43)}
+wvSetCursor -win $_nWave2 17472.452220 -snap {("U_SDMA_ADDR_PATH_0" 44)}
+debReload
+wvSetCursor -win $_nWave2 38827.671599 -snap {("U_SDMA_ADDR_PATH_0" 43)}
+wvSetCursor -win $_nWave2 53089.374052 -snap {("U_SDMA_ADDR_PATH_0" 43)}
+wvSelectSignal -win $_nWave2 {( "U_SDMA_ADDR_PATH_0" 43 )} 
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvSetCursor -win $_nWave2 673809.439443 -snap {("U_SDMA_ADDR_PATH_0" 35)}
+wvZoomOut -win $_nWave2
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+debExit

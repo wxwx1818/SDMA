@@ -1,0 +1,62 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "rram_ahb_mem": [
+        "rram_ahb_mem",
+        "HMuSC",
+        "module",
+        2
+    ],
+    "sdma_data_path_0000": [
+        "sdma_data_path_0000",
+        "HNp3j",
+        "module",
+        3
+    ],
+    "sdma_sap_padding_indicator": [
+        "sdma_sap_padding_indicator",
+        "hvV9P",
+        "module",
+        5
+    ],
+    "sdma_ahb_sigmux": [
+        "sdma_ahb_sigmux",
+        "CuPsT",
+        "module",
+        10
+    ],
+    "sdma_dport_mux": [
+        "sdma_dport_mux",
+        "yiA1u",
+        "module",
+        4
+    ],
+    "sdma_sap_upsample_indicator": [
+        "sdma_sap_upsample_indicator",
+        "pLsxN",
+        "module",
+        6
+    ],
+    "sdma_sport_mux": [
+        "sdma_sport_mux",
+        "pdevE",
+        "module",
+        7
+    ],
+    "TB_sdma_top": [
+        "TB_sdma_top",
+        "xLhdt",
+        "module",
+        8
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        9
+    ]
+}

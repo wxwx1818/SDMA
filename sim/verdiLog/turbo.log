@@ -1,0 +1,3 @@
+Command Line: /home/wx/Software/verdi/verdi/Verdi_O-2018.09-SP2/platform/LINUXAMD64/bin/Novas -sv -f ./f.list -ssf TB_sdma_top.fsdb -nologo
+uname(Linux ubuntu 5.15.0-130-generic #140~20.04.1-Ubuntu SMP Wed Dec 18 21:35:34 UTC 2024 x86_64)
+au time 15418.989664 98.981417 103.252375 delta 605061120 605061120 total 980664320 980664320

@@ -1,0 +1,104 @@
+`ifndef SDMA_PARAMS_VH
+`define SDMA_PARAMS_VH
+
+// 定义常量
+// ------------------------------------Instruction Decode-------------------------------------------
+// XXWIDTH indicates the instruction section lenth, XXSTART indicates the instruction section start bit
+
+`define SDMA_INSTWIDTH							512
+`define SDMA_INST_SDMAMODESTART					0
+`define SDMA_INST_SDMAMODEWIDTH					6
+`define	SDMA_INST_SRCPORTIDSTART				6
+`define	SDMA_INST_SRCPORTIDWIDTH				3
+`define	SDMA_INST_DSTPORTIDSTART				9
+`define	SDMA_INST_DSTPORTIDWIDTH				3
+`define	SDMA_INST_SRCFMSADDRSTART				12
+`define	SDMA_INST_SRCFMSADDRWIDTH				32
+`define	SDMA_INST_DSTFMSADDRSTART				44
+`define	SDMA_INST_DSTFMSADDRWIDTH				32
+`define	SDMA_INST_SRCFMSMOVELENGTHSTART			76
+`define	SDMA_INST_SRCFMSMOVELENGTHWIDTH			21
+`define	SDMA_INST_SRCFMS2ADDRSTART				97
+`define	SDMA_INST_SRCFMS2ADDRWIDTH				32
+`define	SDMA_INST_SRCFMS1CONCATELENGTHSTART	   	129
+`define	SDMA_INST_SRCFMS1CONCATELENGTHWIDTH	   	21
+`define	SDMA_INST_SRCFMS2CONCATELENGTHSTART	   	150
+`define	SDMA_INST_SRCFMS2CONCATELENGTHWIDTH	   	21
+`define	SDMA_INST_SRCFMS2MOVELENGTHSTART		171
+`define	SDMA_INST_SRCFMS2MOVELENGTHWIDTH		21
+`define	SDMA_INST_SRCFMSCSTART					192
+`define	SDMA_INST_SRCFMSCWIDTH					13
+`define	SDMA_INST_SRCFMSXSTART					205
+`define	SDMA_INST_SRCFMSXWIDTH					13
+`define	SDMA_INST_SRCFMSYSTART					218
+`define	SDMA_INST_SRCFMSYWIDTH					13
+`define	SDMA_INST_DSTFMSSTRIDE3START			231
+`define	SDMA_INST_DSTFMSSTRIDE3WIDTH			17
+`define	SDMA_INST_DSTFMSSTRIDE2START			248
+`define	SDMA_INST_DSTFMSSTRIDE2WIDTH			17
+`define	SDMA_INST_DSTFMSSTRIDE1START			265
+`define	SDMA_INST_DSTFMSSTRIDE1WIDTH			17
+`define SDMA_INST_PADDINGAXISBEFORESTART		282
+`define SDMA_INST_PADDINGAXISBEFOREWIDTH		3
+`define	SDMA_INST_PADDINGLEFTXSTART				285
+`define	SDMA_INST_PADDINGLEFTXWIDTH				6
+`define	SDMA_INST_PADDINGRIGHTXSTART			291
+`define	SDMA_INST_PADDINGRIGHTXWIDTH			6
+`define	SDMA_INST_PADDINGLEFTYSTART				297
+`define	SDMA_INST_PADDINGLEFTYWIDTH				6
+`define	SDMA_INST_PADDINGRIGHTYSTART			303
+`define	SDMA_INST_PADDINGRIGHTYWIDTH			6
+`define	SDMA_INST_INSERTZERONUMSTART			309
+`define	SDMA_INST_INSERTZERONUMWIDTH			3
+`define	SDMA_INST_INSERTZERONUMTOTALXSTART		312
+`define	SDMA_INST_INSERTZERONUMTOTALXWIDTH		11
+`define	SDMA_INST_INSERTZERONUMTOTALYSTART		323
+`define	SDMA_INST_INSERTZERONUMTOTALYWIDTH		11
+`define	SDMA_INST_CROPFMSSTRIDE2START			334
+`define	SDMA_INST_CROPFMSSTRIDE2WIDTH			17
+`define	SDMA_INST_CROPFMSSTRIDE1START			351
+`define	SDMA_INST_CROPFMSSTRIDE1WIDTH			13
+`define	SDMA_INST_CROPFMSCSTART					364
+`define	SDMA_INST_CROPFMSCWIDTH					13
+`define	SDMA_INST_CROPFMSXSTART					377
+`define	SDMA_INST_CROPFMSXWIDTH					13
+`define	SDMA_INST_CROPFMSYSTART					390
+`define	SDMA_INST_CROPFMSYWIDTH					13
+`define	SDMA_INST_CROPFMS2STRIDE2START			403
+`define	SDMA_INST_CROPFMS2STRIDE2WIDTH			17
+`define	SDMA_INST_CROPFMS2STRIDE1START			420
+`define	SDMA_INST_CROPFMS2STRIDE1WIDTH			13
+`define	SDMA_INST_CROPFMS2CSTART				433
+`define	SDMA_INST_CROPFMS2CWIDTH				13
+`define	SDMA_INST_CROPFMS2XSTART				446
+`define	SDMA_INST_CROPFMS2XWIDTH				13
+`define	SDMA_INST_CROPFMS2YSTART				459
+`define	SDMA_INST_CROPFMS2YWIDTH				13
+
+// -------------------------------------------------------------------------------------------------
+
+// ------------------------------------Transfer mode------------------------------------------------
+// Try to avoid AHB nonseq write as much as possiable.
+
+`define	SDMA_SDP_MODE_AHB2AHBSEQ		   		0			//src: 32b  valid/write  dst: 32b  valid/read
+`define	SDMA_SDP_MODE_AHB2AHBNONSEQ     		1			//src: 32b  valid/write	 dst: 8b   valid/read
+`define SDMA_SDP_MODE_AHB2CACHESEQ				2			//src: 32b  valid/write  dst: 512b valid/read
+`define	SDMA_SDP_MODE_AHB2CACHENONSEQ   		3			//src: 32b  valid/write  dst: 8b   valid/read
+`define SDMA_SDP_MODE_CACHE2AHBSEQ 	   			4			//src: 512b valid/write	 dst: 32b  valid/read
+`define SDMA_SDP_MODE_CACHE2AHBNONSEQ   		5			//src: 512b valid/write	 dst: 8b   valid/read
+`define SDMA_SDP_MODE_CACHE2CACHESEQ	   		6			//src: 512b valid/write  dst: 512b valid/read
+`define SDMA_SDP_MODE_CACHE2CACHENONSEQ 		7			//src: 512b valid/write	 dst: 8b   valid/read
+// -------------------------------------------------------------------------------------------------
+`define SDMA_ADDRWIDTH							32
+`define	SDMA_CACHEDATAWIDTH						512
+`define	SDMA_AHBDATAWIDTH						32
+`define SDMA_SECTION_DINNUMDATAWIDTH			$clog2(`SDMA_CACHEDATAWIDTH/8)+1		//bytes number
+
+
+// 定义参数
+
+// 定义宏
+//`define ADD(a, b) ((a) + (b))
+
+
+`endif // SDMA_PARAMS_VH

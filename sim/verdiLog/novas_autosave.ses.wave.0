@@ -1,0 +1,192 @@
+Magic 271485
+Revision Verdi_O-2018.09-SP2
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 27 1846 456 248 201
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/wx/Project/SDMA/sim/TB_sdma_top.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 0.000000 3484488.448136
+cursor 221000.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 47
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "U_SDMA_TOP_0"
+activeDirFile "" "/home/wx/Project/SDMA/sim/TB_sdma_top.fsdb"
+addSignal -h 15 /TB_sdma_top/U_SDMA_TOP_0/clk
+addSignal -h 15 -holdScope rst_n
+addSignal -h 15 -holdScope i_sdma_en
+addSignal -h 15 -holdScope i_sdma_inst_vld
+addSignal -h 15 -holdScope i_sdma_inst[511:0]
+addSignal -h 15 -holdScope o_sdma_ready
+addSignal -h 15 -holdScope i_sdma_ahbready
+addSignal -h 15 -holdScope i_sdma_ahbrdata[31:0]
+addSignal -h 15 -holdScope i_sdma_ahbrvld[3:0]
+addSignal -h 15 -holdScope o_sdma_ahbraddr[31:0]
+addSignal -h 15 -holdScope o_sdma_ahbren[3:0]
+addSignal -h 15 -holdScope o_sdma_ahbwdata[31:0]
+addSignal -h 15 -holdScope o_sdma_ahbwen[3:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope o_sdma_ahbwaddr[31:0]
+addSignal -h 15 -holdScope i_sdma_dc1ready
+addSignal -h 15 -holdScope i_sdma_dc1rdata[511:0]
+addSignal -h 15 -holdScope i_sdma_dc1rvld[63:0]
+addSignal -h 15 -holdScope o_sdma_dc1raddr[31:0]
+addSignal -h 15 -holdScope o_sdma_dc1ren[63:0]
+addSignal -h 15 -holdScope o_sdma_dc1wdata[511:0]
+addSignal -h 15 -holdScope o_sdma_dc1wen[63:0]
+addSignal -h 15 -holdScope o_sdma_dc1waddr[31:0]
+addSignal -h 15 -holdScope i_sdma_dc2ready
+addSignal -h 15 -holdScope i_sdma_dc2rdata[511:0]
+addSignal -h 15 -holdScope i_sdma_dc2rvld[63:0]
+addSignal -h 15 -holdScope o_sdma_dc2raddr[31:0]
+addSignal -h 15 -holdScope o_sdma_dc2ren[63:0]
+addSignal -h 15 -holdScope o_sdma_dc2wdata[511:0]
+addSignal -h 15 -holdScope o_sdma_dc2wen[63:0]
+addSignal -h 15 -holdScope o_sdma_dc2waddr[31:0]
+addSignal -h 15 -holdScope i_sdma_wc1ready
+addSignal -h 15 -holdScope i_sdma_wc1rdata[511:0]
+addSignal -h 15 -holdScope i_sdma_wc1rvld[63:0]
+addSignal -h 15 -holdScope o_sdma_wc1raddr[31:0]
+addSignal -h 15 -holdScope o_sdma_wc1ren[63:0]
+addSignal -h 15 -holdScope o_sdma_wc1wdata[511:0]
+addSignal -h 15 -holdScope o_sdma_wc1wen[63:0]
+addSignal -h 15 -holdScope o_sdma_wc1waddr[31:0]
+addSignal -h 15 -holdScope i_sdma_wc2ready
+addSignal -h 15 -holdScope i_sdma_wc2rdata[511:0]
+addSignal -h 15 -holdScope i_sdma_wc2rvld[63:0]
+addSignal -h 15 -holdScope o_sdma_wc2raddr[31:0]
+addSignal -h 15 -holdScope o_sdma_wc2ren[63:0]
+addSignal -h 15 -holdScope o_sdma_wc2wdata[511:0]
+addSignal -h 15 -holdScope o_sdma_wc2wen[63:0]
+addSignal -h 15 -holdScope o_sdma_wc2waddr[31:0]
+addGroup "U_SDMA_DATA_PATH_0" -e FALSE
+addSignal -h 15 /TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0/clk
+addSignal -h 15 -holdScope rst_n
+addSignal -h 15 -holdScope i_sdp_en
+addSignal -h 15 -holdScope i_sdp_transfer_pending
+addSignal -h 15 -holdScope i_sdp_num_of_remain_bytes[6:0]
+addSignal -h 15 -holdScope i_sdp_mode[2:0]
+addSignal -h 15 -holdScope i_sdp_din_strb[63:0]
+addSignal -h 15 -holdScope i_sdp_din_vld
+addSignal -h 15 -UNSIGNED -HEX -holdScope i_sdp_din[511:0]
+addSignal -h 15 -holdScope data_buffer[0:63]
+addSignal -h 15 -holdScope i_sdp_dout_ready
+addSignal -h 15 -holdScope i_sdp_dout_ldb_num[6:0]
+addSignal -h 15 -holdScope i_sdp_paddingflag
+addSignal -h 15 -holdScope i_sdp_upsampleflag
+addSignal -h 15 -holdScope o_sdp_din_ready
+addSignal -h 15 -UNSIGNED -HEX -holdScope o_sdp_dout[511:0]
+addSignal -h 15 -holdScope o_sdp_input_section_done
+addSignal -h 15 -holdScope o_sdp_output_section_done
+addSignal -h 15 -holdScope o_sdp_parallelinout_section_done
+addGroup "U_SDMA_ADDR_PATH_0" -e FALSE
+addSignal -h 15 /TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/clk
+addSignal -h 15 -holdScope rst_n
+addSignal -h 15 -holdScope i_sap_en
+addSignal -h 15 -holdScope i_sap_transfer_pending
+addSignal -h 15 -holdScope i_sap_num_of_remain_bytes[6:0]
+addSignal -h 15 -holdScope i_sap_concate_fms_switch_flag
+addSignal -h 15 -holdScope i_sap_sdpmode[2:0]
+addSignal -h 15 -holdScope i_sap_sdmamode[5:0]
+addSignal -h 15 -holdScope i_sap_srcfmsaddr[31:0]
+addSignal -h 15 -holdScope i_sap_dstfmsaddr[31:0]
+addSignal -h 15 -holdScope i_sap_srcfms2addr[31:0]
+addSignal -h 15 -holdScope i_sap_srcfmsc[12:0]
+addSignal -h 15 -holdScope i_sap_srcfmsx[12:0]
+addSignal -h 15 -holdScope i_sap_srcfmsy[12:0]
+addSignal -h 15 -holdScope i_sap_dstfmsstride3[16:0]
+addSignal -h 15 -holdScope i_sap_dstfmsstride2[16:0]
+addSignal -h 15 -holdScope i_sap_dstfmsstride1[16:0]
+addSignal -h 15 -holdScope i_sap_paddingaxisbefore[2:0]
+addSignal -h 15 -holdScope i_sap_paddingleftx[5:0]
+addSignal -h 15 -holdScope i_sap_paddingrightx[5:0]
+addSignal -h 15 -holdScope i_sap_paddinglefty[5:0]
+addSignal -h 15 -holdScope i_sap_paddingrighty[5:0]
+addSignal -h 15 -holdScope i_sap_insertzeronum[2:0]
+addSignal -h 15 -holdScope i_sap_insertzeronumtotalx[10:0]
+addSignal -h 15 -holdScope i_sap_insertzeronumtotaly[10:0]
+addSignal -h 15 -holdScope i_sap_cropfmsstride2[16:0]
+addSignal -h 15 -holdScope i_sap_cropfmsstride1[12:0]
+addSignal -h 15 -holdScope i_sap_cropfmsc[12:0]
+addSignal -h 15 -holdScope i_sap_cropfmsx[12:0]
+addSignal -h 15 -holdScope i_sap_cropfmsy[12:0]
+addSignal -h 15 -holdScope i_sap_cropfms2stride2[16:0]
+addSignal -h 15 -holdScope i_sap_cropfms2stride1[12:0]
+addSignal -h 15 -holdScope i_sap_cropfms2c[12:0]
+addSignal -h 15 -holdScope i_sap_cropfms2x[12:0]
+addSignal -h 15 -holdScope i_sap_cropfms2y[12:0]
+addSignal -h 15 -holdScope i_sap_sdp_ready
+addSignal -h 15 -holdScope i_sap_sdp_inputsectiondone
+addSignal -h 15 -holdScope i_sap_sdp_outputsectiondone
+addSignal -h 15 -holdScope i_sap_sdp_parallelinoutsectiondone
+addSignal -h 15 -holdScope i_sap_sport_ready
+addSignal -h 15 -holdScope i_sap_dport_ready
+addSignal -h 15 -holdScope o_sap_sdp_ldb_num[6:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope o_sap_sport_ren[63:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope section_r_cnt[6:0]
+addSignal -h 15 -holdScope sfms_raddr_inc_flag
+addSignal -h 15 -holdScope section_r_num[6:0]
+addSignal -h 15 -holdScope o_sap_sport_raddr[31:0]
+addSignal -h 15 -holdScope o_sap_dport_wen[63:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope o_sap_dport_waddr[31:0]
+addSignal -h 15 -holdScope o_sap_padding_flag
+addSignal -h 15 -holdScope o_sap_upsample_flag
+addGroup "G4"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/wx/Project/SDMA/sim/TB_sdma_top.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/TB_sdma_top"
+"/TB_sdma_top/U_SDMA_TOP_0"
+"/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0"
+
+SCOPE_LIST_BEGIN
+"/TB_sdma_top"
+"/TB_sdma_top/U_SDMA_TOP_0"
+"/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DATA_PATH_0"
+"/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_DPORT_MUX_0"
+"/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0"
+"/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_ADDR_PATH_0/U_SDMA_SAP_PADDING_INDICATOR_0"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+
