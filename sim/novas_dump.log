@@ -160,7 +160,7 @@ VCS compile option:
  option[55]: ./f.list
  option[56]: timescale=1ns/1ps
 Chronologic Simulation VCS Release O-2018.09-SP2_Full64
-Linux 5.15.0-130-generic #140~20.04.1-Ubuntu SMP Wed Dec 18 21:35:34 UTC 2024 x86_64
+Linux 5.15.0-131-generic #141~20.04.1-Ubuntu SMP Thu Jan 16 18:38:51 UTC 2025 x86_64
 CPU cores: 8
 Limit information:
 ======================================
@@ -179,7 +179,7 @@ maxproc		31239
 
 Runtime environment variables:
 SHELL=/bin/bash
-SESSION_MANAGER=local/ubuntu:@/tmp/.ICE-unix/1774,unix/ubuntu:/tmp/.ICE-unix/1774
+SESSION_MANAGER=local/ubuntu:@/tmp/.ICE-unix/1821,unix/ubuntu:/tmp/.ICE-unix/1821
 QT_ACCESSIBILITY=1
 COLORTERM=truecolor
 VCS_ARCH_OVERRIDE=linux
@@ -197,7 +197,7 @@ SCRIPT_NAME=vcs
 XMODIFIERS=@im=ibus
 VERDI_HOME=/home/wx/Software/verdi/verdi/Verdi_O-2018.09-SP2
 DESKTOP_SESSION=ubuntu
-SSH_AGENT_PID=1739
+SSH_AGENT_PID=1786
 OPENRAM_TECH=/home/wx/Software/OpenRAM/technology
 sysc_uni_pwd=/home/wx/Project/SDMA/sim
 GTK_MODULES=gail:atk-bridge
@@ -223,13 +223,13 @@ LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd
 XDG_CURRENT_DESKTOP=ubuntu:GNOME
 VTE_VERSION=6003
 CONDA_PROMPT_MODIFIER=(base) 
-GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/f4117432_39b1_41d0_9f3f_47f602035535
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/049fd219_d0e3_48f4_b59f_40bf475fad8c
 https_proxy=http://192.168.110.1:7890/
-INVOCATION_ID=5456a416fc804983b9fb101e1d37fa4a
+INVOCATION_ID=3db85978a6b3437cbc91206fe916df12
 VMR_MODE_FLAG=64
 TOOL_HOME=/home/wx/Software/vcs2018/vcs/O-2018.09-SP2/linux64
-MANAGERPID=1566
-SNPS_VCS_TMPDIR=/tmp/vcs_20250208131623_192814
+MANAGERPID=1610
+SNPS_VCS_TMPDIR=/tmp/vcs_20250220021651_14679
 VCS_LOG_FILE=run.log
 MFLAGS=
 OVA_UUM=0
@@ -246,7 +246,7 @@ USER=wx
 NO_PROXY=localhost,127.0.0.0/8,::1
 MAKE_TERMERR=/dev/pts/4
 FTP_PROXY=http://192.168.110.1:7890/
-GNOME_TERMINAL_SERVICE=:1.79
+GNOME_TERMINAL_SERVICE=:1.78
 CONDA_SHLVL=1
 SCRNAME=vcs
 DISPLAY=:0
@@ -256,7 +256,7 @@ HTTPS_PROXY=http://192.168.110.1:7890/
 HTTP_PROXY=http://192.168.110.1:7890/
 QT_IM_MODULE=ibus
 VCS_MX_HOME=/home/wx/Software/vcs2018/vcs/O-2018.09-SP2
-DBUS_STARTER_ADDRESS=unix:path=/run/user/1000/bus,guid=3812efd31d798be0ebbe0621678864ea
+DBUS_STARTER_ADDRESS=unix:path=/run/user/1000/bus,guid=429ce277307118670625665467b5d868
 http_proxy=http://192.168.110.1:7890/
 LM_LICENSE_FILE=27000@ubuntu
 VCS_MODE_FLAG=64
@@ -267,17 +267,17 @@ CONDA_DEFAULT_ENV=base
 ALL_PROXY=socks://192.168.110.1:7890/
 VCS_ARG_ADDED_FOR_TMP=1
 LC_ALL=C
-JOURNAL_STREAM=8:56649
+JOURNAL_STREAM=8:60522
 DVE_HOME=/home/wx/Software/vcs2018/vcs/O-2018.09-SP2
 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 VCS_COM=/home/wx/Software/vcs2018/vcs/O-2018.09-SP2/linux64/bin/vcs1
 all_proxy=socks://192.168.110.1:7890/
 PATH=.:/home/wx/Software/Anaconda3/bin:/home/wx/Software/Anaconda3/condabin:/home/wx/.local/bin:/home/wx/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/wx/Software/vcs2018/vcs/O-2018.09-SP2/gui/dve/bin:/home/wx/Software/vcs2018/vcs/O-2018.09-SP2/bin:/home/wx/Software/verdi/verdi/Verdi_O-2018.09-SP2/bin:/home/wx/Software/scl2018/scl/2018.06/linux64/bin:/home/wx/Software/syn2018/syn/O-2018.06-SP1/bin:/home/wx/Software/Anaconda3/bin:/home/wx/Software/riscv_toolchain/bin:/home/wx/Software/IDEA/ideaIU-2024.3.1.1/idea-IU-243.22562.218/bin
 GDMSESSION=ubuntu
-DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus,guid=3812efd31d798be0ebbe0621678864ea
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus,guid=429ce277307118670625665467b5d868
 VCS_DEPTH=0
-_=./simv
 OLDPWD=/home/wx/Project/SDMA/sim/simv.daidir/debug_dump/fsearch
+_=./simv
 VCS_HEAP_EXEC=true
 VCS_PATHMAP_PRELOAD_DONE=1
 VCS_EXEC_DONE=1
@@ -296,8 +296,8 @@ argv[8]=+fsdb+autoflush
 argv[9]=-a
 argv[10]=run.log
 297 profile - 100
-          CPU/Mem usage: 0.010 sys,  0.180 user,  183.10M mem
-298 Sat Feb  8 21:16:26 2025
+          CPU/Mem usage: 0.010 sys,  0.160 user,  183.12M mem
+298 Thu Feb 20 10:16:54 2025
 299 pliAppInit
 300 FSDB_GATE is set.
 301 FSDB_RTL is set.
@@ -307,14 +307,14 @@ argv[10]=run.log
 305 LIBSSCORE=found /home/wx/Software/verdi/verdi/Verdi_O-2018.09-SP2/share/PLI/lib/LINUXAMD64/libsscore_vcs201809.so through $NOVAS_HOME setting.
 306 FSDB Dumper for VCS, Release Verdi_O-2018.09-SP2, Linux x86_64/64bit, 02/21/2019
 307 (C) 1996 - 2019 by Synopsys, Inc.
-308 sps_call_fsdbDumpfile_main at 0 : ../tb/tb_sdma_top.v(159)
+308 sps_call_fsdbDumpfile_main at 0 : ../tb/tb_sdma_top.v(152)
 309 argv[0]: (TB_sdma_top.fsdb)
 310 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
 311 *Verdi* : Create FSDB file 'TB_sdma_top.fsdb'
 312 compile option from '/home/wx/Project/SDMA/sim/simv.daidir/vcs_rebuild'.
 313   "vcs '-full64' '-sverilog' '+v2k' '-timescale=1ns/1ps' '-debug_all' '+notimingcheck' '+nospecify' '+vcs+flush+all' '-o' 'simv' '-l' 'compile.log' '-f' './f.list' '-LDFLAGS' '-Wl,--no-as-needed' '+nbaopt' '-P' '/home/wx/Software/verdi/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/linux64/novas.tab' '/home/wx/Software/verdi/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/linux64/pli.a' '-R' '+fsdb+autoflush' '-l' 'run.log' 2>&1"
 314 FSDB_VCS_ENABLE_FAST_VC is enable
-315 sps_call_fsdbDumpvars_vd_main at 0 : ../tb/tb_sdma_top.v(160)
+315 sps_call_fsdbDumpvars_vd_main at 0 : ../tb/tb_sdma_top.v(153)
 316 argv[0]: (0)
 317 argv[1]: (handle) TB_sdma_top
 318 [spi_vcs_vd_ppi_create_root]: no upf option
@@ -322,61 +322,61 @@ argv[10]=run.log
 320 *Verdi* : Begin traversing the scope (TB_sdma_top), layer (0).
 321 *Verdi* : End of traversing.
 322 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.020 sys,  0.200 user,  279.45M mem
-                   incr: 0.010 sys,  0.020 user,  8.41M mem
-                   accu: 0.010 sys,  0.020 user,  8.41M mem
-              accu incr: 0.010 sys,  0.020 user,  8.41M mem
+          CPU/Mem usage: 0.020 sys,  0.170 user,  279.62M mem
+                   incr: 0.010 sys,  0.010 user,  8.55M mem
+                   accu: 0.010 sys,  0.010 user,  8.55M mem
+              accu incr: 0.010 sys,  0.010 user,  8.55M mem
 
-          Count usage: 735 var,  396 idcode,  180 callback
-                 incr: 735 var,  396 idcode,  180 callback
-                 accu: 735 var,  396 idcode,  180 callback
-            accu incr: 735 var,  396 idcode,  180 callback
-323 Sat Feb  8 21:16:26 2025
+          Count usage: 728 var,  411 idcode,  179 callback
+                 incr: 728 var,  411 idcode,  179 callback
+                 accu: 728 var,  411 idcode,  179 callback
+            accu incr: 728 var,  411 idcode,  179 callback
+323 Thu Feb 20 10:16:54 2025
 324 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.020 sys,  0.200 user,  280.65M mem
-                   incr: 0.000 sys,  0.000 user,  1.19M mem
-                   accu: 0.010 sys,  0.020 user,  9.60M mem
-              accu incr: 0.000 sys,  0.000 user,  1.19M mem
+          CPU/Mem usage: 0.020 sys,  0.170 user,  280.67M mem
+                   incr: 0.000 sys,  0.000 user,  1.05M mem
+                   accu: 0.010 sys,  0.010 user,  9.60M mem
+              accu incr: 0.000 sys,  0.000 user,  1.05M mem
 
-          Count usage: 735 var,  396 idcode,  180 callback
+          Count usage: 728 var,  411 idcode,  179 callback
                  incr: 0 var,  0 idcode,  0 callback
-                 accu: 735 var,  396 idcode,  180 callback
+                 accu: 728 var,  411 idcode,  179 callback
             accu incr: 0 var,  0 idcode,  0 callback
-325 Sat Feb  8 21:16:26 2025
-326 sps_call_fsdbDumpMDA_vd_main at 0 : ../tb/tb_sdma_top.v(161)
+325 Thu Feb 20 10:16:54 2025
+326 sps_call_fsdbDumpMDA_vd_main at 0 : ../tb/tb_sdma_top.v(154)
 327 *Verdi* : Begin traversing the MDAs, layer (0).
 328 *Verdi* : Enable +mda and +packedmda dumping.
 329 *Verdi* : End of traversing the MDAs.
 330 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.020 sys,  0.200 user,  281.05M mem
-                   incr: 0.000 sys,  0.000 user,  0.41M mem
-                   accu: 0.000 sys,  0.000 user,  0.41M mem
-              accu incr: 0.000 sys,  0.000 user,  0.41M mem
+          CPU/Mem usage: 0.020 sys,  0.180 user,  281.08M mem
+                   incr: 0.000 sys,  0.010 user,  0.41M mem
+                   accu: 0.000 sys,  0.010 user,  0.41M mem
+              accu incr: 0.000 sys,  0.010 user,  0.41M mem
 
-          Count usage: 17311 var,  16972 idcode,  184 callback
-                 incr: 16576 var,  16576 idcode,  4 callback
-                 accu: 16576 var,  16576 idcode,  4 callback
-            accu incr: 16576 var,  16576 idcode,  4 callback
-331 Sat Feb  8 21:16:26 2025
+          Count usage: 17240 var,  16923 idcode,  182 callback
+                 incr: 16512 var,  16512 idcode,  3 callback
+                 accu: 16512 var,  16512 idcode,  3 callback
+            accu incr: 16512 var,  16512 idcode,  3 callback
+331 Thu Feb 20 10:16:54 2025
 332 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.020 sys,  0.200 user,  281.75M mem
-                   incr: 0.000 sys,  0.000 user,  0.70M mem
-                   accu: 0.000 sys,  0.000 user,  1.10M mem
-              accu incr: 0.000 sys,  0.000 user,  0.70M mem
+          CPU/Mem usage: 0.020 sys,  0.180 user,  281.77M mem
+                   incr: 0.000 sys,  0.000 user,  0.69M mem
+                   accu: 0.000 sys,  0.010 user,  1.10M mem
+              accu incr: 0.000 sys,  0.000 user,  0.69M mem
 
-          Count usage: 17311 var,  16972 idcode,  184 callback
+          Count usage: 17240 var,  16923 idcode,  182 callback
                  incr: 0 var,  0 idcode,  0 callback
-                 accu: 16576 var,  16576 idcode,  4 callback
+                 accu: 16512 var,  16512 idcode,  3 callback
             accu incr: 0 var,  0 idcode,  0 callback
-333 Sat Feb  8 21:16:26 2025
+333 Thu Feb 20 10:16:54 2025
 334 End of simulation at 100000000
-335 Sat Feb  8 21:16:26 2025
+335 Thu Feb 20 10:16:54 2025
 336 Begin FSDB profile info:
-337 FSDB Writer : bc1(200107) bcn(18745) mtf/stf(0/0)
-FSDB Writer elapsed time : flush(0.007478) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
+337 FSDB Writer : bc1(200106) bcn(18514) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.016122) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
 FSDB Writer cpu time : MT Compression : 0
 338 End FSDB profile info
 339 Parallel profile    -  Flush:4 Expand:0 ProduceWait:0 ConsumerWait:1 BlockUsed:1
-340                        ProduceTime:0.262740509 ConsumerTime:0.006399637 Buffer:64MB
+340                        ProduceTime:0.248106732 ConsumerTime:0.006621252 Buffer:64MB
 341 SimExit
 342 Sim process exit

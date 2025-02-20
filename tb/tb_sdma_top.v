@@ -20,9 +20,9 @@ wire   [`SDMA_INSTWIDTH-1:0]        i_sdma_inst;
 //SDMA ctrl port output
 wire                                o_sdma_ready;
 //SDMA w/r port input
-wire                                sdma_ahbready;
-wire   [`SDMA_AHBDATAWIDTH-1:0]     sdma_ahbrdata;
-wire   [`SDMA_AHBDATAWIDTH/8-1:0]   sdma_ahbrvld;
+wire                                i_sdma_ahbready;
+wire   [`SDMA_AHBDATAWIDTH-1:0]     i_sdma_ahbrdata;
+wire   [`SDMA_AHBDATAWIDTH/8-1:0]   i_sdma_ahbrvld;
 reg                                 i_sdma_dc1ready;
 reg    [`SDMA_CACHEDATAWIDTH-1:0]   i_sdma_dc1rdata;
 reg    [`SDMA_CACHEDATAWIDTH/8-1:0] i_sdma_dc1rvld;
@@ -36,34 +36,27 @@ reg                                 i_sdma_wc2ready;
 reg    [`SDMA_CACHEDATAWIDTH-1:0]   i_sdma_wc2rdata;
 reg    [`SDMA_CACHEDATAWIDTH/8-1:0] i_sdma_wc2rvld;
 //SDMA w/r port output
-wire   [`SDMA_ADDRWIDTH-1:0]        sdma_ahbraddr;
-wire   [`SDMA_AHBDATAWIDTH/8-1:0]   sdma_ahbren;
-wire   [`SDMA_AHBDATAWIDTH-1:0]     sdma_ahbwdata;
-wire   [`SDMA_AHBDATAWIDTH/8-1:0]   sdma_ahbwen;
-wire   [`SDMA_AHBDATAWIDTH/8-1:0]	sdma_ahbena;
-wire								sdma_ahbrea;
-wire   [`SDMA_ADDRWIDTH-1:0]		sdma_ahbaddr;
-wire   [`SDMA_ADDRWIDTH-1:0]        sdma_ahbwaddr;
-wire   [`SDMA_ADDRWIDTH-1:0]        o_sdma_dc1raddr;
-wire   [`SDMA_CACHEDATAWIDTH/8-1:0] o_sdma_dc1ren;
+wire   [`SDMA_ADDRWIDTH-1:0]        o_sdma_ahbaddr;
+wire   [`SDMA_AHBDATAWIDTH/8-1:0]   o_sdma_ahbena;
+wire   [`SDMA_AHBDATAWIDTH-1:0]     o_sdma_ahbwdata;
+wire   								o_sdma_ahbwea;
+wire   [`SDMA_ADDRWIDTH-1:0]        o_sdma_dc1addr;
+wire   [`SDMA_CACHEDATAWIDTH/8-1:0] o_sdma_dc1ena;
 wire   [`SDMA_CACHEDATAWIDTH-1:0]   o_sdma_dc1wdata;
-wire   [`SDMA_CACHEDATAWIDTH/8-1:0] o_sdma_dc1wen;
-wire   [`SDMA_ADDRWIDTH-1:0]        o_sdma_dc1waddr;
-wire   [`SDMA_ADDRWIDTH-1:0]        o_sdma_dc2raddr;
-wire   [`SDMA_CACHEDATAWIDTH/8-1:0] o_sdma_dc2ren;
+wire   								o_sdma_dc1wea;
+wire   [`SDMA_ADDRWIDTH-1:0]        o_sdma_dc2addr;
+wire   [`SDMA_CACHEDATAWIDTH/8-1:0] o_sdma_dc2ena;
 wire   [`SDMA_CACHEDATAWIDTH-1:0]   o_sdma_dc2wdata;
-wire   [`SDMA_CACHEDATAWIDTH/8-1:0] o_sdma_dc2wen;
-wire   [`SDMA_ADDRWIDTH-1:0]        o_sdma_dc2waddr;
-wire   [`SDMA_ADDRWIDTH-1:0]        o_sdma_wc1raddr;
-wire   [`SDMA_CACHEDATAWIDTH/8-1:0] o_sdma_wc1ren;
+wire   								o_sdma_dc2wea;
+wire   [`SDMA_ADDRWIDTH-1:0]        o_sdma_wc1addr;
+wire   [`SDMA_CACHEDATAWIDTH/8-1:0] o_sdma_wc1ena;
 wire   [`SDMA_CACHEDATAWIDTH-1:0]   o_sdma_wc1wdata;
-wire   [`SDMA_CACHEDATAWIDTH/8-1:0] o_sdma_wc1wen;
-wire   [`SDMA_ADDRWIDTH-1:0]        o_sdma_wc1waddr;
-wire   [`SDMA_ADDRWIDTH-1:0]        o_sdma_wc2raddr;
-wire   [`SDMA_CACHEDATAWIDTH/8-1:0] o_sdma_wc2ren;
+wire   								o_sdma_wc1wea;
+wire   [`SDMA_ADDRWIDTH-1:0]        o_sdma_wc2addr;
+wire   [`SDMA_CACHEDATAWIDTH/8-1:0] o_sdma_wc2ena;
 wire   [`SDMA_CACHEDATAWIDTH-1:0]   o_sdma_wc2wdata;
-wire   [`SDMA_CACHEDATAWIDTH/8-1:0] o_sdma_wc2wen;
-wire   [`SDMA_ADDRWIDTH-1:0]        o_sdma_wc2waddr;
+wire   								o_sdma_wc2wea;
+
 
 //rram_ahb other signals
 reg									ahb_clk;
@@ -528,9 +521,9 @@ sdma_top U_SDMA_TOP_0(
   .i_sdma_en       (i_sdma_en),
   .i_sdma_inst_vld (i_sdma_inst_vld),
   .i_sdma_inst     (i_sdma_inst[`SDMA_INSTWIDTH-1:0]),
-  .i_sdma_ahbready (sdma_ahbready),
-  .i_sdma_ahbrdata (sdma_ahbrdata[`SDMA_AHBDATAWIDTH-1:0]),
-  .i_sdma_ahbrvld  (sdma_ahbrvld[`SDMA_AHBDATAWIDTH/8-1:0]),
+  .i_sdma_ahbready (i_sdma_ahbready),
+  .i_sdma_ahbrdata (i_sdma_ahbrdata[`SDMA_AHBDATAWIDTH-1:0]),
+  .i_sdma_ahbrvld  (i_sdma_ahbrvld[`SDMA_AHBDATAWIDTH/8-1:0]),
   .i_sdma_dc1ready (i_sdma_dc1ready),
   .i_sdma_dc1rdata (i_sdma_dc1rdata[`SDMA_CACHEDATAWIDTH-1:0]),
   .i_sdma_dc1rvld  (i_sdma_dc1rvld[`SDMA_CACHEDATAWIDTH/8-1:0]),
@@ -544,40 +537,26 @@ sdma_top U_SDMA_TOP_0(
   .i_sdma_wc2rdata (i_sdma_wc2rdata[`SDMA_CACHEDATAWIDTH-1:0]),
   .i_sdma_wc2rvld  (i_sdma_wc2rvld[`SDMA_CACHEDATAWIDTH/8-1:0]),
   .o_sdma_ready    (o_sdma_ready),
-  .o_sdma_ahbraddr (sdma_ahbraddr[`SDMA_ADDRWIDTH-1:0]),
-  .o_sdma_ahbren   (sdma_ahbren[`SDMA_AHBDATAWIDTH/8-1:0]),
-  .o_sdma_ahbwdata (sdma_ahbwdata[`SDMA_AHBDATAWIDTH-1:0]),
-  .o_sdma_ahbwen   (sdma_ahbwen[`SDMA_AHBDATAWIDTH/8-1:0]),
-  .o_sdma_ahbwaddr (sdma_ahbwaddr[`SDMA_ADDRWIDTH-1:0]),
-  .o_sdma_dc1raddr (o_sdma_dc1raddr[`SDMA_ADDRWIDTH-1:0]),
-  .o_sdma_dc1ren   (o_sdma_dc1ren[`SDMA_CACHEDATAWIDTH/8-1:0]),
+  .o_sdma_ahbaddr  (o_sdma_ahbaddr[`SDMA_ADDRWIDTH-1:0]),
+  .o_sdma_ahbena   (o_sdma_ahbena[`SDMA_AHBDATAWIDTH/8-1:0]),
+  .o_sdma_ahbwdata (o_sdma_ahbwdata[`SDMA_AHBDATAWIDTH-1:0]),
+  .o_sdma_ahbwea   (o_sdma_ahbwea),
+  .o_sdma_dc1addr  (o_sdma_dc1addr[`SDMA_ADDRWIDTH-1:0]),
+  .o_sdma_dc1ena   (o_sdma_dc1ena[`SDMA_CACHEDATAWIDTH/8-1:0]),
   .o_sdma_dc1wdata (o_sdma_dc1wdata[`SDMA_CACHEDATAWIDTH-1:0]),
-  .o_sdma_dc1wen   (o_sdma_dc1wen[`SDMA_CACHEDATAWIDTH/8-1:0]),
-  .o_sdma_dc1waddr (o_sdma_dc1waddr[`SDMA_ADDRWIDTH-1:0]),
-  .o_sdma_dc2raddr (o_sdma_dc2raddr[`SDMA_ADDRWIDTH-1:0]),
-  .o_sdma_dc2ren   (o_sdma_dc2ren[`SDMA_CACHEDATAWIDTH/8-1:0]),
+  .o_sdma_dc1wea   (o_sdma_dc1wea),
+  .o_sdma_dc2addr  (o_sdma_dc2addr[`SDMA_ADDRWIDTH-1:0]),
+  .o_sdma_dc2ena   (o_sdma_dc2ena[`SDMA_CACHEDATAWIDTH/8-1:0]),
   .o_sdma_dc2wdata (o_sdma_dc2wdata[`SDMA_CACHEDATAWIDTH-1:0]),
-  .o_sdma_dc2wen   (o_sdma_dc2wen[`SDMA_CACHEDATAWIDTH/8-1:0]),
-  .o_sdma_dc2waddr (o_sdma_dc2waddr[`SDMA_ADDRWIDTH-1:0]),
-  .o_sdma_wc1raddr (o_sdma_wc1raddr[`SDMA_ADDRWIDTH-1:0]),
-  .o_sdma_wc1ren   (o_sdma_wc1ren[`SDMA_CACHEDATAWIDTH/8-1:0]),
+  .o_sdma_dc2wea   (o_sdma_dc2wea),
+  .o_sdma_wc1addr  (o_sdma_wc1addr[`SDMA_ADDRWIDTH-1:0]),
+  .o_sdma_wc1ena   (o_sdma_wc1ena[`SDMA_CACHEDATAWIDTH/8-1:0]),
   .o_sdma_wc1wdata (o_sdma_wc1wdata[`SDMA_CACHEDATAWIDTH-1:0]),
-  .o_sdma_wc1wen   (o_sdma_wc1wen[`SDMA_CACHEDATAWIDTH/8-1:0]),
-  .o_sdma_wc1waddr (o_sdma_wc1waddr[`SDMA_ADDRWIDTH-1:0]),
-  .o_sdma_wc2raddr (o_sdma_wc2raddr[`SDMA_ADDRWIDTH-1:0]),
-  .o_sdma_wc2ren   (o_sdma_wc2ren[`SDMA_CACHEDATAWIDTH/8-1:0]),
+  .o_sdma_wc1wea   (o_sdma_wc1wea),
+  .o_sdma_wc2addr  (o_sdma_wc2addr[`SDMA_ADDRWIDTH-1:0]),
+  .o_sdma_wc2ena   (o_sdma_wc2ena[`SDMA_CACHEDATAWIDTH/8-1:0]),
   .o_sdma_wc2wdata (o_sdma_wc2wdata[`SDMA_CACHEDATAWIDTH-1:0]),
-  .o_sdma_wc2wen   (o_sdma_wc2wen[`SDMA_CACHEDATAWIDTH/8-1:0]),
-  .o_sdma_wc2waddr (o_sdma_wc2waddr[`SDMA_ADDRWIDTH-1:0]));
-
-sdma_ahb_sigmux U_SDMA_AHB_SIGMUX_0(
-  .i_sas_sdmaren   (sdma_ahbren[`SDMA_AHBDATAWIDTH/8-1:0]),
-  .i_sas_sdmawen   (sdma_ahbwen[`SDMA_AHBDATAWIDTH/8-1:0]),
-  .i_sas_sdmaraddr (sdma_ahbraddr[`SDMA_ADDRWIDTH-1:0]),
-  .i_sas_sdmawaddr (sdma_ahbwaddr[`SDMA_ADDRWIDTH-1:0]),
-  .o_sas_ahbena    (sdma_ahbena[`SDMA_AHBDATAWIDTH/8-1:0]),
-  .o_sas_ahbwea    (sdma_ahbwea),
-  .o_sas_ahbaddr   (sdma_ahbaddr[`SDMA_ADDRWIDTH-1:0])
+  .o_sdma_wc2wea   (o_sdma_wc2wea)
 );
 
 rram_ahb_mem 
@@ -595,14 +574,14 @@ rram_ahb_mem
   .i_ahb_hrst_n		 (ahb_rst_n),
   .i_rram_clk        (ahb_clk),
   .i_rram_rst_n      (ahb_rst_n),
-  .i_rram_mena       (sdma_ahbena),
-  .i_rram_mwea       (sdma_ahbwea),
-  .i_rram_maddr      (sdma_ahbaddr),
-  .i_rram_mwdata     (sdma_ahbwdata),
-  .o_rram_mready     (sdma_ahbready),
+  .i_rram_mena       (o_sdma_ahbena),
+  .i_rram_mwea       (o_sdma_ahbwea),
+  .i_rram_maddr      (o_sdma_ahbaddr),
+  .i_rram_mwdata     (o_sdma_ahbwdata),
+  .o_rram_mready     (i_sdma_ahbready),
   .o_rram_merror     (ahb_error),
-  .o_rram_mrdata     (sdma_ahbrdata),
-  .o_rram_mrdata_vld (sdma_ahbrvld)
+  .o_rram_mrdata     (i_sdma_ahbrdata),
+  .o_rram_mrdata_vld (i_sdma_ahbrvld)
 );
 
 //-------------------------------------------------------------------------------

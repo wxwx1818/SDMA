@@ -3,12 +3,14 @@
 /home/wx/Project/SDMA/src/sdma_section_ctrl.v
 /home/wx/Project/SDMA/src/sdma_top.v
 /home/wx/Project/SDMA/src/sdma_top_ctrl.v
-/home/wx/Project/SDMA/src/utils/sdma_dport_mux.v
+/home/wx/Project/SDMA/src/utils/sdma_addr_mux.v
 /home/wx/Project/SDMA/src/utils/sdma_inst_decoder.v
+/home/wx/Project/SDMA/src/utils/sdma_rdata_mux.v
+/home/wx/Project/SDMA/src/utils/sdma_ready_mux.v
 /home/wx/Project/SDMA/src/utils/sdma_sap_padding_indicator.v
 /home/wx/Project/SDMA/src/utils/sdma_sap_upsample_indicator.v
 /home/wx/Project/SDMA/src/utils/sdma_sdp_lddata.v
-/home/wx/Project/SDMA/src/utils/sdma_sport_mux.v
+/home/wx/Project/SDMA/src/utils/sdma_wdata_mux.v
 /home/wx/Project/SDMA/src/vhead/sdma_params.vh
 /home/wx/Project/SDMA/tb/rram_ahb_mem/ahb_port2sram.v
 /home/wx/Project/SDMA/tb/rram_ahb_mem/ahb_port_slave.v
@@ -16,7 +18,6 @@
 /home/wx/Project/SDMA/tb/rram_ahb_mem/ahb_port_slave_wo_sfifo.v
 /home/wx/Project/SDMA/tb/rram_ahb_mem/ahb_rram_master.v
 /home/wx/Project/SDMA/tb/rram_ahb_mem/rram_ahb_mem.v
-/home/wx/Project/SDMA/tb/rram_ahb_mem/sdma_ahb_sigmux.v
 /home/wx/Project/SDMA/tb/rram_ahb_mem/sync_fifo.v
 /home/wx/Project/SDMA/tb/rram_ahb_mem/unaligned_ahbram.sv
 /home/wx/Project/SDMA/tb/tb_sdma_top.v

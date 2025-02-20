@@ -1,250 +1,62 @@
 {
-    "CompileStatus": "Successful",
-    "NameTable": {
-        "sdma_sap_upsample_indicator": [
-            "sdma_sap_upsample_indicator",
-            "pLsxN",
-            "module",
-            6
-        ],
-        "std": [
-            "std",
-            "reYIK",
-            "module",
-            1
-        ],
-        "sdma_data_path_0000": [
-            "sdma_data_path_0000",
-            "HNp3j",
-            "module",
-            3
-        ],
-        "sdma_dport_mux": [
-            "sdma_dport_mux",
-            "yiA1u",
-            "module",
-            4
-        ],
-        "sdma_sap_padding_indicator": [
-            "sdma_sap_padding_indicator",
-            "hvV9P",
-            "module",
-            5
-        ],
-        "sdma_sport_mux": [
-            "sdma_sport_mux",
-            "pdevE",
-            "module",
-            7
-        ],
-        "TB_sdma_top": [
-            "TB_sdma_top",
-            "xLhdt",
-            "module",
-            8
-        ],
-        "rram_ahb_mem": [
-            "rram_ahb_mem",
-            "HMuSC",
-            "module",
-            2
-        ],
-        "...MASTER...": [
-            "SIM",
-            "amcQw",
-            "module",
-            9
-        ],
-        "sdma_ahb_sigmux": [
-            "sdma_ahb_sigmux",
-            "CuPsT",
-            "module",
-            10
-        ]
-    },
-    "cycles_program_begin": 6085432540753525,
-    "PrevCompiledModules": {
-        "sdma_data_path_0000": {
-            "HNp3j_d": {
-                "out": "HNp3j_d.o",
-                "mod": "sdma_data_path_0000",
-                "bytes": 2022002,
-                "mode": 4,
-                "checksum": 0,
-                "archive": "archive.94/_192530_archive_1.a"
-            }
-        },
-        "sdma_sport_mux": {
-            "pdevE_d": {
-                "out": "pdevE_d.o",
-                "mod": "sdma_sport_mux",
-                "bytes": 22270,
-                "mode": 4,
-                "checksum": 0,
-                "archive": "archive.94/_prev_archive_1.a"
-            }
-        },
-        "...MASTER...": {
-            "amcQw_d": {
-                "out": "objs/amcQw_d.o",
-                "mod": "...MASTER...",
-                "bytes": 7832,
-                "mode": 4,
-                "checksum": 0
-            }
-        },
-        "sdma_ahb_sigmux": {
-            "CuPsT_d": {
-                "out": "CuPsT_d.o",
-                "mod": "sdma_ahb_sigmux",
-                "bytes": 10336,
-                "mode": 4,
-                "checksum": 0,
-                "archive": "archive.94/_prev_archive_1.a"
-            }
-        },
-        "sdma_sap_upsample_indicator": {
-            "pLsxN_d": {
-                "out": "pLsxN_d.o",
-                "mod": "sdma_sap_upsample_indicator",
-                "bytes": 8918,
-                "mode": 4,
-                "checksum": 0,
-                "archive": "archive.94/_prev_archive_1.a"
-            }
-        },
-        "std": {
-            "reYIK_d": {
-                "out": "reYIK_d.o",
-                "mod": "std",
-                "bytes": 43000,
-                "mode": 4,
-                "checksum": 0,
-                "archive": "archive.94/_prev_archive_1.a"
-            }
-        },
-        "TB_sdma_top": {
-            "xLhdt_d": {
-                "out": "xLhdt_d.o",
-                "mod": "TB_sdma_top",
-                "bytes": 369154,
-                "mode": 4,
-                "checksum": 0,
-                "archive": "archive.94/_prev_archive_1.a"
-            }
-        },
-        "sdma_sap_padding_indicator": {
-            "hvV9P_d": {
-                "out": "hvV9P_d.o",
-                "mod": "sdma_sap_padding_indicator",
-                "bytes": 43522,
-                "mode": 4,
-                "checksum": 0,
-                "archive": "archive.94/_prev_archive_1.a"
-            }
-        },
-        "rram_ahb_mem": {
-            "HMuSC_d": {
-                "out": "HMuSC_d.o",
-                "mod": "rram_ahb_mem",
-                "bytes": 126284,
-                "mode": 4,
-                "checksum": 0,
-                "archive": "archive.94/_prev_archive_1.a"
-            }
-        },
-        "sdma_dport_mux": {
-            "yiA1u_d": {
-                "out": "yiA1u_d.o",
-                "mod": "sdma_dport_mux",
-                "bytes": 23820,
-                "mode": 4,
-                "checksum": 0,
-                "archive": "archive.94/_prev_archive_1.a"
-            }
-        }
-    },
-    "stat": {
-        "ru_self_end": {
-            "ru_utime_sec": 1.9993560000000001,
-            "ru_stime_sec": 1.530105,
-            "ru_maxrss_kb": 145460,
-            "ru_nvcsw": 25,
-            "ru_minflt": 17660,
-            "ru_nivcsw": 27,
-            "ru_majflt": 0
-        },
-        "ru_childs_cgstart": {
-            "ru_utime_sec": 0.024056000000000001,
-            "ru_stime_sec": 0.60254600000000003,
-            "ru_maxrss_kb": 117696,
-            "ru_nvcsw": 17,
-            "ru_minflt": 3403,
-            "ru_nivcsw": 32,
-            "ru_majflt": 0
-        },
-        "CodeGen(%)": 73.586051679045084,
-        "outputSizePerQuad": 29.006444810543659,
-        "ru_self_cgstart": {
-            "ru_utime_sec": 0.51040700000000006,
-            "ru_stime_sec": 0.045645999999999999,
-            "ru_maxrss_kb": 117696,
-            "ru_nvcsw": 23,
-            "ru_minflt": 10998,
-            "ru_nivcsw": 10,
-            "ru_majflt": 0
-        },
-        "quadSpeed": 50958.763530517172,
-        "nMops": 291681,
-        "cpu_cycles_cgstart": 6085436277097194,
-        "nQuads": 75875,
-        "mopSpeed": 195897.24026813547,
-        "ru_childs_end": {
-            "ru_utime_sec": 0.024056000000000001,
-            "ru_stime_sec": 0.60422299999999995,
-            "ru_maxrss_kb": 117704,
-            "ru_nvcsw": 18,
-            "ru_minflt": 3625,
-            "ru_nivcsw": 32,
-            "ru_majflt": 0
-        },
-        "totalObjSize": 2200864,
-        "cpu_cycles_end": 6085445204241577,
-        "cpu_cycles_total": 12663488052,
-        "mop/quad": 3.8442306425041188,
-        "Frontend(%)": 26.413948320954901,
-        "peak_mem_kb": 244584,
-        "realTime": 4.2337300777435303
-    },
+    "cycles_program_begin": 141621340607915,
+    "CompileProcesses": [
+        "cgproc.14469.json"
+    ],
+    "CompileStrategy": "fullobj",
+    "CurCompileModules": [
+        "...MASTER...",
+        "...MASTER...",
+        "std",
+        "std",
+        "sdma_data_path",
+        "sdma_data_path",
+        "sdma_sap_padding_indicator",
+        "sdma_sap_padding_indicator",
+        "sdma_sap_upsample_indicator",
+        "sdma_sap_upsample_indicator",
+        "sdma_addr_mux",
+        "sdma_addr_mux",
+        "sdma_ready_mux",
+        "sdma_ready_mux",
+        "sdma_rdata_mux",
+        "sdma_rdata_mux",
+        "sdma_wdata_mux",
+        "sdma_wdata_mux",
+        "TB_sdma_top",
+        "TB_sdma_top",
+        "rram_ahb_mem",
+        "rram_ahb_mem"
+    ],
     "perf": [
         {
             "stat": [
                 "main",
                 "entry",
-                0.012614965438842773,
-                0.033433999999999998,
-                0.015942000000000001,
+                0.012139081954956055,
+                0.035361999999999998,
+                0.0,
                 200716,
                 200716,
                 0.0,
                 0.0,
-                1739020371.9303229,
-                6085432540939277
+                1740017754.1681671,
+                141621340836637
             ],
             "sub": [
                 {
                     "stat": [
                         "doParsingAndDesignResolution",
                         "entry",
-                        0.1355140209197998,
-                        0.035082000000000002,
-                        0.027286000000000001,
+                        0.13297796249389648,
+                        0.042640999999999998,
+                        0.0038760000000000001,
                         209696,
                         210496,
                         0.0,
                         0.0,
-                        1739020372.0532219,
-                        6085432909603579
+                        1740017754.289006,
+                        141621703476827
                     ],
                     "sub": []
                 },
@@ -252,15 +64,15 @@
                     "stat": [
                         "doParsingAndDesignResolution",
                         "exit",
-                        0.18482708930969238,
-                        0.072859999999999994,
-                        0.038821000000000001,
-                        213604,
-                        214252,
+                        0.1807548999786377,
+                        0.078548999999999994,
+                        0.015709000000000001,
+                        213060,
+                        213708,
                         0.0,
                         0.0,
-                        1739020372.102535,
-                        6085433057594000
+                        1740017754.3367829,
+                        141621846726748
                     ],
                     "sub": []
                 },
@@ -268,30 +80,30 @@
                     "stat": [
                         "doPostDesignResolutionToVir2Vcs",
                         "entry",
-                        0.18917417526245117,
-                        0.077205999999999997,
-                        0.038821000000000001,
-                        213604,
-                        214252,
+                        0.18491005897521973,
+                        0.082668000000000005,
+                        0.015746,
+                        213240,
+                        213708,
                         0.0,
                         0.0,
-                        1739020372.1068821,
-                        6085433070626405
+                        1740017754.3409381,
+                        141621859130276
                     ],
                     "sub": [
                         {
                             "stat": [
                                 "doUptoVir2VcsNoSepCleanup",
                                 "entry",
-                                0.26189398765563965,
-                                0.147483,
-                                0.041230000000000003,
-                                218452,
-                                218648,
+                                0.26413297653198242,
+                                0.11715200000000001,
+                                0.020007,
+                                218140,
+                                218176,
                                 0.0,
                                 0.0,
-                                1739020372.1796019,
-                                6085433288831564
+                                1740017754.420161,
+                                141622096847193
                             ],
                             "sub": []
                         },
@@ -299,15 +111,15 @@
                             "stat": [
                                 "doUptoVir2VcsNoSepCleanup",
                                 "exit",
-                                0.61265802383422852,
-                                0.49817699999999998,
-                                0.041230000000000003,
-                                232192,
-                                232192,
+                                0.8406059741973877,
+                                0.451685,
+                                0.048394,
+                                231756,
+                                231756,
                                 0.0,
-                                0.0,
-                                1739020372.5303659,
-                                6085434341077468
+                                0.001536,
+                                1740017754.996634,
+                                141623826262956
                             ],
                             "sub": []
                         },
@@ -315,15 +127,15 @@
                             "stat": [
                                 "doRadify_vir2vcsAll",
                                 "entry",
-                                0.61270499229431152,
-                                0.498224,
-                                0.041230000000000003,
-                                232192,
-                                232192,
+                                0.84073805809020996,
+                                0.45180500000000001,
+                                0.048406999999999999,
+                                231756,
+                                231756,
                                 0.0,
-                                0.0,
-                                1739020372.5304129,
-                                6085434341152537
+                                0.001536,
+                                1740017754.9967661,
+                                141623826615704
                             ],
                             "sub": []
                         },
@@ -331,15 +143,15 @@
                             "stat": [
                                 "doRadify_vir2vcsAll",
                                 "exit",
-                                0.62662315368652344,
-                                0.50793999999999995,
-                                0.045425,
-                                232192,
-                                232192,
+                                0.88153386116027832,
+                                0.472022,
+                                0.048406999999999999,
+                                231756,
+                                231756,
                                 0.0,
-                                0.0,
-                                1739020372.5443311,
-                                6085434383050583
+                                0.001536,
+                                1740017755.0375619,
+                                141623949077514
                             ],
                             "sub": []
                         }
@@ -349,15 +161,15 @@
                     "stat": [
                         "doPostDesignResolutionToVir2Vcs",
                         "exit",
-                        0.62670207023620605,
-                        0.50799899999999998,
-                        0.045429999999999998,
-                        232192,
-                        232192,
+                        0.88157987594604492,
+                        0.47206999999999999,
+                        0.048406999999999999,
+                        231756,
+                        231756,
                         0.0,
-                        0.0,
-                        1739020372.54441,
-                        6085434383141212
+                        0.001536,
+                        1740017755.0376079,
+                        141623949118234
                     ],
                     "sub": []
                 },
@@ -365,30 +177,30 @@
                     "stat": [
                         "doGAToPass2",
                         "entry",
-                        0.62671399116516113,
-                        0.50802499999999995,
-                        0.045433000000000001,
-                        232192,
-                        232192,
+                        0.8815920352935791,
+                        0.47208099999999997,
+                        0.048406999999999999,
+                        231756,
+                        231756,
                         0.0,
-                        0.0,
-                        1739020372.5444219,
-                        6085434383168363
+                        0.001536,
+                        1740017755.0376201,
+                        141623949145627
                     ],
                     "sub": [
                         {
                             "stat": [
                                 "DoPass2",
                                 "entry",
-                                1.2579741477966309,
-                                0.51036400000000004,
-                                0.045642000000000002,
-                                230508,
-                                232192,
-                                0.024056000000000001,
-                                0.60254600000000003,
-                                1739020373.1756821,
-                                6085436277030928
+                                1.7808279991149902,
+                                0.47242200000000001,
+                                0.051609000000000002,
+                                230072,
+                                231756,
+                                0.031799000000000001,
+                                0.095787999999999998,
+                                1740017755.936856,
+                                141626647212508
                             ],
                             "sub": []
                         },
@@ -396,15 +208,15 @@
                             "stat": [
                                 "DoPass2",
                                 "exit",
-                                4.2307970523834229,
-                                1.9964390000000001,
-                                1.530105,
-                                244584,
-                                244584,
-                                0.024056000000000001,
-                                0.60422299999999995,
-                                1739020376.148505,
-                                6085445195535960
+                                3.0270428657531738,
+                                1.569534,
+                                0.084066000000000002,
+                                243444,
+                                243444,
+                                0.031799000000000001,
+                                0.095787999999999998,
+                                1740017757.1830709,
+                                141630385630962
                             ],
                             "sub": []
                         }
@@ -414,15 +226,15 @@
                     "stat": [
                         "doGAToPass2",
                         "exit",
-                        4.2333199977874756,
-                        1.9989620000000001,
-                        1.530105,
-                        244584,
-                        244584,
-                        0.024056000000000001,
-                        0.60422299999999995,
-                        1739020376.1510279,
-                        6085445203183111
+                        3.029155969619751,
+                        1.571647,
+                        0.084066000000000002,
+                        243444,
+                        243444,
+                        0.031799000000000001,
+                        0.095787999999999998,
+                        1740017757.185184,
+                        141630391941397
                     ],
                     "sub": []
                 }
@@ -432,66 +244,171 @@
             "stat": [
                 "main",
                 "exit",
-                4.2336809635162354,
-                1.999323,
-                1.530105,
-                244584,
-                244584,
-                0.024056000000000001,
-                0.60422299999999995,
-                1739020376.1513889,
-                6085445204177666
+                3.0295279026031494,
+                1.57202,
+                0.084066000000000002,
+                243444,
+                243444,
+                0.031799000000000001,
+                0.095787999999999998,
+                1740017757.1855559,
+                141630393051433
             ],
             "sub": []
         }
     ],
-    "SIMBData": {
-        "bytes": 121574,
-        "out": "amcQwB.o",
-        "text": 0,
-        "archive": "archive.94/_192530_archive_1.a"
-    },
+    "cpu_cycles_pass2_start": 141626647234270,
     "MlibObjs": {},
+    "PrevCompiledModules": {},
+    "NameTable": {
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module",
+            11
+        ],
+        "sdma_ready_mux": [
+            "sdma_ready_mux",
+            "NyyYa",
+            "module",
+            6
+        ],
+        "std": [
+            "std",
+            "reYIK",
+            "module",
+            1
+        ],
+        "sdma_data_path": [
+            "sdma_data_path",
+            "gx7jk",
+            "module",
+            2
+        ],
+        "sdma_sap_upsample_indicator": [
+            "sdma_sap_upsample_indicator",
+            "pLsxN",
+            "module",
+            4
+        ],
+        "sdma_sap_padding_indicator": [
+            "sdma_sap_padding_indicator",
+            "hvV9P",
+            "module",
+            3
+        ],
+        "sdma_addr_mux": [
+            "sdma_addr_mux",
+            "jS7kD",
+            "module",
+            5
+        ],
+        "sdma_wdata_mux": [
+            "sdma_wdata_mux",
+            "mPcN3",
+            "module",
+            8
+        ],
+        "sdma_rdata_mux": [
+            "sdma_rdata_mux",
+            "jRB5p",
+            "module",
+            7
+        ],
+        "TB_sdma_top": [
+            "TB_sdma_top",
+            "xLhdt",
+            "module",
+            9
+        ],
+        "rram_ahb_mem": [
+            "rram_ahb_mem",
+            "HMuSC",
+            "module",
+            10
+        ]
+    },
+    "stat": {
+        "ru_self_cgstart": {
+            "ru_minflt": 10933,
+            "ru_utime_sec": 0.47285300000000002,
+            "ru_nvcsw": 133,
+            "ru_stime_sec": 0.051656000000000001,
+            "ru_maxrss_kb": 117728,
+            "ru_nivcsw": 12,
+            "ru_majflt": 186
+        },
+        "cpu_cycles_cgstart": 141626662080966,
+        "ru_childs_cgstart": {
+            "ru_minflt": 3431,
+            "ru_utime_sec": 0.031799000000000001,
+            "ru_nvcsw": 237,
+            "ru_stime_sec": 0.095787999999999998,
+            "ru_maxrss_kb": 117728,
+            "ru_nivcsw": 22,
+            "ru_majflt": 268
+        },
+        "CodeGen(%)": 68.53500198272657,
+        "nMops": 289730,
+        "cpu_cycles_total": 9052508867,
+        "cpu_cycles_end": 141630393116782,
+        "ru_childs_end": {
+            "ru_minflt": 3431,
+            "ru_utime_sec": 0.031799000000000001,
+            "ru_nvcsw": 237,
+            "ru_stime_sec": 0.095787999999999998,
+            "ru_maxrss_kb": 117728,
+            "ru_nivcsw": 22,
+            "ru_majflt": 268
+        },
+        "totalObjSize": 2849132,
+        "nQuads": 75658,
+        "mopSpeed": 263582.60553129553,
+        "ru_self_end": {
+            "ru_minflt": 17272,
+            "ru_utime_sec": 1.5720529999999999,
+            "ru_nvcsw": 176,
+            "ru_stime_sec": 0.084066000000000002,
+            "ru_maxrss_kb": 144092,
+            "ru_nivcsw": 27,
+            "ru_majflt": 271
+        },
+        "quadSpeed": 68830.058224163047,
+        "mop/quad": 3.8294694546511936,
+        "outputSizePerQuad": 37.658040127944169,
+        "peak_mem_kb": 243444,
+        "Frontend(%)": 31.464998017273416,
+        "realTime": 3.0295798778533936
+    },
+    "CurCompileUdps": {},
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "archive": "archive.0/_14469_archive_1.a",
+        "bytes": 123056,
+        "text": 0
+    },
     "Misc": {
-        "cwd": "/home/wx/Project/SDMA/sim",
+        "daidir": "/home/wx/Project/SDMA/sim/simv.daidir",
+        "csrc_abs": "/home/wx/Project/SDMA/sim/csrc",
         "vcs_version": "O-2018.09-SP2_Full64",
         "vcs_build_date": "Build Date = Feb 28 2019 22:34:30",
-        "csrc": "csrc",
-        "master_pid": 192530,
-        "hostname": "",
+        "master_pid": 14469,
         "VCS_HOME": "/home/wx/Software/vcs2018/vcs/O-2018.09-SP2",
-        "csrc_abs": "/home/wx/Project/SDMA/sim/csrc",
-        "daidir": "/home/wx/Project/SDMA/sim/simv.daidir",
+        "cwd": "/home/wx/Project/SDMA/sim",
+        "hostname": "",
+        "csrc": "csrc",
         "daidir_abs": "/home/wx/Project/SDMA/sim/simv.daidir",
         "default_output_dir": "csrc",
-        "archive_dir": "archive.94"
+        "archive_dir": "archive.0"
     },
-    "CompileStrategy": "fullobj",
     "incremental": "on",
-    "PEModules": [],
-    "CurCompileModules": [
-        "...MASTER...",
-        "std",
-        "sdma_data_path_0000",
-        "sdma_data_path_0000",
-        "sdma_dport_mux",
-        "sdma_sap_padding_indicator",
-        "sdma_sap_upsample_indicator",
-        "sdma_sport_mux",
-        "TB_sdma_top",
-        "rram_ahb_mem",
-        "sdma_ahb_sigmux"
-    ],
-    "cpu_cycles_pass2_start": 6085436277042131,
-    "CurCompileUdps": {},
     "LVLData": [
         "SIM"
     ],
-    "CompileProcesses": [
-        "cgproc.192530.json"
-    ],
+    "PEModules": [],
     "rlimit": {
-        "stack": -1,
-        "data": -1
-    }
+        "data": -1,
+        "stack": -1
+    },
+    "CompileStatus": "Successful"
 }

@@ -78,9 +78,9 @@ USERNAME=wx
 UNAME=/bin/uname
 TOOL_HOME=/home/wx/Software/vcs2018/vcs/O-2018.09-SP2/linux64
 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
-SSH_AGENT_PID=1739
+SSH_AGENT_PID=1786
 SNPS_VCS_INTERNAL_UBUNTU_PRE_LDFLAGS= -no-pie 
-SESSION_MANAGER=local/ubuntu:@/tmp/.ICE-unix/1774,unix/ubuntu:/tmp/.ICE-unix/1774
+SESSION_MANAGER=local/ubuntu:@/tmp/.ICE-unix/1821,unix/ubuntu:/tmp/.ICE-unix/1821
 SCRNAME=vcs
 SCRIPT_NAME=vcs
 SCL_HOME=/home/wx/Software/scl2018/scl/2018.06
@@ -92,7 +92,7 @@ OPENRAM_TECH=/home/wx/Software/OpenRAM/technology
 OPENRAM_HOME=/home/wx/Software/OpenRAM/compiler
 NO_PROXY=localhost,127.0.0.0/8,::1
 MFLAGS=
-MANAGERPID=1566
+MANAGERPID=1610
 MAKE_TERMOUT=/dev/pts/4
 MAKE_TERMERR=/dev/pts/4
 MAKELEVEL=1
@@ -100,15 +100,15 @@ MAKEFLAGS=
 LESSOPEN=| /usr/bin/lesspipe %s
 LESSCLOSE=/usr/bin/lesspipe %s %s
 LC_ALL=C
-JOURNAL_STREAM=8:56649
-INVOCATION_ID=5456a416fc804983b9fb101e1d37fa4a
+JOURNAL_STREAM=8:60522
+INVOCATION_ID=3db85978a6b3437cbc91206fe916df12
 IM_CONFIG_PHASE=1
 HTTP_PROXY=http://192.168.110.1:7890/
 HTTPS_PROXY=http://192.168.110.1:7890/
 GTK_MODULES=gail:atk-bridge
 GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
-GNOME_TERMINAL_SERVICE=:1.79
-GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/f4117432_39b1_41d0_9f3f_47f602035535
+GNOME_TERMINAL_SERVICE=:1.78
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/049fd219_d0e3_48f4_b59f_40bf475fad8c
 GNOME_SHELL_SESSION_MODE=ubuntu
 GNOME_DESKTOP_SESSION_ID=this-is-deprecated
 GDMSESSION=ubuntu
@@ -117,8 +117,8 @@ DVE_HOME=/home/wx/Software/vcs2018/vcs/O-2018.09-SP2
 DESKTOP_SESSION=ubuntu
 DC_HOME=/home/wx/Software/syn2018/syn/O-2018.06-SP1
 DBUS_STARTER_BUS_TYPE=session
-DBUS_STARTER_ADDRESS=unix:path=/run/user/1000/bus,guid=3812efd31d798be0ebbe0621678864ea
-DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus,guid=3812efd31d798be0ebbe0621678864ea
+DBUS_STARTER_ADDRESS=unix:path=/run/user/1000/bus,guid=429ce277307118670625665467b5d868
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus,guid=429ce277307118670625665467b5d868
 CONDA_SHLVL=1
 CONDA_PYTHON_EXE=/home/wx/Software/Anaconda3/bin/python
 CONDA_PROMPT_MODIFIER=(base) 
@@ -128,9 +128,8 @@ CONDA_DEFAULT_ENV=base
 COLORTERM=truecolor
 ALL_PROXY=socks://192.168.110.1:7890/
 0
-26
+27
 1738496572 /home/wx/Project/SDMA/src/vhead/sdma_params.vh
-1737622832 ../tb/rram_ahb_mem/sdma_ahb_sigmux.v
 1737696204 ../tb/rram_ahb_mem/sync_fifo.v
 1738333929 ../tb/rram_ahb_mem/rram_ahb_mem.v
 1738330232 ../tb/rram_ahb_mem/unaligned_ahbram.sv
@@ -139,20 +138,22 @@ ALL_PROXY=socks://192.168.110.1:7890/
 1737494957 ../tb/rram_ahb_mem/ahb_port_slave_wo_sfifo.v
 1737494027 ../tb/rram_ahb_mem/ahb_port_slave.v
 1737499022 ../tb/rram_ahb_mem/ahb_port2sram.v
-1739015986 ../tb/tb_sdma_top.v
-1737521572 ../src/utils/sdma_sport_mux.v
+1740017796 ../tb/tb_sdma_top.v
+1739974235 ../src/utils/sdma_wdata_mux.v
+1740016817 ../src/utils/sdma_rdata_mux.v
+1740016731 ../src/utils/sdma_ready_mux.v
+1740016614 ../src/utils/sdma_addr_mux.v
 1738161630 ../src/utils/sdma_sdp_lddata.v
 1738512032 ../src/utils/sdma_sap_upsample_indicator.v
 1738498362 ../src/utils/sdma_sap_padding_indicator.v
 1738497123 ../src/utils/sdma_inst_decoder.v
-1737687123 ../src/utils/sdma_dport_mux.v
-1739020574 ../src/sdma_data_path.v
-1739017467 ../src/sdma_addr_path.v
+1739071917 ../src/sdma_data_path.v
+1739074753 ../src/sdma_addr_path.v
 1738843820 ../src/sdma_section_ctrl.v
 1738496976 ../src/sdma_top_ctrl.v
-1739015445 ../src/sdma_top.v
+1740017717 ../src/sdma_top.v
 1738496572 ../src/vhead/sdma_params.vh
-1737795709 ./f.list
+1740017548 ./f.list
 1550753332 /home/wx/Software/verdi/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/linux64/novas.tab
 1551421246 /home/wx/Software/vcs2018/vcs/O-2018.09-SP2/linux64/lib/vcsdp.tab
 5
@@ -161,5 +162,5 @@ ALL_PROXY=socks://192.168.110.1:7890/
 1551421768 /home/wx/Software/vcs2018/vcs/O-2018.09-SP2/linux64/lib/libsnpsmalloc.so
 1551421789 /home/wx/Software/vcs2018/vcs/O-2018.09-SP2/linux64/lib/libvfs.so
 1550752033 /home/wx/Software/verdi/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/linux64/pli.a
-1739020586 simv.daidir
+1740017814 simv.daidir
 -1 partitionlib

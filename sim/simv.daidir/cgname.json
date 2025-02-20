@@ -5,58 +5,64 @@
         "module",
         1
     ],
-    "rram_ahb_mem": [
-        "rram_ahb_mem",
-        "HMuSC",
-        "module",
-        2
-    ],
-    "sdma_data_path_0000": [
-        "sdma_data_path_0000",
-        "HNp3j",
-        "module",
-        3
-    ],
-    "sdma_sap_padding_indicator": [
-        "sdma_sap_padding_indicator",
-        "hvV9P",
-        "module",
-        5
-    ],
-    "sdma_ahb_sigmux": [
-        "sdma_ahb_sigmux",
-        "CuPsT",
-        "module",
-        10
-    ],
-    "sdma_dport_mux": [
-        "sdma_dport_mux",
-        "yiA1u",
-        "module",
-        4
-    ],
-    "sdma_sap_upsample_indicator": [
-        "sdma_sap_upsample_indicator",
-        "pLsxN",
-        "module",
-        6
-    ],
-    "sdma_sport_mux": [
-        "sdma_sport_mux",
-        "pdevE",
-        "module",
-        7
-    ],
     "TB_sdma_top": [
         "TB_sdma_top",
         "xLhdt",
         "module",
-        8
+        9
+    ],
+    "sdma_ready_mux": [
+        "sdma_ready_mux",
+        "NyyYa",
+        "module",
+        6
+    ],
+    "sdma_data_path": [
+        "sdma_data_path",
+        "gx7jk",
+        "module",
+        2
     ],
     "...MASTER...": [
         "SIM",
         "amcQw",
         "module",
-        9
+        11
+    ],
+    "sdma_sap_padding_indicator": [
+        "sdma_sap_padding_indicator",
+        "hvV9P",
+        "module",
+        3
+    ],
+    "sdma_addr_mux": [
+        "sdma_addr_mux",
+        "jS7kD",
+        "module",
+        5
+    ],
+    "sdma_sap_upsample_indicator": [
+        "sdma_sap_upsample_indicator",
+        "pLsxN",
+        "module",
+        4
+    ],
+    "sdma_rdata_mux": [
+        "sdma_rdata_mux",
+        "jRB5p",
+        "module",
+        7
+    ],
+    "rram_ahb_mem": [
+        "rram_ahb_mem",
+        "HMuSC",
+        "module",
+        10
+    ],
+    "sdma_wdata_mux": [
+        "sdma_wdata_mux",
+        "mPcN3",
+        "module",
+        8
     ]
 }
