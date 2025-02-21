@@ -65,7 +65,6 @@ wire									 parallelinout_section_done;
 wire									 output_section_done;
 reg	 [`SDMA_CACHEDATAWIDTH-1:0]		 	 dout_r;
 reg										 din_ready_r;
-wire									 parallelinout_empty;
 reg	 [`SDMA_SECTION_DINNUMDATAWIDTH-1:0] din_strb_num;
 reg	 [`SDMA_CACHEDATAWIDTH-1:0]			 dout_next_ldany;
 

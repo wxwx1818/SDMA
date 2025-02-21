@@ -47,126 +47,126 @@ always@(*)begin
 	case(i_sap_pi_paddingaxisbefore[2:0])
 		3'b000:begin
 			if(i_sap_pi_upsampleen)begin
-				x_padding_cnt_1stage = i_sap_pi_paddingleftx;
+				x_padding_cnt_1stage = {{(`SDMA_INST_SRCFMSXWIDTH-`SDMA_INST_PADDINGLEFTXWIDTH){1'b0}},i_sap_pi_paddingleftx};
 				x_padding_cnt_2stage = i_sap_pi_paddingleftx + i_sap_pi_srcfmsx + i_sap_pi_insertzeronumtotalx;
 				x_padding_cnt_3stage = i_sap_pi_paddingleftx + i_sap_pi_srcfmsx + i_sap_pi_insertzeronumtotalx + i_sap_pi_paddingrightx;
-				y_padding_cnt_1stage = i_sap_pi_paddinglefty;
+				y_padding_cnt_1stage = {{(`SDMA_INST_SRCFMSYWIDTH-`SDMA_INST_PADDINGLEFTYWIDTH){1'b0}},i_sap_pi_paddinglefty};
 				y_padding_cnt_2stage = i_sap_pi_paddinglefty + i_sap_pi_srcfmsy + i_sap_pi_insertzeronumtotaly;
 				y_padding_cnt_3stage = i_sap_pi_paddinglefty + i_sap_pi_srcfmsy + i_sap_pi_insertzeronumtotaly + i_sap_pi_paddingrighty;
 			end
 			else begin
-				x_padding_cnt_1stage = i_sap_pi_paddingleftx;
+				x_padding_cnt_1stage = {{(`SDMA_INST_SRCFMSXWIDTH-`SDMA_INST_PADDINGLEFTXWIDTH){1'b0}},i_sap_pi_paddingleftx};
 				x_padding_cnt_2stage = i_sap_pi_paddingleftx + i_sap_pi_srcfmsx;
 				x_padding_cnt_3stage = i_sap_pi_paddingleftx + i_sap_pi_srcfmsx + i_sap_pi_paddingrightx;
-				y_padding_cnt_1stage = i_sap_pi_paddinglefty;
+				y_padding_cnt_1stage = {{(`SDMA_INST_SRCFMSYWIDTH-`SDMA_INST_PADDINGLEFTYWIDTH){1'b0}},i_sap_pi_paddinglefty};
 				y_padding_cnt_2stage = i_sap_pi_paddinglefty + i_sap_pi_srcfmsy;
 				y_padding_cnt_3stage = i_sap_pi_paddinglefty + i_sap_pi_srcfmsy + i_sap_pi_paddingrighty;
 			end
 		end
 		3'b111:begin
 			if(i_sap_pi_upsampleen)begin
-				x_padding_cnt_1stage = i_sap_pi_paddingleftx;
+				x_padding_cnt_1stage = {{(`SDMA_INST_SRCFMSXWIDTH-`SDMA_INST_PADDINGLEFTXWIDTH){1'b0}},i_sap_pi_paddingleftx};
 				x_padding_cnt_2stage = i_sap_pi_paddingleftx + i_sap_pi_srcfmsy + i_sap_pi_insertzeronumtotalx;
 				x_padding_cnt_3stage = i_sap_pi_paddingleftx + i_sap_pi_srcfmsy + i_sap_pi_insertzeronumtotalx + i_sap_pi_paddingrightx;
-				y_padding_cnt_1stage = i_sap_pi_paddinglefty;
+				y_padding_cnt_1stage = {{(`SDMA_INST_SRCFMSYWIDTH-`SDMA_INST_PADDINGLEFTYWIDTH){1'b0}},i_sap_pi_paddinglefty};
 				y_padding_cnt_2stage = i_sap_pi_paddinglefty + i_sap_pi_srcfmsx + i_sap_pi_insertzeronumtotaly;
 				y_padding_cnt_3stage = i_sap_pi_paddinglefty + i_sap_pi_srcfmsx + i_sap_pi_insertzeronumtotaly + i_sap_pi_paddingrighty;
 			end
 			else begin
-				x_padding_cnt_1stage = i_sap_pi_paddingleftx;
+				x_padding_cnt_1stage = {{(`SDMA_INST_SRCFMSXWIDTH-`SDMA_INST_PADDINGLEFTXWIDTH){1'b0}},i_sap_pi_paddingleftx};
 				x_padding_cnt_2stage = i_sap_pi_paddingleftx + i_sap_pi_srcfmsy;
 				x_padding_cnt_3stage = i_sap_pi_paddingleftx + i_sap_pi_srcfmsy + i_sap_pi_paddingrightx;
-				y_padding_cnt_1stage = i_sap_pi_paddinglefty;
+				y_padding_cnt_1stage = {{(`SDMA_INST_SRCFMSYWIDTH-`SDMA_INST_PADDINGLEFTYWIDTH){1'b0}},i_sap_pi_paddinglefty};
 				y_padding_cnt_2stage = i_sap_pi_paddinglefty + i_sap_pi_srcfmsx;
 				y_padding_cnt_3stage = i_sap_pi_paddinglefty + i_sap_pi_srcfmsx + i_sap_pi_paddingrighty;
 			end		
 		end
 		3'b001:begin
 			if(i_sap_pi_upsampleen)begin
-				x_padding_cnt_1stage = i_sap_pi_paddingleftx;
+				x_padding_cnt_1stage = {{(`SDMA_INST_SRCFMSXWIDTH-`SDMA_INST_PADDINGLEFTXWIDTH){1'b0}},i_sap_pi_paddingleftx};
 				x_padding_cnt_2stage = i_sap_pi_paddingleftx + i_sap_pi_srcfmsc + i_sap_pi_insertzeronumtotalx;
 				x_padding_cnt_3stage = i_sap_pi_paddingleftx + i_sap_pi_srcfmsc + i_sap_pi_insertzeronumtotalx + i_sap_pi_paddingrightx;
-				y_padding_cnt_1stage = i_sap_pi_paddinglefty;
+				y_padding_cnt_1stage = {{(`SDMA_INST_SRCFMSYWIDTH-`SDMA_INST_PADDINGLEFTYWIDTH){1'b0}},i_sap_pi_paddinglefty};
 				y_padding_cnt_2stage = i_sap_pi_paddinglefty + i_sap_pi_srcfmsx + i_sap_pi_insertzeronumtotaly;
 				y_padding_cnt_3stage = i_sap_pi_paddinglefty + i_sap_pi_srcfmsx + i_sap_pi_insertzeronumtotaly + i_sap_pi_paddingrighty;
 			end
 			else begin
-				x_padding_cnt_1stage = i_sap_pi_paddingleftx;
+				x_padding_cnt_1stage = {{(`SDMA_INST_SRCFMSXWIDTH-`SDMA_INST_PADDINGLEFTXWIDTH){1'b0}},i_sap_pi_paddingleftx};
 				x_padding_cnt_2stage = i_sap_pi_paddingleftx + i_sap_pi_srcfmsc;
 				x_padding_cnt_3stage = i_sap_pi_paddingleftx + i_sap_pi_srcfmsc + i_sap_pi_paddingrightx;
-				y_padding_cnt_1stage = i_sap_pi_paddinglefty;
+				y_padding_cnt_1stage = {{(`SDMA_INST_SRCFMSYWIDTH-`SDMA_INST_PADDINGLEFTYWIDTH){1'b0}},i_sap_pi_paddinglefty};
 				y_padding_cnt_2stage = i_sap_pi_paddinglefty + i_sap_pi_srcfmsx;
 				y_padding_cnt_3stage = i_sap_pi_paddinglefty + i_sap_pi_srcfmsx + i_sap_pi_paddingrighty;
 			end
 		end
 		3'b110:begin
 			if(i_sap_pi_upsampleen)begin
-				x_padding_cnt_1stage = i_sap_pi_paddingleftx;
+				x_padding_cnt_1stage = {{(`SDMA_INST_SRCFMSXWIDTH-`SDMA_INST_PADDINGLEFTXWIDTH){1'b0}},i_sap_pi_paddingleftx};
 				x_padding_cnt_2stage = i_sap_pi_paddingleftx + i_sap_pi_srcfmsx + i_sap_pi_insertzeronumtotalx;
 				x_padding_cnt_3stage = i_sap_pi_paddingleftx + i_sap_pi_srcfmsx + i_sap_pi_insertzeronumtotalx + i_sap_pi_paddingrightx;
-				y_padding_cnt_1stage = i_sap_pi_paddinglefty;
+				y_padding_cnt_1stage = {{(`SDMA_INST_SRCFMSYWIDTH-`SDMA_INST_PADDINGLEFTYWIDTH){1'b0}},i_sap_pi_paddinglefty};
 				y_padding_cnt_2stage = i_sap_pi_paddinglefty + i_sap_pi_srcfmsc + i_sap_pi_insertzeronumtotaly;
 				y_padding_cnt_3stage = i_sap_pi_paddinglefty + i_sap_pi_srcfmsc + i_sap_pi_insertzeronumtotaly + i_sap_pi_paddingrighty;
 			end
 			else begin
-				x_padding_cnt_1stage = i_sap_pi_paddingleftx;
+				x_padding_cnt_1stage = {{(`SDMA_INST_SRCFMSXWIDTH-`SDMA_INST_PADDINGLEFTXWIDTH){1'b0}},i_sap_pi_paddingleftx};
 				x_padding_cnt_2stage = i_sap_pi_paddingleftx + i_sap_pi_srcfmsx;
 				x_padding_cnt_3stage = i_sap_pi_paddingleftx + i_sap_pi_srcfmsx + i_sap_pi_paddingrightx;
-				y_padding_cnt_1stage = i_sap_pi_paddinglefty;
+				y_padding_cnt_1stage = {{(`SDMA_INST_SRCFMSYWIDTH-`SDMA_INST_PADDINGLEFTYWIDTH){1'b0}},i_sap_pi_paddinglefty};
 				y_padding_cnt_2stage = i_sap_pi_paddinglefty + i_sap_pi_srcfmsc;
 				y_padding_cnt_3stage = i_sap_pi_paddinglefty + i_sap_pi_srcfmsc + i_sap_pi_paddingrighty;
 			end	
 		end
 		3'b010:begin
 			if(i_sap_pi_upsampleen)begin
-				x_padding_cnt_1stage = i_sap_pi_paddingleftx;
+				x_padding_cnt_1stage = {{(`SDMA_INST_SRCFMSXWIDTH-`SDMA_INST_PADDINGLEFTXWIDTH){1'b0}},i_sap_pi_paddingleftx};
 				x_padding_cnt_2stage = i_sap_pi_paddingleftx + i_sap_pi_srcfmsc + i_sap_pi_insertzeronumtotalx;
 				x_padding_cnt_3stage = i_sap_pi_paddingleftx + i_sap_pi_srcfmsc + i_sap_pi_insertzeronumtotalx + i_sap_pi_paddingrightx;
-				y_padding_cnt_1stage = i_sap_pi_paddinglefty;
+				y_padding_cnt_1stage = {{(`SDMA_INST_SRCFMSYWIDTH-`SDMA_INST_PADDINGLEFTYWIDTH){1'b0}},i_sap_pi_paddinglefty};
 				y_padding_cnt_2stage = i_sap_pi_paddinglefty + i_sap_pi_srcfmsy + i_sap_pi_insertzeronumtotaly;
 				y_padding_cnt_3stage = i_sap_pi_paddinglefty + i_sap_pi_srcfmsy + i_sap_pi_insertzeronumtotaly + i_sap_pi_paddingrighty;
 			end
 			else begin
-				x_padding_cnt_1stage = i_sap_pi_paddingleftx;
+				x_padding_cnt_1stage = {{(`SDMA_INST_SRCFMSXWIDTH-`SDMA_INST_PADDINGLEFTXWIDTH){1'b0}},i_sap_pi_paddingleftx};
 				x_padding_cnt_2stage = i_sap_pi_paddingleftx + i_sap_pi_srcfmsc;
 				x_padding_cnt_3stage = i_sap_pi_paddingleftx + i_sap_pi_srcfmsc + i_sap_pi_paddingrightx;
-				y_padding_cnt_1stage = i_sap_pi_paddinglefty;
+				y_padding_cnt_1stage = {{(`SDMA_INST_SRCFMSYWIDTH-`SDMA_INST_PADDINGLEFTYWIDTH){1'b0}},i_sap_pi_paddinglefty};
 				y_padding_cnt_2stage = i_sap_pi_paddinglefty + i_sap_pi_srcfmsy;
 				y_padding_cnt_3stage = i_sap_pi_paddinglefty + i_sap_pi_srcfmsy + i_sap_pi_paddingrighty;
 			end	
 		end
 		3'b101:begin
 			if(i_sap_pi_upsampleen)begin
-				x_padding_cnt_1stage = i_sap_pi_paddingleftx;
+				x_padding_cnt_1stage = {{(`SDMA_INST_SRCFMSXWIDTH-`SDMA_INST_PADDINGLEFTXWIDTH){1'b0}},i_sap_pi_paddingleftx};
 				x_padding_cnt_2stage = i_sap_pi_paddingleftx + i_sap_pi_srcfmsy + i_sap_pi_insertzeronumtotalx;
 				x_padding_cnt_3stage = i_sap_pi_paddingleftx + i_sap_pi_srcfmsy + i_sap_pi_insertzeronumtotalx + i_sap_pi_paddingrightx;
-				y_padding_cnt_1stage = i_sap_pi_paddinglefty;
+				y_padding_cnt_1stage = {{(`SDMA_INST_SRCFMSYWIDTH-`SDMA_INST_PADDINGLEFTYWIDTH){1'b0}},i_sap_pi_paddinglefty};
 				y_padding_cnt_2stage = i_sap_pi_paddinglefty + i_sap_pi_srcfmsc + i_sap_pi_insertzeronumtotaly;
 				y_padding_cnt_3stage = i_sap_pi_paddinglefty + i_sap_pi_srcfmsc + i_sap_pi_insertzeronumtotaly + i_sap_pi_paddingrighty;
 			end
 			else begin
-				x_padding_cnt_1stage = i_sap_pi_paddingleftx;
+				x_padding_cnt_1stage = {{(`SDMA_INST_SRCFMSXWIDTH-`SDMA_INST_PADDINGLEFTXWIDTH){1'b0}},i_sap_pi_paddingleftx};
 				x_padding_cnt_2stage = i_sap_pi_paddingleftx + i_sap_pi_srcfmsy;
 				x_padding_cnt_3stage = i_sap_pi_paddingleftx + i_sap_pi_srcfmsy + i_sap_pi_paddingrightx;
-				y_padding_cnt_1stage = i_sap_pi_paddinglefty;
+				y_padding_cnt_1stage = {{(`SDMA_INST_SRCFMSYWIDTH-`SDMA_INST_PADDINGLEFTYWIDTH){1'b0}},i_sap_pi_paddinglefty};
 				y_padding_cnt_2stage = i_sap_pi_paddinglefty + i_sap_pi_srcfmsc;
 				y_padding_cnt_3stage = i_sap_pi_paddinglefty + i_sap_pi_srcfmsc + i_sap_pi_paddingrighty;
 			end	
 		end
 		default:begin
 			if(i_sap_pi_upsampleen)begin
-				x_padding_cnt_1stage = i_sap_pi_paddingleftx;
+				x_padding_cnt_1stage = {{(`SDMA_INST_SRCFMSXWIDTH-`SDMA_INST_PADDINGLEFTXWIDTH){1'b0}},i_sap_pi_paddingleftx};
 				x_padding_cnt_2stage = i_sap_pi_paddingleftx + i_sap_pi_srcfmsx + i_sap_pi_insertzeronumtotalx;
 				x_padding_cnt_3stage = i_sap_pi_paddingleftx + i_sap_pi_srcfmsx + i_sap_pi_insertzeronumtotalx + i_sap_pi_paddingrightx;
-				y_padding_cnt_1stage = i_sap_pi_paddinglefty;
+				y_padding_cnt_1stage = {{(`SDMA_INST_SRCFMSYWIDTH-`SDMA_INST_PADDINGLEFTYWIDTH){1'b0}},i_sap_pi_paddinglefty};
 				y_padding_cnt_2stage = i_sap_pi_paddinglefty + i_sap_pi_srcfmsy + i_sap_pi_insertzeronumtotaly;
 				y_padding_cnt_3stage = i_sap_pi_paddinglefty + i_sap_pi_srcfmsy + i_sap_pi_insertzeronumtotaly + i_sap_pi_paddingrighty;
 			end
 			else begin
-				x_padding_cnt_1stage = i_sap_pi_paddingleftx;
+				x_padding_cnt_1stage = {{(`SDMA_INST_SRCFMSXWIDTH-`SDMA_INST_PADDINGLEFTXWIDTH){1'b0}},i_sap_pi_paddingleftx};
 				x_padding_cnt_2stage = i_sap_pi_paddingleftx + i_sap_pi_srcfmsx;
 				x_padding_cnt_3stage = i_sap_pi_paddingleftx + i_sap_pi_srcfmsx + i_sap_pi_paddingrightx;
-				y_padding_cnt_1stage = i_sap_pi_paddinglefty;
+				y_padding_cnt_1stage = {{(`SDMA_INST_SRCFMSYWIDTH-`SDMA_INST_PADDINGLEFTYWIDTH){1'b0}},i_sap_pi_paddinglefty};
 				y_padding_cnt_2stage = i_sap_pi_paddinglefty + i_sap_pi_srcfmsy;
 				y_padding_cnt_3stage = i_sap_pi_paddinglefty + i_sap_pi_srcfmsy + i_sap_pi_paddingrighty;
 			end
@@ -178,40 +178,46 @@ always@(*)begin
 	if(i_sap_pi_paddingen)begin
 		case(i_sap_pi_paddingaxisbefore[2:0])
 			3'b000:begin 
-				o_sap_pi_padding_flag = ((i_sap_pi_sfmsxcnt>= 1'd0)&&(i_sap_pi_sfmsxcnt < x_padding_cnt_1stage))
+				o_sap_pi_padding_flag = (i_sap_pi_sfmsxcnt < x_padding_cnt_1stage)
 									  ||((i_sap_pi_sfmsxcnt>= x_padding_cnt_2stage)&&(i_sap_pi_sfmsxcnt < x_padding_cnt_3stage))
-									  ||((i_sap_pi_sfmsycnt>= 1'd0)&&(i_sap_pi_sfmsycnt < y_padding_cnt_1stage))
+									  ||(i_sap_pi_sfmsycnt < y_padding_cnt_1stage)
 									  ||((i_sap_pi_sfmsycnt>= y_padding_cnt_2stage)&&(i_sap_pi_sfmsycnt < y_padding_cnt_3stage)); 
 			end
 			3'b111:begin
-				o_sap_pi_padding_flag = ((i_sap_pi_sfmsycnt>= 1'd0)&&(i_sap_pi_sfmsycnt < x_padding_cnt_1stage))
+				o_sap_pi_padding_flag = (i_sap_pi_sfmsycnt < x_padding_cnt_1stage)
 									  ||((i_sap_pi_sfmsycnt>= x_padding_cnt_2stage)&&(i_sap_pi_sfmsycnt < x_padding_cnt_3stage))
-									  ||((i_sap_pi_sfmsxcnt>= 1'd0)&&(i_sap_pi_sfmsxcnt < y_padding_cnt_1stage))
+									  ||(i_sap_pi_sfmsxcnt < y_padding_cnt_1stage)
 									  ||((i_sap_pi_sfmsxcnt>= y_padding_cnt_2stage)&&(i_sap_pi_sfmsxcnt < y_padding_cnt_3stage));
 			end
 			3'b001:begin
-				o_sap_pi_padding_flag = ((i_sap_pi_sfmsccnt>= 1'd0)&&(i_sap_pi_sfmsccnt < x_padding_cnt_1stage))
+				o_sap_pi_padding_flag = (i_sap_pi_sfmsccnt < x_padding_cnt_1stage)
 									  ||((i_sap_pi_sfmsccnt>= x_padding_cnt_2stage)&&(i_sap_pi_sfmsccnt < x_padding_cnt_3stage))
-									  ||((i_sap_pi_sfmsxcnt>= 1'd0)&&(i_sap_pi_sfmsxcnt < y_padding_cnt_1stage))
+									  ||(i_sap_pi_sfmsxcnt < y_padding_cnt_1stage)
 									  ||((i_sap_pi_sfmsxcnt>= y_padding_cnt_2stage)&&(i_sap_pi_sfmsxcnt < y_padding_cnt_3stage));	
 			end
 			3'b110:begin
-				o_sap_pi_padding_flag = ((i_sap_pi_sfmsxcnt>= 1'd0)&&(i_sap_pi_sfmsxcnt < x_padding_cnt_1stage))
+				o_sap_pi_padding_flag = (i_sap_pi_sfmsxcnt < x_padding_cnt_1stage)
 									  ||((i_sap_pi_sfmsxcnt>= x_padding_cnt_2stage)&&(i_sap_pi_sfmsxcnt < x_padding_cnt_3stage))
-									  ||((i_sap_pi_sfmsccnt>= 1'd0)&&(i_sap_pi_sfmsccnt < y_padding_cnt_1stage))
+									  ||(i_sap_pi_sfmsccnt < y_padding_cnt_1stage)
 									  ||((i_sap_pi_sfmsccnt>= y_padding_cnt_2stage)&&(i_sap_pi_sfmsccnt < y_padding_cnt_3stage));	
 			end
 			3'b010:begin
-				o_sap_pi_padding_flag = ((i_sap_pi_sfmsccnt>= 1'd0)&&(i_sap_pi_sfmsccnt < x_padding_cnt_1stage))
+				o_sap_pi_padding_flag = (i_sap_pi_sfmsccnt < x_padding_cnt_1stage)
 									  ||((i_sap_pi_sfmsccnt>= x_padding_cnt_2stage)&&(i_sap_pi_sfmsccnt < x_padding_cnt_3stage))
-									  ||((i_sap_pi_sfmsycnt>= 1'd0)&&(i_sap_pi_sfmsycnt < y_padding_cnt_1stage))
+									  ||(i_sap_pi_sfmsycnt < y_padding_cnt_1stage)
 									  ||((i_sap_pi_sfmsycnt>= y_padding_cnt_2stage)&&(i_sap_pi_sfmsycnt < y_padding_cnt_3stage));
 			end
 			3'b101:begin
-				o_sap_pi_padding_flag = ((i_sap_pi_sfmsycnt>= 1'd0)&&(i_sap_pi_sfmsycnt < x_padding_cnt_1stage))
+				o_sap_pi_padding_flag = (i_sap_pi_sfmsycnt < x_padding_cnt_1stage)
 									  ||((i_sap_pi_sfmsycnt>= x_padding_cnt_2stage)&&(i_sap_pi_sfmsycnt < x_padding_cnt_3stage))
-									  ||((i_sap_pi_sfmsccnt>= 1'd0)&&(i_sap_pi_sfmsccnt < y_padding_cnt_1stage))
+									  ||(i_sap_pi_sfmsccnt < y_padding_cnt_1stage)
 									  ||((i_sap_pi_sfmsccnt>= y_padding_cnt_2stage)&&(i_sap_pi_sfmsccnt < y_padding_cnt_3stage));	
+			end
+			default:begin
+				o_sap_pi_padding_flag = (i_sap_pi_sfmsxcnt < x_padding_cnt_1stage)
+									  ||((i_sap_pi_sfmsxcnt>= x_padding_cnt_2stage)&&(i_sap_pi_sfmsxcnt < x_padding_cnt_3stage))
+									  ||(i_sap_pi_sfmsycnt < y_padding_cnt_1stage)
+									  ||((i_sap_pi_sfmsycnt>= y_padding_cnt_2stage)&&(i_sap_pi_sfmsycnt < y_padding_cnt_3stage));
 			end
 		endcase
 	end

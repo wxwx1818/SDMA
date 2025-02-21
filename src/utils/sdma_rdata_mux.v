@@ -38,8 +38,8 @@ module sdma_rdata_mux
 always@(*)begin
 	case(i_inst_srcportid)
 		3'b000:begin
-			o_sdma_sportrdata = i_sdma_ahbrdata;
-			o_sdma_sportrvld  = i_sdma_ahbrvld;
+			o_sdma_sportrdata = {{(`SDMA_CACHEDATAWIDTH - `SDMA_AHBDATAWIDTH){1'b0}},i_sdma_ahbrdata};
+			o_sdma_sportrvld  = {{(`SDMA_CACHEDATAWIDTH/8 - `SDMA_AHBDATAWIDTH/8){1'b0}},i_sdma_ahbrvld};
 		end
 		3'b100:begin
 			o_sdma_sportrdata = i_sdma_dc1rdata;
@@ -58,8 +58,8 @@ always@(*)begin
 			o_sdma_sportrvld  = i_sdma_wc2rvld;
 		end
 		default:begin
-			o_sdma_sportrdata = i_sdma_ahbrdata;
-			o_sdma_sportrvld  = i_sdma_ahbrvld;
+			o_sdma_sportrdata = {{(`SDMA_CACHEDATAWIDTH - `SDMA_AHBDATAWIDTH){1'b0}},i_sdma_ahbrdata};
+			o_sdma_sportrvld  = {{(`SDMA_CACHEDATAWIDTH/8 - `SDMA_AHBDATAWIDTH/8){1'b0}},i_sdma_ahbrvld};
 		end
 	endcase
 end

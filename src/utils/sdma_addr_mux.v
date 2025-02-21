@@ -55,13 +55,13 @@ wire [`SDMA_ADDRWIDTH-1:0]			sdma_dc2waddr;
 wire [`SDMA_ADDRWIDTH-1:0]			sdma_wc1waddr;
 wire [`SDMA_ADDRWIDTH-1:0]			sdma_wc2waddr;
 
-wire [`SDMA_CACHEDATAWIDTH/8-1:0]	sdma_ahbren;
+wire [`SDMA_AHBDATAWIDTH/8-1:0]		sdma_ahbren;
 wire [`SDMA_CACHEDATAWIDTH/8-1:0]	sdma_dc1ren;
 wire [`SDMA_CACHEDATAWIDTH/8-1:0]	sdma_dc2ren;
 wire [`SDMA_CACHEDATAWIDTH/8-1:0]	sdma_wc1ren;
 wire [`SDMA_CACHEDATAWIDTH/8-1:0]	sdma_wc2ren;
 
-wire [`SDMA_CACHEDATAWIDTH/8-1:0]	sdma_ahbwen;
+wire [`SDMA_AHBDATAWIDTH/8-1:0]		sdma_ahbwen;
 wire [`SDMA_CACHEDATAWIDTH/8-1:0]	sdma_dc1wen;
 wire [`SDMA_CACHEDATAWIDTH/8-1:0]	sdma_dc2wen;
 wire [`SDMA_CACHEDATAWIDTH/8-1:0]	sdma_wc1wen;

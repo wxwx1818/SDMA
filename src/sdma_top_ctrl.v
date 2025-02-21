@@ -92,6 +92,9 @@ always@(*)begin
 				next_state = SDMAWORK;
 			end
 		end
+		default:begin
+			next_state = IDLE;
+		end
 	endcase
 end
 

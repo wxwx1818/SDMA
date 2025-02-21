@@ -2229,7 +2229,7 @@ always @(*) begin
                            i_sdp_l_databuffer[i_sdp_l_doutcnt + 7'd0]};
         end
         7'd64: begin
-            o_sdp_l_lddataany = {{(`SDMA_CACHEDATAWIDTH - 512){1'b0}},
+            o_sdp_l_lddataany = {
                            i_sdp_l_databuffer[i_sdp_l_doutcnt + 7'd63],
                            i_sdp_l_databuffer[i_sdp_l_doutcnt + 7'd62],
                            i_sdp_l_databuffer[i_sdp_l_doutcnt + 7'd61],
