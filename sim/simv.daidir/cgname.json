@@ -1,0 +1,86 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "sdma_sap_upsample_indicator": [
+        "sdma_sap_upsample_indicator",
+        "pLsxN",
+        "module",
+        4
+    ],
+    "TB_sdma_top": [
+        "TB_sdma_top",
+        "xLhdt",
+        "module",
+        12
+    ],
+    "sdma_addr_mux": [
+        "sdma_addr_mux",
+        "jS7kD",
+        "module",
+        5
+    ],
+    "sdma_data_path": [
+        "sdma_data_path",
+        "gx7jk",
+        "module",
+        2
+    ],
+    "sdma_sap_padding_indicator": [
+        "sdma_sap_padding_indicator",
+        "hvV9P",
+        "module",
+        3
+    ],
+    "rram_addr_cyc_align": [
+        "rram_addr_cyc_align",
+        "RUgB9",
+        "module",
+        11
+    ],
+    "sdma_rdata_mux": [
+        "sdma_rdata_mux",
+        "jRB5p",
+        "module",
+        7
+    ],
+    "sdma_ready_mux": [
+        "sdma_ready_mux",
+        "NyyYa",
+        "module",
+        6
+    ],
+    "sdma_wdata_mux": [
+        "sdma_wdata_mux",
+        "mPcN3",
+        "module",
+        8
+    ],
+    "rram_addr_demux": [
+        "rram_addr_demux",
+        "BaTh1",
+        "module",
+        9
+    ],
+    "rram_width_reducer": [
+        "rram_width_reducer",
+        "FQvLa",
+        "module",
+        10
+    ],
+    "rram_ahb_mem": [
+        "rram_ahb_mem",
+        "HMuSC",
+        "module",
+        13
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        14
+    ]
+}
