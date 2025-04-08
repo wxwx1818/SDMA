@@ -202,7 +202,7 @@ always@(posedge clk or negedge rst_n)begin
 	end
 end
 
-assign o_stc_sigmnt1 = {clk,o_stc_sdmamode,cur_state};
+assign o_stc_sigmnt1 = {clk,1'd0,o_stc_sdmamode,cur_state};
 assign o_stc_sigmnt2 = {clk,5'd0,{o_stc_srcportid[2],o_stc_dstportid[2],o_stc_sdmamode[3]}};
 //------------------------------------------------------------------------------
 
