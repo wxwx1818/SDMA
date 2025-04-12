@@ -1,0 +1,797 @@
+debImport "-sv" "-f" "./f.list"
+debLoadSimResult /home/wx/Project/SDMA/sim/TB_sdma_top.fsdb
+wvCreateWindow
+srcHBSelect "TB_sdma_top.U_SDMA_TOP_0" -win $_nTrace1
+srcHBDrag -win $_nTrace1
+wvRenameGroup -win $_nWave2 {G1} {U_SDMA_TOP_0}
+wvAddSignal -win $_nWave2 "/TB_sdma_top/U_SDMA_TOP_0/i_clk" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_rst_n" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_en" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_inst_vld" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_inst\[639:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ready" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbready" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbrdata\[127:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_ahbrvld\[15:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbaddr\[31:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbena\[15:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwdata\[127:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_ahbwea" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1ready" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1rdata\[511:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc1rvld\[63:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1addr\[31:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1ena\[63:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1wdata\[511:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc1wea" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2ready" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2rdata\[511:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_dc2rvld\[63:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2addr\[31:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2ena\[63:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2wdata\[511:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_dc2wea" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1ready" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1rdata\[511:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc1rvld\[63:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1addr\[31:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1ena\[63:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1wdata\[511:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc1wea" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2ready" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2rdata\[511:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_wc2rvld\[63:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2addr\[31:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2ena\[63:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2wdata\[511:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_wc2wea" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_bc1ready" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_bc1rdata\[127:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_bc1rvld\[15:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_bc1addr\[31:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_bc1ena\[15:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_bc1wdata\[127:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_bc1wea" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_bc2ready" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_bc2rdata\[127:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/i_sdma_bc2rvld\[15:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_bc2addr\[31:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_bc2ena\[15:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_bc2wdata\[127:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_bc2wea" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_sigmnt1\[9:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_sigmnt2\[9:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_sigmnt3\[9:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_sigmnt4\[9:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_sigmnt5\[9:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_sigmnt6\[9:0\]" \
+           "/TB_sdma_top/U_SDMA_TOP_0/o_sdma_sigmnt7\[9:0\]"
+wvSetPosition -win $_nWave2 {("U_SDMA_TOP_0" 0)}
+wvSetPosition -win $_nWave2 {("U_SDMA_TOP_0" 62)}
+wvSetPosition -win $_nWave2 {("U_SDMA_TOP_0" 62)}
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvZoom -win $_nWave2 335649.546828 927613.293051
+wvZoom -win $_nWave2 352460.601856 406470.587161
+wvZoomOut -win $_nWave2
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvSetCursor -win $_nWave2 6526.886442 -snap {("U_SDMA_TOP_0" 61)}
+wvSetCursor -win $_nWave2 11356.782409 -snap {("U_SDMA_TOP_0" 61)}
+wvSetCursor -win $_nWave2 13445.386070 -snap {("U_SDMA_TOP_0" 61)}
+wvSetCursor -win $_nWave2 17753.131121 -snap {("U_SDMA_TOP_0" 61)}
+wvSetCursor -win $_nWave2 21995.607308 -snap {("U_SDMA_TOP_0" 61)}
+wvSetCursor -win $_nWave2 25585.394851 -snap {("U_SDMA_TOP_0" 61)}
+wvSetCursor -win $_nWave2 30284.753089 -snap {("U_SDMA_TOP_0" 60)}
+wvSetCursor -win $_nWave2 36746.370667 -snap {("U_SDMA_TOP_0" 60)}
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvSetCursor -win $_nWave2 313290.549201 -snap {("U_SDMA_TOP_0" 60)}
+wvSetCursor -win $_nWave2 419809.335930 -snap {("U_SDMA_TOP_0" 60)}
+wvSetCursor -win $_nWave2 595252.043482 -snap {("U_SDMA_TOP_0" 60)}
+wvSetCursor -win $_nWave2 776960.562019 -snap {("U_SDMA_TOP_0" 60)}
+wvSetCursor -win $_nWave2 903321.083530 -snap {("U_SDMA_TOP_0" 60)}
+wvSetCursor -win $_nWave2 975377.909846 -snap {("U_SDMA_TOP_0" 60)}
+wvSetCursor -win $_nWave2 404144.808469 -snap {("U_SDMA_TOP_0" 58)}
+wvSetCursor -win $_nWave2 142025.048971 -snap {("U_SDMA_TOP_0" 59)}
+wvSetCursor -win $_nWave2 278828.588789 -snap {("U_SDMA_TOP_0" 58)}
+wvSetCursor -win $_nWave2 409366.317623 -snap {("U_SDMA_TOP_0" 57)}
+wvSetCursor -win $_nWave2 432340.957898 -snap {("U_SDMA_TOP_0" 57)}
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvZoom -win $_nWave2 21930.338444 113828.899543
+wvZoomOut -win $_nWave2
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvSetCursor -win $_nWave2 25875.969470 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 26431.247784 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 33427.754551 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 37314.702754 -snap {("U_SDMA_TOP_0" 19)}
+wvSelectSignal -win $_nWave2 {( "U_SDMA_TOP_0" 19 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_TOP_0" 19 )} 
+wvSetRadix -win $_nWave2 -format UDec
+wvSetCursor -win $_nWave2 38203.148058 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 43089.597228 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 53750.940872 -snap {("U_SDMA_TOP_0" 20)}
+wvSetCursor -win $_nWave2 82403.301916 -snap {("U_SDMA_TOP_0" 20)}
+wvSetCursor -win $_nWave2 101504.875945 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 111944.108263 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 123604.952874 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 135043.686159 -snap {("U_SDMA_TOP_0" 19)}
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+debReload
+wvSetCursor -win $_nWave2 26875.470436 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 32761.420573 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 132045.183259 -snap {("U_SDMA_TOP_0" 19)}
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvSetCursor -win $_nWave2 27763.915740 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 29985.028999 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 30984.529966 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 32650.364910 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 34982.533832 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 36981.535766 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 39202.649025 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 41201.650958 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 42645.374576 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 44755.432173 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 46088.100128 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 48420.269050 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 50197.159658 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 52973.551232 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 55305.720154 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 56083.109795 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 58415.278717 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 59414.779683 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 61191.670291 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 63190.672224 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 64079.117528 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 67077.620428 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 68743.455372 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 70631.401642 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 72963.570564 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 74407.294183 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 76739.463105 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 78627.409375 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 80293.244320 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 82292.246253 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 84291.248186 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 86068.138794 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 88289.252053 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 103392.822215 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 105502.879812 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 108279.271386 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 107612.937408 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 108945.605363 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 110944.607297 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 112832.553567 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 114942.611163 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 117274.780085 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 119384.837681 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 121050.672626 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 123049.674559 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 125492.899144 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 128158.235055 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 126492.400111 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 128602.457707 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 130268.292652 -snap {("U_SDMA_TOP_0" 19)}
+wvSetCursor -win $_nWave2 133266.795551 -snap {("U_SDMA_TOP_0" 19)}
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvSetCursor -win $_nWave2 26764.414773 -snap {("U_SDMA_TOP_0" 56)}
+wvSetCursor -win $_nWave2 75406.795150 -snap {("U_SDMA_TOP_0" 57)}
+wvSetCursor -win $_nWave2 120939.616963 -snap {("U_SDMA_TOP_0" 58)}
+wvZoom -win $_nWave2 128602.457707 130046.181326
+wvZoom -win $_nWave2 129705.096169 129710.330212
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvSetCursor -win $_nWave2 131112.628374 -snap {("U_SDMA_TOP_0" 19)}
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvZoom -win $_nWave2 130282.801612 160156.565039
+wvZoomOut -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "U_SDMA_TOP_0" 60 )} 
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvSetCursor -win $_nWave2 132790.453286 -snap {("U_SDMA_TOP_0" 19)}
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvSelectSignal -win $_nWave2 {( "U_SDMA_TOP_0" 56 )} 
+wvSelectSignal -win $_nWave2 {( "U_SDMA_TOP_0" 56 )} 
+wvSetRadix -win $_nWave2 -format Bin
+wvScrollUp -win $_nWave2 55
+wvSelectGroup -win $_nWave2 {U_SDMA_TOP_0}
+wvSetPosition -win $_nWave2 {("U_SDMA_TOP_0" 0)}
+wvSelectGroup -win $_nWave2 {G2}
+srcHBSelect "TB_sdma_top.U_SDMA_TOP_0" -win $_nTrace1
+srcHBSelect "TB_sdma_top.U_SDMA_TOP_0.U_SDMA_TOP_CTRL_0" -win $_nTrace1
+srcHBDrag -win $_nTrace1
+wvSetPosition -win $_nWave2 {("G2" 0)}
+wvMoveSelected -win $_nWave2
+wvSelectGroup -win $_nWave2 {U_SDMA_TOP_0}
+wvSelectGroup -win $_nWave2 {U_SDMA_TOP_0}
+wvSelectGroup -win $_nWave2 {U_SDMA_TOP_0}
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 0)}
+srcHBDrag -win $_nTrace1
+debExit

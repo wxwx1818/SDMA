@@ -135,10 +135,15 @@ wire [`SDMA_INST_CROPFMSYWIDTH-1:0] inst_cropfms2y;
 wire [`SDMA_INST_SRCFMSCYCSADDRWIDTH-1:0] inst_srcfmscycsaddr;
 wire [`SDMA_INST_SRCFMSCYCEADDRWIDTH-1:0] inst_srcfmscyceaddr;
 wire [`SDMA_INST_SRCFMSCYCALIGNENAWIDTH-1:0] inst_srcfmscycalignena;
+//2025.04.09 added
+wire [`SDMA_INST_SHUFFLEIDXWIDTH-1:0] inst_shuffleidx;
+
+
 wire								sdp_inputsectiondone;
 wire 								sdp_outputsectiondone;
 wire								sdp_parallelinoutsectiondone;
 wire								sdp_parallelinoutempty;
+wire [`SDMA_CACHEDATAWIDTH-1:0]		sdp_dout;
 wire								ssc_transfer_pending;
 wire								ssc_transfer_done;
 wire [`SDMA_SECTION_DINNUMDATAWIDTH-1:0] ssc_num_of_remain_bytes;
@@ -157,6 +162,8 @@ wire								sap_upsampleflag;
 wire [`SDMA_CACHEDATAWIDTH/8-1:0]	sport_rvld;
 wire [`SDMA_CACHEDATAWIDTH-1:0]		sport_rdata;
 wire [`SDMA_CACHEDATAWIDTH-1:0]		dport_wdata;
+
+
 
 //2025.03.12 added
 wire								sdma_ready_old;
@@ -256,6 +263,7 @@ sdma_top_ctrl U_SDMA_TOP_CTRL_0(
   .o_stc_srcfmscycsaddr		  (inst_srcfmscycsaddr[`SDMA_INST_SRCFMSCYCSADDRWIDTH-1:0]),
   .o_stc_srcfmscyceaddr		  (inst_srcfmscyceaddr[`SDMA_INST_SRCFMSCYCEADDRWIDTH-1:0]),
   .o_stc_srcfmscycalignena	  (inst_srcfmscycalignena[`SDMA_INST_SRCFMSCYCALIGNENAWIDTH-1:0]),
+  .o_stc_shuffleidx			  (inst_shuffleidx[`SDMA_INST_SHUFFLEIDXWIDTH-1:0]),
   .o_stc_sigmnt1			  (o_sdma_sigmnt1),
   .o_stc_sigmnt2			  (o_sdma_sigmnt2)
 );
@@ -352,12 +360,19 @@ sdma_data_path U_SDMA_DATA_PATH_0(
   .i_sdp_paddingflag 	              (sap_paddingflag),
   .i_sdp_upsampleflag				  (sap_upsampleflag),
   .o_sdp_din_ready                    (sdp_ready),
-  .o_sdp_dout                         (dport_wdata[`SDMA_CACHEDATAWIDTH-1:0]),
+  .o_sdp_dout                         (sdp_dout),
   .o_sdp_input_section_done           (sdp_inputsectiondone),
   .o_sdp_output_section_done          (sdp_outputsectiondone),
   .o_sdp_parallelinout_section_done   (sdp_parallelinoutsectiondone),
   .o_sdp_parallelinout_empty		  (sdp_parallelinoutempty),
   .o_sdp_sigmnt1					  (o_sdma_sigmnt7)
+);
+
+sdma_shuffle_mux U_SDMA_SHUFFLE_MUX_0(
+  .i_ssm_shuffleen    (inst_sdmamode[5]),
+  .i_ssm_shuffleidx   (inst_shuffleidx),
+  .i_ssm_originaldata (sdp_dout),
+  .o_ssm_shuffleddata (dport_wdata[`SDMA_CACHEDATAWIDTH-1:0])
 );
 
 sdma_addr_mux U_SDMA_ADDR_MUX_0(

@@ -2,7 +2,7 @@ Magic 271485
 Revision Verdi_O-2018.09-SP2
 
 ; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
-viewPort 0 27 900 256 100 65
+viewPort 0 27 1846 477 337 222
 
 ; File list:
 ; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
@@ -16,16 +16,16 @@ signalSpacing 5
 
 ; windowTimeUnit is used for zoom, cursor & marker
 ; waveform viewport range
-zoom 0.000000 10100000.000000
-cursor 0.000000
+zoom 86576.665043 180853.445654
+cursor 161000.000000
 marker 0.000000
 
 ; user define markers
 ; userMarker time_pos marker_name color linestyle
 ; visible top row signal index
-top 0
+top 61
 ; marker line index
-markerPos 0
+markerPos 116
 
 ; event list
 ; addEvent event_name event_expression
@@ -45,8 +45,143 @@ COMPLEX_EVENT_END
 curSTATUS ByChange
 
 
-addGroup "G1"
+addGroup "U_SDMA_TOP_CTRL_0" -e FALSE
+activeDirFile "" "/home/wx/Project/SDMA/sim/TB_sdma_top.fsdb"
+addSignal -h 15 /TB_sdma_top/U_SDMA_TOP_0/U_SDMA_TOP_CTRL_0/clk
+addSignal -h 15 -holdScope rst_n
+addSignal -h 15 -holdScope i_stc_en
+addSignal -h 15 -holdScope i_stc_inst_vld
+addSignal -h 15 -holdScope i_stc_inst[639:0]
+addSignal -h 15 -holdScope i_stc_sscready
+addSignal -h 15 -holdScope i_stc_ssctransferdone
+addSignal -h 15 -holdScope o_stc_sscen
+addSignal -h 15 -holdScope o_stc_ready
+addSignal -h 15 -holdScope o_stc_sdmamode[6:0]
+addSignal -h 15 -holdScope o_stc_srcportid[2:0]
+addSignal -h 15 -holdScope o_stc_dstportid[2:0]
+addSignal -h 15 -holdScope o_stc_srcfmsaddr[31:0]
+addSignal -h 15 -holdScope o_stc_dstfmsaddr[31:0]
+addSignal -h 15 -holdScope o_stc_srcfmsmovelength[20:0]
+addSignal -h 15 -holdScope o_stc_srcfms2addr[31:0]
+addSignal -h 15 -holdScope o_stc_srcfms1concatelength[20:0]
+addSignal -h 15 -holdScope o_stc_srcfms2concatelength[20:0]
+addSignal -h 15 -holdScope o_stc_srcfms2movelength[20:0]
+addSignal -h 15 -holdScope o_stc_srcfmsc[12:0]
+addSignal -h 15 -holdScope o_stc_srcfmsx[12:0]
+addSignal -h 15 -holdScope o_stc_srcfmsy[12:0]
+addSignal -h 15 -holdScope o_stc_dstfmsstride3[16:0]
+addSignal -h 15 -holdScope o_stc_dstfmsstride2[16:0]
+addSignal -h 15 -holdScope o_stc_dstfmsstride1[16:0]
+addSignal -h 15 -holdScope o_stc_paddingaxisbefore[2:0]
+addSignal -h 15 -holdScope o_stc_paddingleftx[5:0]
+addSignal -h 15 -holdScope o_stc_paddingrightx[5:0]
+addSignal -h 15 -holdScope o_stc_paddinglefty[5:0]
+addSignal -h 15 -holdScope o_stc_paddingrighty[5:0]
+addSignal -h 15 -holdScope o_stc_insertzeronum[2:0]
+addSignal -h 15 -holdScope o_stc_insertzeronumtotalx[10:0]
+addSignal -h 15 -holdScope o_stc_insertzeronumtotaly[10:0]
+addSignal -h 15 -holdScope o_stc_upsampleidxx[2:0]
+addSignal -h 15 -holdScope o_stc_upsampleidxy[2:0]
+addSignal -h 15 -holdScope o_stc_cropfmsstride2[16:0]
+addSignal -h 15 -holdScope o_stc_cropfmsstride1[12:0]
+addSignal -h 15 -holdScope o_stc_cropfmsc[12:0]
+addSignal -h 15 -holdScope o_stc_cropfmsx[12:0]
+addSignal -h 15 -holdScope o_stc_cropfmsy[12:0]
+addSignal -h 15 -holdScope o_stc_cropfms2stride2[16:0]
+addSignal -h 15 -holdScope o_stc_cropfms2stride1[12:0]
+addSignal -h 15 -holdScope o_stc_cropfms2c[12:0]
+addSignal -h 15 -holdScope o_stc_cropfms2x[12:0]
+addSignal -h 15 -holdScope o_stc_cropfms2y[12:0]
+addSignal -h 15 -holdScope o_stc_srcfmscycsaddr[31:0]
+addSignal -h 15 -holdScope o_stc_srcfmscyceaddr[31:0]
+addSignal -h 15 -holdScope o_stc_srcfmscycalignena[0:0]
+addSignal -h 15 -holdScope o_stc_shuffleidx[0:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope o_stc_sigmnt1[9:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope o_stc_sigmnt2[9:0]
+addSignal -h 15 -holdScope cur_state[1:0]
+addSignal -h 15 -holdScope o_stc_sdmamode[6:0]
+addGroup "U_SDMA_TOP_0"
+addSignal -h 15 /TB_sdma_top/U_SDMA_TOP_0/i_clk
+addSignal -h 15 -holdScope i_rst_n
+addSignal -h 15 -holdScope i_sdma_en
+addSignal -h 15 -holdScope i_sdma_inst_vld
+addSignal -h 15 -holdScope i_sdma_inst[639:0]
+addSignal -h 15 -holdScope o_sdma_ready
+addSignal -h 15 -holdScope i_sdma_ahbready
+addSignal -h 15 -holdScope i_sdma_ahbrdata[127:0]
+addSignal -h 15 -holdScope i_sdma_ahbrvld[15:0]
+addSignal -h 15 -holdScope o_sdma_ahbaddr[31:0]
+addSignal -h 15 -holdScope o_sdma_ahbena[15:0]
+addSignal -h 15 -holdScope o_sdma_ahbwdata[127:0]
+addSignal -h 15 -holdScope o_sdma_ahbwea
+addSignal -h 15 -holdScope i_sdma_dc1ready
+addSignal -h 15 -holdScope i_sdma_dc1rdata[511:0]
+addSignal -h 15 -holdScope i_sdma_dc1rvld[63:0]
+addSignal -h 15 -holdScope o_sdma_dc1addr[31:0]
+addSignal -h 15 -holdScope o_sdma_dc1ena[63:0]
+addSignal -h 15 -holdScope o_sdma_dc1wdata[511:0]
+addSignal -h 15 -holdScope o_sdma_dc1wea
+addSignal -h 15 -holdScope i_sdma_dc2ready
+addSignal -h 15 -holdScope i_sdma_dc2rdata[511:0]
+addSignal -h 15 -holdScope i_sdma_dc2rvld[63:0]
+addSignal -h 15 -holdScope o_sdma_dc2addr[31:0]
+addSignal -h 15 -holdScope o_sdma_dc2ena[63:0]
+addSignal -h 15 -holdScope o_sdma_dc2wdata[511:0]
+addSignal -h 15 -holdScope o_sdma_dc2wea
+addSignal -h 15 -holdScope i_sdma_wc1ready
+addSignal -h 15 -holdScope i_sdma_wc1rdata[511:0]
+addSignal -h 15 -holdScope i_sdma_wc1rvld[63:0]
+addSignal -h 15 -holdScope o_sdma_wc1addr[31:0]
+addSignal -h 15 -holdScope o_sdma_wc1ena[63:0]
+addSignal -h 15 -holdScope o_sdma_wc1wdata[511:0]
+addSignal -h 15 -holdScope o_sdma_wc1wea
+addSignal -h 15 -holdScope i_sdma_wc2ready
+addSignal -h 15 -holdScope i_sdma_wc2rdata[511:0]
+addSignal -h 15 -holdScope i_sdma_wc2rvld[63:0]
+addSignal -h 15 -holdScope o_sdma_wc2addr[31:0]
+addSignal -h 15 -holdScope o_sdma_wc2ena[63:0]
+addSignal -h 15 -holdScope o_sdma_wc2wdata[511:0]
+addSignal -h 15 -holdScope o_sdma_wc2wea
+addSignal -h 15 -holdScope i_sdma_bc1ready
+addSignal -h 15 -holdScope i_sdma_bc1rdata[127:0]
+addSignal -h 15 -holdScope i_sdma_bc1rvld[15:0]
+addSignal -h 15 -holdScope o_sdma_bc1addr[31:0]
+addSignal -h 15 -holdScope o_sdma_bc1ena[15:0]
+addSignal -h 15 -holdScope o_sdma_bc1wdata[127:0]
+addSignal -h 15 -holdScope o_sdma_bc1wea
+addSignal -h 15 -holdScope i_sdma_bc2ready
+addSignal -h 15 -holdScope i_sdma_bc2rdata[127:0]
+addSignal -h 15 -holdScope i_sdma_bc2rvld[15:0]
+addSignal -h 15 -holdScope o_sdma_bc2addr[31:0]
+addSignal -h 15 -holdScope o_sdma_bc2ena[15:0]
+addSignal -h 15 -holdScope o_sdma_bc2wdata[127:0]
+addSignal -h 15 -holdScope o_sdma_bc2wea
+addSignal -h 15 -holdScope o_sdma_sigmnt1[9:0]
+addSignal -h 15 -holdScope o_sdma_sigmnt2[9:0]
+addSignal -h 15 -holdScope o_sdma_sigmnt3[9:0]
+addSignal -h 15 -holdScope o_sdma_sigmnt4[9:0]
+addSignal -h 15 -holdScope o_sdma_sigmnt5[9:0]
+addSignal -h 15 -holdScope o_sdma_sigmnt6[9:0]
+addSignal -h 15 -holdScope o_sdma_sigmnt7[9:0]
+addGroup "G3"
 
 ; getSignalForm Scope Hierarchy Status
 ; active file of getSignalForm
+activeDirFile "" "/home/wx/Project/SDMA/sim/TB_sdma_top.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/TB_sdma_top"
+"/TB_sdma_top/U_SDMA_TOP_0"
+
+SCOPE_LIST_BEGIN
+"/TB_sdma_top"
+"/TB_sdma_top/U_SDMA_TOP_0"
+"/TB_sdma_top/U_SDMA_TOP_0/U_RRAM_ADDR_CYC_ALIGN_0"
+"/TB_sdma_top/U_SDMA_TOP_0/U_SDMA_TOP_CTRL_0"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
 

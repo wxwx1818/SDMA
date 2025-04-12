@@ -60,6 +60,7 @@ module sdma_top_ctrl
 	output  [`SDMA_INST_SRCFMSCYCSADDRWIDTH - 1:0]		o_stc_srcfmscycsaddr,
 	output	[`SDMA_INST_SRCFMSCYCEADDRWIDTH - 1:0]		o_stc_srcfmscyceaddr,
 	output	[`SDMA_INST_SRCFMSCYCALIGNENAWIDTH - 1:0]   o_stc_srcfmscycalignena,
+	output	[`SDMA_INST_SHUFFLEIDXWIDTH - 1:0]			o_stc_shuffleidx,
 	output	[9:0]										o_stc_sigmnt1,
 	output	[9:0]										o_stc_sigmnt2
 );
@@ -175,7 +176,8 @@ sdma_inst_decoder U_SDMA_INST_DECODER_0(
   .o_sid_cropfms2y            (o_stc_cropfms2y[`SDMA_INST_CROPFMSYWIDTH-1:0]),
   .o_sid_srcfmscycsaddr		  (o_stc_srcfmscycsaddr[`SDMA_INST_SRCFMSCYCSADDRWIDTH-1:0]),
   .o_sid_srcfmscyceaddr		  (o_stc_srcfmscyceaddr[`SDMA_INST_SRCFMSCYCEADDRWIDTH-1:0]),
-  .o_sid_srcfmscycalignena	  (o_stc_srcfmscycalignena[`SDMA_INST_SRCFMSCYCALIGNENAWIDTH-1:0])
+  .o_sid_srcfmscycalignena	  (o_stc_srcfmscycalignena[`SDMA_INST_SRCFMSCYCALIGNENAWIDTH-1:0]),
+  .o_sid_shuffleidx			  (o_stc_shuffleidx[`SDMA_INST_SHUFFLEIDXWIDTH-1:0])
 );
 
 //------------------------------------------------------------------------------
@@ -202,8 +204,8 @@ always@(posedge clk or negedge rst_n)begin
 	end
 end
 
-assign o_stc_sigmnt1 = {clk,1'd0,o_stc_sdmamode,cur_state};
-assign o_stc_sigmnt2 = {clk,5'd0,{o_stc_srcportid[2],o_stc_dstportid[2],o_stc_sdmamode[3]}};
+assign o_stc_sigmnt1 = {clk,o_stc_sdmamode,cur_state};
+assign o_stc_sigmnt2 = {clk,6'd0,{o_stc_srcportid[2],o_stc_dstportid[2],o_stc_sdmamode[3]}};
 //------------------------------------------------------------------------------
 
 endmodule

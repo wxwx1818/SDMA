@@ -19,15 +19,15 @@ Console = FALSE
 powerDumped = 0
 [hb]
 postSimFile = /home/wx/Project/SDMA/sim/TB_sdma_top.fsdb
-syncTime = 0
-viewport = 499 86 900 700 0 0 228 898
-activeNode = "TB_sdma_top"
-activeScope = "TB_sdma_top"
-activeFile = "../tb/tb_sdma_top.v"
+syncTime = 161000
+viewport = 71 26 1846 824 0 0 189 1844
+activeNode = "TB_sdma_top.U_SDMA_TOP_0.U_SDMA_TOP_CTRL_0"
+activeScope = "TB_sdma_top.U_SDMA_TOP_0.U_SDMA_TOP_CTRL_0"
+activeFile = "../src/sdma_ctrl/sdma_top_ctrl.v"
 interactiveMode = False
 viewType = Source
 simulatorMode = False
-sourceBeginLine = 11
+sourceBeginLine = 12
 baMode = False
 srcLineNum = True
 AutoWrap = True
@@ -44,23 +44,23 @@ DnDtraceCrossHierOnly = True
 traceIncTopPort = False
 leadingZero = False
 signalPane = False
-Scope1 = "TB_sdma_top"
-multipleSelection = 1 11 2 0 0
+Scope1 = "TB_sdma_top.U_SDMA_TOP_0.U_SDMA_TOP_CTRL_0"
+multipleSelection = 1 12 2 0 0
 sdfCheckUndef = FALSE
 simFlow = FALSE
 [hb.design]
 importCmd = "-sv" "-f" "./f.list" 
 invokeDir = /home/wx/Project/SDMA/sim
 [hb.sourceTab.1]
-scope = TB_sdma_top
-File = /home/wx/Project/SDMA/tb/tb_sdma_top.v
-Line = 12
+scope = TB_sdma_top.U_SDMA_TOP_0.U_SDMA_TOP_CTRL_0
+File = /home/wx/Project/SDMA/src/sdma_ctrl/sdma_top_ctrl.v
+Line = 13
 [nMemoryManager]
 WaveformFile = /home/wx/Project/SDMA/sim/TB_sdma_top.fsdb
 UserActionNum = 0
 nMemWindowNum = 0
 [wave.0]
-viewPort = 0 27 900 256 100 65
+viewPort = 0 27 1846 477 337 222
 primaryWindow = TRUE
 SessionFile = /home/wx/Project/SDMA/sim/verdiLog/novas_autosave.ses.wave.0
 displayGrid = FALSE

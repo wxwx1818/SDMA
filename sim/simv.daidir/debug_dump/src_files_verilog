@@ -13,6 +13,7 @@
 /home/wx/Project/SDMA/src/utils/sdma_sap_padding_indicator.v
 /home/wx/Project/SDMA/src/utils/sdma_sap_upsample_indicator.v
 /home/wx/Project/SDMA/src/utils/sdma_sdp_lddata.v
+/home/wx/Project/SDMA/src/utils/sdma_shuffle_mux.v
 /home/wx/Project/SDMA/src/utils/sdma_wdata_mux.v
 /home/wx/Project/SDMA/src/vhead/nsdm.vh
 /home/wx/Project/SDMA/tb/rram_ahb_mem/ahb_port2sram.v

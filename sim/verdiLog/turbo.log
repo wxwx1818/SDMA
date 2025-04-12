@@ -1,3 +1,3 @@
 Command Line: /home/wx/Software/verdi/verdi/Verdi_O-2018.09-SP2/platform/LINUXAMD64/bin/Novas -sv -f ./f.list -ssf TB_sdma_top.fsdb -nologo
 uname(Linux ubuntu 5.15.0-136-generic #147~20.04.1-Ubuntu SMP Wed Mar 19 16:13:14 UTC 2025 x86_64)
-au time 18.719349 2.790155 0.878284 delta 268972032 268972032 total 644575232 644575232
+au time 330.685363 9.647239 3.804935 delta 568938496 568938496 total 944541696 944541696

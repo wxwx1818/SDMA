@@ -271,14 +271,14 @@ always@(*)begin
 				end
 			`else
 			`ifdef MED_BANDWIDTH_VERSION
-				if(~((sfms_raddr[2]||sfms_raddr[1]||sfms_raddr[0]) || (section_r_cnt + 4'd8 > section_r_num) || (crop_fms_rbaddr1_cnt + 4'd8 > i_sap_cropfms2c)))begin
+				if(~((sfms_raddr[2]||sfms_raddr[1]||sfms_raddr[0]) || (section_r_cnt + 4'd8 > section_r_num) || (crop_fms_rbaddr1_cnt + 4'd8 > i_sap_cropfmsc)))begin
 					sport_ren_num = {{(`SDMA_SECTION_DINNUMDATAWIDTH-4){1'b0}},4'd8};
 				end
-				else if(~((sfms_raddr[1]||sfms_raddr[0]) || (section_r_cnt + 3'd4 > section_r_num) || (crop_fms_rbaddr1_cnt + 3'd4 > i_sap_cropfms2c)))begin
+				else if(~((sfms_raddr[1]||sfms_raddr[0]) || (section_r_cnt + 3'd4 > section_r_num) || (crop_fms_rbaddr1_cnt + 3'd4 > i_sap_cropfmsc)))begin
 					sport_ren_num = {{(`SDMA_SECTION_DINNUMDATAWIDTH-3){1'b0}},3'd4};
 				end
 			`else
-				if(~((sfms_raddr[1]||sfms_raddr[0]) || (section_r_cnt + 3'd4 > section_r_num) || (crop_fms_rbaddr1_cnt + 3'd4 > i_sap_cropfms2c)))begin
+				if(~((sfms_raddr[1]||sfms_raddr[0]) || (section_r_cnt + 3'd4 > section_r_num) || (crop_fms_rbaddr1_cnt + 3'd4 > i_sap_cropfmsc)))begin
 					sport_ren_num = {{(`SDMA_SECTION_DINNUMDATAWIDTH-3){1'b0}},3'd4};
 				end
 			`endif
@@ -304,14 +304,14 @@ always@(*)begin
 
 			`else
 			`ifdef MED_BANDWIDTH_VERSION
-				if(~((sfms_raddr[2]||sfms_raddr[1]||sfms_raddr[0]) || (section_r_cnt + 4'd8 > section_r_num) || (crop_fms_rbaddr1_cnt + 4'd8 > i_sap_cropfms2c)))begin
+				if(~((sfms_raddr[2]||sfms_raddr[1]||sfms_raddr[0]) || (section_r_cnt + 4'd8 > section_r_num)))begin
 					sport_ren_num = {{(`SDMA_SECTION_DINNUMDATAWIDTH-4){1'b0}},4'd8};
 				end
-				else if(~((sfms_raddr[1]||sfms_raddr[0]) || (section_r_cnt + 3'd4 > section_r_num) || (crop_fms_rbaddr1_cnt + 3'd4 > i_sap_cropfms2c)))begin
+				else if(~((sfms_raddr[1]||sfms_raddr[0]) || (section_r_cnt + 3'd4 > section_r_num)))begin
 					sport_ren_num = {{(`SDMA_SECTION_DINNUMDATAWIDTH-3){1'b0}},3'd4};
 				end
 			`else
-				if(~((sfms_raddr[1]||sfms_raddr[0]) || (section_r_cnt + 3'd4 > section_r_num) || (crop_fms_rbaddr1_cnt + 3'd4 > i_sap_cropfms2c)))begin
+				if(~((sfms_raddr[1]||sfms_raddr[0]) || (section_r_cnt + 3'd4 > section_r_num)))begin
 					sport_ren_num = {{(`SDMA_SECTION_DINNUMDATAWIDTH-3){1'b0}},3'd4};
 				end
 			`endif
@@ -1015,14 +1015,14 @@ always@(*)begin
 				end
 			`else
 			`ifdef MED_BANDWIDTH_VERSION
-				if(~((sfms_raddr[2]||sfms_raddr[1]||sfms_raddr[0]) || (section_r_cnt + 4'd8 > section_r_num) || (crop_fms_rbaddr1_cnt + 4'd8 > i_sap_cropfms2c)))begin
+				if(~((dfms_waddr[2]||dfms_waddr[1]||dfms_waddr[0]) || (section_w_cnt + 4'd8 > section_w_num) || (sfms_c_cnt + 4'd8 > sfms_c_withpu)))begin
 					sdp_ldb_num = {{(`SDMA_SECTION_DINNUMDATAWIDTH-4){1'b0}},4'd8};
 				end
-				else if(~((sfms_raddr[1]||sfms_raddr[0]) || (section_r_cnt + 3'd4 > section_r_num) || (crop_fms_rbaddr1_cnt + 3'd4 > i_sap_cropfms2c)))begin
+				else if(~((dfms_waddr[1]||dfms_waddr[0]) || (section_w_cnt + 3'd4 > section_w_num) || (sfms_c_cnt + 3'd4 > sfms_c_withpu)))begin
 					sdp_ldb_num = {{(`SDMA_SECTION_DINNUMDATAWIDTH-3){1'b0}},3'd4};
 				end
 			`else
-				if(~((sfms_raddr[1]||sfms_raddr[0]) || (section_r_cnt + 3'd4 > section_r_num) || (crop_fms_rbaddr1_cnt + 3'd4 > i_sap_cropfms2c)))begin
+				if(~((dfms_waddr[1]||dfms_waddr[0]) || (section_w_cnt + 3'd4 > section_w_num) || (sfms_c_cnt + 3'd4 > sfms_c_withpu)))begin
 					sdp_ldb_num = {{(`SDMA_SECTION_DINNUMDATAWIDTH-3){1'b0}},3'd4};
 				end
 			`endif
@@ -1036,7 +1036,10 @@ always@(*)begin
 			end
 			else begin	// w/o Padding or Upsample
 			`ifdef HIGH_BANDWIDTH_VERSION
-				if(~((dfms_waddr[3]||dfms_waddr[2]||dfms_waddr[1]||dfms_waddr[0]) || (section_w_cnt + 5'd16 > section_w_num)))begin
+				if(i_sap_sdmamode[5])begin
+					sdp_ldb_num = {{(`SDMA_SECTION_DINNUMDATAWIDTH-2){1'b0}},2'd2};
+				end
+				else if(~((dfms_waddr[3]||dfms_waddr[2]||dfms_waddr[1]||dfms_waddr[0]) || (section_w_cnt + 5'd16 > section_w_num)))begin
 					sdp_ldb_num = {{(`SDMA_SECTION_DINNUMDATAWIDTH-5){1'b0}},5'd16};
 				end
 				else if(~((dfms_waddr[2]||dfms_waddr[1]||dfms_waddr[0]) || (section_w_cnt + 4'd8 > section_w_num)))begin
@@ -1047,14 +1050,20 @@ always@(*)begin
 				end
 			`else
 			`ifdef MED_BANDWIDTH_VERSION
-				if(~((sfms_raddr[2]||sfms_raddr[1]||sfms_raddr[0]) || (section_r_cnt + 4'd8 > section_r_num) || (crop_fms_rbaddr1_cnt + 4'd8 > i_sap_cropfms2c)))begin
+				if(i_sap_sdmamode[5])begin
+					sdp_ldb_num = {{(`SDMA_SECTION_DINNUMDATAWIDTH-2){1'b0}},2'd2};
+				end
+				else if(~((dfms_waddr[2]||dfms_waddr[1]||dfms_waddr[0]) || (section_w_cnt + 4'd8 > section_w_num) || (sfms_c_cnt + 4'd8 > sfms_c_withpu)))begin
 					sdp_ldb_num = {{(`SDMA_SECTION_DINNUMDATAWIDTH-4){1'b0}},4'd8};
 				end
-				else if(~((sfms_raddr[1]||sfms_raddr[0]) || (section_r_cnt + 3'd4 > section_r_num) || (crop_fms_rbaddr1_cnt + 3'd4 > i_sap_cropfms2c)))begin
+				else if(~((dfms_waddr[1]||dfms_waddr[0]) || (section_w_cnt + 3'd4 > section_w_num) || (sfms_c_cnt + 3'd4 > sfms_c_withpu)))begin
 					sdp_ldb_num = {{(`SDMA_SECTION_DINNUMDATAWIDTH-3){1'b0}},3'd4};
 				end
 			`else
-				if(~((sfms_raddr[1]||sfms_raddr[0]) || (section_r_cnt + 3'd4 > section_r_num) || (crop_fms_rbaddr1_cnt + 3'd4 > i_sap_cropfms2c)))begin
+				if(i_sap_sdmamode[5])begin
+					sdp_ldb_num = {{(`SDMA_SECTION_DINNUMDATAWIDTH-2){1'b0}},2'd2};
+				end
+				else if(~((dfms_waddr[1]||dfms_waddr[0]) || (section_w_cnt + 3'd4 > section_w_num) || (sfms_c_cnt + 3'd4 > sfms_c_withpu)))begin
 					sdp_ldb_num = {{(`SDMA_SECTION_DINNUMDATAWIDTH-3){1'b0}},3'd4};
 				end
 			`endif
@@ -1068,7 +1077,7 @@ always@(*)begin
 			end
 		end
 		else if(i_sap_sdpmode == `SDMA_SDP_MODE_AHB2CACHESEQ ||i_sap_sdpmode == `SDMA_SDP_MODE_CACHE2CACHESEQ)begin//dport is cache,w/o Transpose
-			if(i_sap_sdmamode[2] || i_sap_sdmamode[1])begin
+			if(i_sap_sdmamode[2] || i_sap_sdmamode[1])begin	//with Padding or Upsample
 				if(sfms_c_withpu > `SDMA_CACHEDATAWIDTH/8)begin
 					if(padding_flag || upsample_flag)begin
 						sdp_ldb_num = ($unsigned(sfms_c_withpu - sfms_c_cnt) > `SDMA_CACHEDATAWIDTH/8)?(`SDMA_CACHEDATAWIDTH/8):(sfms_c_withpu - sfms_c_cnt);
@@ -1086,8 +1095,13 @@ always@(*)begin
 					end
 				end
 			end
-			else begin
-				sdp_ldb_num = i_sap_num_of_remain_bytes;
+			else begin	//w/o Padding or Upsample
+				if(i_sap_sdmamode[5])begin
+					sdp_ldb_num = {{(`SDMA_SECTION_DINNUMDATAWIDTH-2){1'b0}},2'd2};
+				end
+				else begin
+					sdp_ldb_num = i_sap_num_of_remain_bytes;
+				end
 			end
 		end
 		else begin //Transpose
@@ -1136,7 +1150,7 @@ always@(posedge clk or negedge rst_n)begin
 					|| i_sap_sdpmode == `SDMA_SDP_MODE_AHB2CACHESEQ
 					|| i_sap_sdpmode == `SDMA_SDP_MODE_CACHE2AHBSEQ
 					|| i_sap_sdpmode == `SDMA_SDP_MODE_CACHE2CACHESEQ)begin
-						dfms_waddr <= dfms_waddr + sdp_ldb_num;
+						dfms_waddr <= (i_sap_sdmamode[5])?(dfms_waddr + 1'd1):(dfms_waddr + sdp_ldb_num);
 					end
 					else begin //Transpose
 						if(sfms_y_wrap_flag)begin
@@ -1202,7 +1216,7 @@ always@(posedge clk or negedge rst_n)begin
 				dport_wen <= {(`SDMA_CACHEDATAWIDTH/8){1'b0}};
 			end
 			WDATA,PARALLELRW:begin
-				dport_wen <= (dfms_waddr_inc_flag)?sdp_ldb:((i_sap_sdp_outputsectiondone || i_sap_sdp_parallelinoutsectiondone)?{(`SDMA_CACHEDATAWIDTH/8){1'b0}}:dport_wen);
+				dport_wen <= (dfms_waddr_inc_flag)?(i_sap_sdmamode[5]?{{(`SDMA_CACHEDATAWIDTH/8-1){1'b0}},1'b1}:sdp_ldb):((i_sap_sdp_outputsectiondone || i_sap_sdp_parallelinoutsectiondone)?{(`SDMA_CACHEDATAWIDTH/8){1'b0}}:dport_wen);
 			end
 			BADDRSWITCH:begin
 				dport_wen <= {(`SDMA_CACHEDATAWIDTH/8){1'b0}};

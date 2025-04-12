@@ -57,6 +57,14 @@ wire   [`SDMA_CACHEDATAWIDTH/8-1:0] o_sdma_wc2ena;
 wire   [`SDMA_CACHEDATAWIDTH-1:0]   o_sdma_wc2wdata;
 wire   								o_sdma_wc2wea;
 
+//test signals
+wire   [9:0]						sigmnt1;
+wire   [9:0]						sigmnt2;
+wire   [9:0]						sigmnt3;
+wire   [9:0]						sigmnt4;
+wire   [9:0]						sigmnt5;
+wire   [9:0]						sigmnt6;
+wire   [9:0]						sigmnt7;
 
 //rram_ahb other signals
 reg									ahb_clk;
@@ -103,8 +111,11 @@ reg [`SDMA_INST_CROPFMSYWIDTH - 1:0] 			cropfms2y;
 reg	[`SDMA_INST_SRCFMSCYCSADDRWIDTH - 1:0]		srcfmscycsaddr;
 reg [`SDMA_INST_SRCFMSCYCEADDRWIDTH - 1:0]		srcfmscyceaddr;
 reg	[`SDMA_INST_SRCFMSCYCALIGNENAWIDTH - 1:0]	srcfmscycalignena;
+reg [`SDMA_INST_SHUFFLEIDXWIDTH - 1:0]			shuffleidx;
 
-assign i_sdma_inst = {	srcfmscycalignena,
+
+assign i_sdma_inst = {	shuffleidx,
+						srcfmscycalignena,
 						srcfmscyceaddr,
 						srcfmscycsaddr,
 						cropfms2y,
@@ -157,7 +168,8 @@ initial begin
 	//Concate_AHB2AHB();
 	//Transpose_AHB2DC1();
 	//CropAndConcate_AHB2DC1();
-	PaddingAndUpsample_AHB2DC1();
+	//PaddingAndUpsample_AHB2DC1();
+	Shuffle_AHB2DC1();
 end
 
 initial begin
@@ -187,7 +199,7 @@ begin
 	i_sdma_wc2ready = 1;
 	i_sdma_wc2rdata = 0;
 	i_sdma_wc2rvld = 0;
-	sdmamode = 'b000000;
+	sdmamode = 'b0000000;
 	srcportid = 'b000;
 	dstportid = 'b000;
 	srcfmsaddr = 'd0;
@@ -226,6 +238,7 @@ begin
 	srcfmscycsaddr = 'd0;
 	srcfmscyceaddr = 'd0;
 	srcfmscycalignena = 'd0;
+	shuffleidx = 'd0;
 	#2  
 	sdma_rst_n = 1;
 	ahb_rst_n  = 1;
@@ -235,7 +248,7 @@ endtask
 
 //testcase1, move fms from AHB to DCache1.Pass!
 task Move_AHB2DC1();
-	sdmamode = 'b100000;
+	sdmamode = 'b1000000;
 	srcportid = 'b000;
 	dstportid = 'b000;
 	srcfmsaddr = 'd0;
@@ -279,7 +292,7 @@ endtask
 
 //testcase2, transpose fms from AHB to AHB.Pass!
 task Transpose_AHB2AHB();
-	sdmamode = 'b101000;
+	sdmamode = 'b1001000;
 	srcportid = 'b000;
 	dstportid = 'b000;
 	srcfmsaddr = 'd0;
@@ -323,7 +336,7 @@ endtask
 
 //testcase3, crop fms from AHB to AHB. Pass!
 task Crop_AHB2AHB();
-	sdmamode = 'b100001;
+	sdmamode = 'b1000001;
 	srcportid = 'b000;
 	dstportid = 'b000;
 	srcfmsaddr = 'd0;
@@ -333,9 +346,9 @@ task Crop_AHB2AHB();
 	srcfms1concatelength = 'd0;
 	srcfms2concatelength = 'd0;
 	srcfms2movelength	 = 'd0;
-	srcfmsc = 'd0;
-	srcfmsx = 'd0;
-	srcfmsy = 'd0;
+	srcfmsc = 'd2;
+	srcfmsx = 'd2;
+	srcfmsy = 'd2;
 	dstfmsstride3 = 'd0;
 	dstfmsstride2 = 'd0;
 	dstfmsstride1 = 'd0;
@@ -367,7 +380,7 @@ endtask
 
 //testcase4, padding fms from AHB to AHB. Pass!
 task Padding_AHB2AHB();
-	sdmamode = 'b100100;
+	sdmamode = 'b1000100;
 	srcportid = 'b000;
 	dstportid = 'b000;
 	srcfmsaddr = 'd0;
@@ -411,7 +424,7 @@ endtask
 
 //testcase5, upsample fms from AHB to AHB. Pass! 
 task Upsample_AHB2AHB();
-	sdmamode = 'b100010;
+	sdmamode = 'b1000010;
 	srcportid = 'b000;
 	dstportid = 'b000;
 	srcfmsaddr = 'd0;
@@ -455,7 +468,7 @@ endtask
 
 //testcase6, concate fms from AHB to AHB. Pass!
 task Concate_AHB2AHB();
-	sdmamode = 'b110000;
+	sdmamode = 'b1010000;
 	srcportid = 'b000;
 	dstportid = 'b000;
 	srcfmsaddr = 'd0;
@@ -499,7 +512,7 @@ endtask
 
 //testcase7, transpose fms from AHB to DCACHE1. Pass!
 task Transpose_AHB2DC1();
-	sdmamode = 'b101000;
+	sdmamode = 'b1001000;
 	srcportid = 'b000;
 	dstportid = 'b100;
 	srcfmsaddr = 'd0;
@@ -543,7 +556,7 @@ endtask
 
 //testcase8, crop and concate fms from AHB to DC1. Pass!
 task CropAndConcate_AHB2DC1();
-	sdmamode = 'b110001;
+	sdmamode = 'b1010001;
 	srcportid = 'b000;
 	dstportid = 'b100;
 	srcfmsaddr = 'd0;
@@ -587,7 +600,7 @@ endtask
 
 //testcase9, padding and upsample fms from AHB to DC1. Passed!
 task PaddingAndUpsample_AHB2DC1();
-	sdmamode = 'b100110;
+	sdmamode = 'b1000110;
 	srcportid = 'b000;
 	dstportid = 'b100;
 	srcfmsaddr = 'd0;
@@ -623,6 +636,51 @@ task PaddingAndUpsample_AHB2DC1();
 	cropfms2c = 'd0;
 	cropfms2x = 'd0;
 	cropfms2y = 'd0;
+	#2
+	i_sdma_inst_vld = 1;
+	#2
+	i_sdma_inst_vld = 0;
+endtask
+
+//testcase10, shuffle fms from AHB to DC1. Passed!
+task Shuffle_AHB2DC1();
+	sdmamode = 'b1100000;
+	srcportid = 'b000;
+	dstportid = 'b100;
+	srcfmsaddr = 'd0;
+	dstfmsaddr = 'd0;
+	srcfmsmovelength = 'd96; //Source fms:Y4*C4*X6
+	srcfms2addr = 'd0;
+	srcfms1concatelength = 'd0;
+	srcfms2concatelength = 'd0;
+	srcfms2movelength	 = 'd0;
+	srcfmsc = 'd4;
+	srcfmsx = 'd6;
+	srcfmsy = 'd4;
+	dstfmsstride3 = 'd0;
+	dstfmsstride2 = 'd0;
+	dstfmsstride1 = 'd0;
+	paddingaxisbefore = 'b000;
+	paddingleftx = 'd0;
+	paddingrightx = 'd0;
+	paddinglefty = 'd0;
+	paddingrighty = 'd0;
+	insertzeronum = 'd0;
+	insertzeronumtotalx = 'd0;
+	insertzeronumtotaly = 'd0;
+	upsampleidxx = 0;
+	upsampleidxy = 0;
+	cropfmsstride2 = 'd0;
+	cropfmsstride1 = 'd0;
+	cropfmsc = 'd0;
+	cropfmsx = 'd0;
+	cropfmsy = 'd0;
+	cropfms2stride2 = 'd0;
+	cropfms2stride1 = 'd0;
+	cropfms2c = 'd0;
+	cropfms2x = 'd0;
+	cropfms2y = 'd0;
+	shuffleidx = 'd1;
 	#2
 	i_sdma_inst_vld = 1;
 	#2
@@ -682,7 +740,14 @@ U_SDMA_TOP_0(
   .o_sdma_wc2addr  (o_sdma_wc2addr[`SDMA_ADDRWIDTH-1:0]),
   .o_sdma_wc2ena   (o_sdma_wc2ena[`SDMA_CACHEDATAWIDTH/8-1:0]),
   .o_sdma_wc2wdata (o_sdma_wc2wdata[`SDMA_CACHEDATAWIDTH-1:0]),
-  .o_sdma_wc2wea   (o_sdma_wc2wea)
+  .o_sdma_wc2wea   (o_sdma_wc2wea),
+  .o_sdma_sigmnt1  (sigmnt1),
+  .o_sdma_sigmnt2  (sigmnt2),
+  .o_sdma_sigmnt3  (sigmnt3),
+  .o_sdma_sigmnt4  (sigmnt4),
+  .o_sdma_sigmnt5  (sigmnt5),
+  .o_sdma_sigmnt6  (sigmnt6),
+  .o_sdma_sigmnt7  (sigmnt7)
 );
 
 rram_ahb_mem 

@@ -20,6 +20,7 @@ Command arguments:
         ../src/utils/rram_addr_demux.v
         ../src/utils/rram_width_reducer.v
         ../src/utils/rram_addr_cyc_align.v
+        ../src/utils/sdma_shuffle_mux.v
         ../tb/tb_sdma_top.v
         ../tb/rram_ahb_mem/ahb_port2sram.v
         ../tb/rram_ahb_mem/ahb_port_slave.v

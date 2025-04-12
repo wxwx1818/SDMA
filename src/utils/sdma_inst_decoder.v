@@ -50,7 +50,8 @@ module sdma_inst_decoder
 	output  [`SDMA_INST_CROPFMSYWIDTH - 1:0]  			o_sid_cropfms2y,
 	output	[`SDMA_INST_SRCFMSCYCSADDRWIDTH - 1:0]		o_sid_srcfmscycsaddr,
 	output  [`SDMA_INST_SRCFMSCYCEADDRWIDTH - 1:0]		o_sid_srcfmscyceaddr,
-	output  [`SDMA_INST_SRCFMSCYCALIGNENAWIDTH - 1:0]	o_sid_srcfmscycalignena
+	output  [`SDMA_INST_SRCFMSCYCALIGNENAWIDTH - 1:0]	o_sid_srcfmscycalignena,
+	output	[`SDMA_INST_SHUFFLEIDXWIDTH -1:0]			o_sid_shuffleidx
 );
 
 
@@ -94,6 +95,7 @@ assign o_sid_cropfms2y = i_sid_inst[`SDMA_INST_CROPFMS2YSTART + `SDMA_INST_CROPF
 assign o_sid_srcfmscycsaddr = i_sid_inst[`SDMA_INST_SRCFMSCYCSADDRSTART + `SDMA_INST_SRCFMSCYCSADDRWIDTH - 1 : `SDMA_INST_SRCFMSCYCSADDRSTART];
 assign o_sid_srcfmscyceaddr = i_sid_inst[`SDMA_INST_SRCFMSCYCEADDRSTART + `SDMA_INST_SRCFMSCYCEADDRWIDTH - 1 : `SDMA_INST_SRCFMSCYCEADDRSTART];
 assign o_sid_srcfmscycalignena = i_sid_inst[`SDMA_INST_SRCFMSCYCALIGNENASTART + `SDMA_INST_SRCFMSCYCALIGNENAWIDTH - 1 : `SDMA_INST_SRCFMSCYCALIGNENASTART];
+assign o_sid_shuffleidx	= i_sid_inst[`SDMA_INST_SHUFFLEIDXSTART + `SDMA_INST_SHUFFLEIDXWIDTH - 1 : `SDMA_INST_SHUFFLEIDXSTART];
 //------------------------------------------------------------------------------
 
 
